@@ -1,0 +1,1903 @@
+{
+  "certs": [
+    {
+      "id": "aws-clf-c02",
+      "vendor": "AWS",
+      "level": "Fundamentals",
+      "levelDisplay": "Foundational",
+      "domain": "Cloud Concepts",
+      "title": "AWS Certified Cloud Practitioner",
+      "exam": "CLF-C02",
+      "roles": ["General"],
+      "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      "description": "AWS basics: billing, shared responsibility, core services.",
+      "price": "$100 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf"},
+        {"title": "AWS Skill Builder", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials"}
+      ]
+    },
+    {
+      "id": "aws-saa-c03",
+      "vendor": "AWS",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Architecture",
+      "title": "AWS Certified Solutions Architect – Associate",
+      "exam": "SAA-C03",
+      "roles": ["Architect", "General", "Security"],
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "description": "Architecture design, HA, cost optimization, security.",
+      "price": "$150 USD",
+      "prerequisites": "Recommended: 1 year experience with AWS",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf"},
+        {"title": "AWS Skill Builder", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/125/exam-readiness-aws-certified-solutions-architect-associate"}
+      ]
+    },
+    {
+      "id": "aws-dva-c02",
+      "vendor": "AWS",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Development",
+      "title": "AWS Certified Developer – Associate",
+      "exam": "DVA-C02",
+      "roles": ["DevOps", "General"],
+      "url": "https://aws.amazon.com/certification/certified-developer-associate/",
+      "description": "Dev na AWS: deployment patterns, serverless, CI/CD, SDK.",
+      "price": "$150 USD",
+      "prerequisites": "Recommended: 1 year experience with AWS",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-soa-c03",
+      "vendor": "AWS",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Operations",
+      "title": "AWS Certified SysOps Administrator – Associate",
+      "exam": "SOA-C03",
+      "roles": ["DevOps", "SysAdmin", "Security"],
+      "url": "https://aws.amazon.com/certification/certified-sysops-admin-associate/",
+      "description": "Operacje: monitoring, incident response, automatyzacja.",
+      "price": "$150 USD",
+      "prerequisites": "Recommended: 1 year experience with AWS",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-sysops-associate/AWS-Certified-SysOps-Administrator-Associate_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-sap-c02",
+      "vendor": "AWS",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Architecture",
+      "title": "AWS Certified Solutions Architect – Professional",
+      "exam": "SAP-C02",
+      "roles": ["Architect"],
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-professional/",
+      "description": "Advanced architectures, migrations, governance, multi-account.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: SAA-C03 lub 2 years experience with AWS",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-dop-c02",
+      "vendor": "AWS",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "DevOps",
+      "title": "AWS Certified DevOps Engineer – Professional",
+      "exam": "DOP-C02",
+      "roles": ["DevOps"],
+      "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/",
+      "description": "CI/CD, IaC, observability, reliability engineering.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: DVA-C02 lub SOA-C03",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-devops-pro/AWS-Certified-DevOps-Engineer-Professional_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-scs-c02",
+      "vendor": "AWS",
+      "level": "Specialty",
+      "levelDisplay": "Specialty",
+      "domain": "Security",
+      "title": "AWS Certified Security – Specialty",
+      "exam": "SCS-C02",
+      "roles": ["Security"],
+      "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "description": "IAM, encryption, logging, monitoring, incident response.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: SAA-C03 + 2 years security experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certified-Security-Specialty_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-ans-c01",
+      "vendor": "AWS",
+      "level": "Specialty",
+      "levelDisplay": "Specialty",
+      "domain": "Networking",
+      "title": "AWS Certified Advanced Networking – Specialty",
+      "exam": "ANS-C01",
+      "roles": ["Architect", "SysAdmin"],
+      "url": "https://aws.amazon.com/certification/certified-advanced-networking-specialty/",
+      "description": "Advanced networking: VPC, hybrid connectivity, DNS, load balancing, security.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: SAA-C03 + networking experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-advnetworking-spec/AWS-Certified-Advanced-Networking-Specialty_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-dbs-c01",
+      "vendor": "AWS",
+      "level": "Specialty",
+      "levelDisplay": "Specialty",
+      "domain": "Database",
+      "title": "AWS Certified Database – Specialty",
+      "exam": "DBS-C01",
+      "roles": ["Data&AI", "SysAdmin"],
+      "url": "https://aws.amazon.com/certification/certified-database-specialty/",
+      "description": "Bazy danych AWS: RDS, Aurora, DynamoDB, Redshift, migration, tuning.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: SAA-C03 + database experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-database-specialty/AWS-Certified-Database-Specialty_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-mls-c01",
+      "vendor": "AWS",
+      "level": "Specialty",
+      "levelDisplay": "Specialty",
+      "domain": "Machine Learning",
+      "title": "AWS Certified Machine Learning – Specialty",
+      "exam": "MLS-C01",
+      "roles": ["Data&AI"],
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+      "description": "ML na AWS: SageMaker, data engineering, modeling, deployment, MLOps.",
+      "price": "$300 USD",
+      "prerequisites": "Recommended: 2+ years ML/DS experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-dea-c01",
+      "vendor": "AWS",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Data Engineering",
+      "title": "AWS Certified Data Engineer – Associate",
+      "exam": "DEA-C01",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://aws.amazon.com/certification/certified-data-engineer-associate/",
+      "description": "Data engineering: pipelines, ETL, data lakes, analytics, Glue, Athena.",
+      "price": "$150 USD",
+      "prerequisites": "Recommended: 2-3 years data engineering experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-data-engineer-associate/AWS-Certified-Data-Engineer-Associate_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-mla-c01",
+      "vendor": "AWS",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Machine Learning",
+      "title": "AWS Certified Machine Learning Engineer – Associate",
+      "exam": "MLA-C01",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "description": "ML Engineering: model training, deployment, MLOps, SageMaker pipelines.",
+      "price": "$150 USD",
+      "prerequisites": "Recommended: 1+ year ML experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-machine-learning-engineer-associate/AWS-Certified-Machine-Learning-Engineer-Associate_Exam-Guide.pdf"}
+      ]
+    },
+    {
+      "id": "aws-aif-c01",
+      "vendor": "AWS",
+      "level": "Fundamentals",
+      "levelDisplay": "Foundational",
+      "domain": "AI/ML",
+      "title": "AWS Certified AI Practitioner",
+      "exam": "AIF-C01",
+      "roles": ["General", "Data&AI"],
+      "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "description": "AI/ML basics: generative AI, responsible AI, Amazon Bedrock, prompt engineering.",
+      "price": "$100 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf"}
+      ]
+    },
+
+    {
+      "id": "az-900",
+      "vendor": "Azure",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "Azure",
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "exam": "AZ-900",
+      "roles": ["General"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-fundamentals/",
+      "description": "Azure basics: core services, pricing, governance.",
+      "price": "$99 USD",
+      "lastUpdate": "2026-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900"},
+        {"title": "Microsoft Learn", "url": "https://learn.microsoft.com/training/paths/az-900-describe-cloud-concepts/"}
+      ]
+    },
+    {
+      "id": "az-104",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Infrastructure",
+      "title": "Microsoft Certified: Azure Administrator Associate",
+      "exam": "AZ-104",
+      "roles": ["General", "DevOps", "SysAdmin", "Security"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-administrator/",
+      "description": "Admin: compute, storage, networking, identity, monitoring.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-04-18",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: 6 months experience with Azure",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"}
+      ]
+    },
+    {
+      "id": "az-120",
+      "vendor": "Azure",
+      "level": "Specialty",
+      "levelDisplay": "Specialty",
+      "domain": "SAP",
+      "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+      "exam": "AZ-120",
+      "roles": ["Architect", "SysAdmin"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "description": "SAP on Azure: migration, infrastructure, HA/DR, maintenance.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: SAP and Azure experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120"}
+      ]
+    },
+    {
+      "id": "az-140",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Specialty",
+      "domain": "Virtual Desktop",
+      "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "exam": "AZ-140",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-virtual-desktop-specialty/",
+      "description": "AVD: infrastructure, identity, security, user environments, monitoring.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: AZ-104",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140"}
+      ]
+    },
+    {
+      "id": "az-204",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Developer",
+      "title": "Microsoft Certified: Azure Developer Associate",
+      "exam": "AZ-204",
+      "roles": ["DevOps", "General"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-developer/",
+      "description": "Dev: App Services, Functions, containers, auth, storage, integration.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: 1-2 years development experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"}
+      ]
+    },
+    {
+      "id": "az-305",
+      "vendor": "Azure",
+      "level": "Professional-Expert",
+      "levelDisplay": "Expert",
+      "domain": "Architecture",
+      "title": "Microsoft Certified: Azure Solutions Architect Expert",
+      "exam": "AZ-305",
+      "roles": ["Architect"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-solutions-architect/",
+      "description": "Design: compute/data/networking/security/governance.",
+      "price": "$165 USD",
+      "lastUpdate": "2024-10-18",
+      "scoreToPass": 700,
+      "prerequisites": "Required: AZ-104 (Azure Administrator)",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"}
+      ]
+    },
+    {
+      "id": "az-400",
+      "vendor": "Azure",
+      "level": "Professional-Expert",
+      "levelDisplay": "Expert",
+      "domain": "DevOps",
+      "title": "Microsoft Certified: DevOps Engineer Expert",
+      "exam": "AZ-400",
+      "roles": ["DevOps"],
+      "url": "https://learn.microsoft.com/credentials/certifications/devops-engineer/",
+      "description": "DevOps: pipelines, IaC, release, monitoring, security practices.",
+      "price": "$165 USD",
+      "lastUpdate": "2024-07-26",
+      "scoreToPass": 700,
+      "prerequisites": "Required: AZ-104 lub AZ-204",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"}
+      ]
+    },
+    {
+      "id": "az-500",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Security",
+      "title": "Microsoft Certified: Azure Security Engineer Associate",
+      "exam": "AZ-500",
+      "roles": ["Security"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-security-engineer/",
+      "description": "Security: identity, networking, compute, storage, Defender, Sentinel.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-22",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: AZ-104",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"}
+      ]
+    },
+    {
+      "id": "az-700",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Networking",
+      "title": "Microsoft Certified: Azure Network Engineer Associate",
+      "exam": "AZ-700",
+      "roles": ["Architect", "SysAdmin"],
+      "url": "https://learn.microsoft.com/credentials/certifications/azure-network-engineer-associate/",
+      "description": "Networking: VNet, connectivity, load balancing, private access, security.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-21",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: AZ-104",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700"}
+      ]
+    },
+    {
+      "id": "az-800",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Windows Server",
+      "title": "Windows Server Hybrid Administrator Associate (AZ-800)",
+      "exam": "AZ-800",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator/",
+      "description": "Windows Server: AD DS, hybrid, VMs, containers, networking, storage.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-21",
+      "scoreToPass": 700,
+      "prerequisites": "Wymagane razem z AZ-801",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"}
+      ]
+    },
+    {
+      "id": "az-801",
+      "vendor": "Azure",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Windows Server",
+      "title": "Windows Server Hybrid Administrator Associate (AZ-801)",
+      "exam": "AZ-801",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator/",
+      "description": "Windows Server: security, HA, DR, migration, monitoring.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-10-06",
+      "scoreToPass": 700,
+      "prerequisites": "Wymagane razem z AZ-800",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"}
+      ]
+    },
+
+    {
+      "id": "gcp-cdl",
+      "vendor": "GCP",
+      "level": "Fundamentals",
+      "levelDisplay": "Foundational",
+      "domain": "Foundational",
+      "title": "Cloud Digital Leader",
+      "roles": ["General"],
+      "url": "https://cloud.google.com/certification/cloud-digital-leader",
+      "description": "Cloud computing basics + how GCP products support business goals.",
+      "price": "$99 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "examLength": "90 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese", "Spanish", "Portuguese", "French"],
+      "renewalAvailable": true,
+      "renewalPrice": "$60 USD",
+      "officialResources": [
+        {"title": "Exam Guide", "url": "https://services.google.com/fh/files/misc/cloud-digital-leader-exam-guide.pdf"},
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-gai",
+      "vendor": "GCP",
+      "level": "Fundamentals",
+      "levelDisplay": "Foundational",
+      "domain": "AI/ML",
+      "title": "Generative AI Leader",
+      "roles": ["General", "Data&AI"],
+      "url": "https://cloud.google.com/learn/certification/generative-ai-leader",
+      "description": "GenAI basics + Google Cloud GenAI offerings + business strategy.",
+      "price": "$99 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "examLength": "90 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-ace",
+      "vendor": "GCP",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Infrastructure",
+      "title": "Associate Cloud Engineer",
+      "roles": ["General", "DevOps", "SysAdmin"],
+      "url": "https://cloud.google.com/certification/cloud-engineer",
+      "description": "Operations and deployments: IAM, networking, compute, monitoring.",
+      "price": "$125 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": true,
+      "renewalPrice": "$75 USD",
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-agwa",
+      "vendor": "GCP",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Workspace",
+      "title": "Associate Google Workspace Administrator",
+      "roles": ["SysAdmin"],
+      "url": "https://cloud.google.com/certification/associate-google-workspace-administrator",
+      "description": "Google Workspace administration: users, groups, security, compliance.",
+      "price": "$125 USD",
+      "prerequisites": "Recommended: 6 months Super Admin experience",
+      "validityPeriod": "3 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-adp",
+      "vendor": "GCP",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Data",
+      "title": "Associate Data Practitioner",
+      "roles": ["Data&AI"],
+      "url": "https://cloud.google.com/learn/certification/data-practitioner",
+      "description": "Data solutions on GCP: BigQuery, Dataflow, ML basics.",
+      "price": "$125 USD",
+      "prerequisites": "Recommended: 6+ months data experience on GCP",
+      "validityPeriod": "3 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pca",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Infrastructure",
+      "title": "Professional Cloud Architect",
+      "roles": ["Architect"],
+      "url": "https://cloud.google.com/certification/cloud-architect",
+      "description": "Solution design, reliability, security, costs. Case studies.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years industry experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions (including 2 case studies)",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": true,
+      "renewalPrice": "$100 USD",
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pde",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Data",
+      "title": "Professional Data Engineer",
+      "roles": ["Data&AI"],
+      "url": "https://cloud.google.com/certification/data-engineer",
+      "description": "Data engineering: BigQuery, Dataflow, Pub/Sub, data pipelines, ML integration.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years industry experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "40-50 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": true,
+      "renewalPrice": "$100 USD",
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pdbe",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Data",
+      "title": "Professional Cloud Database Engineer",
+      "roles": ["Data&AI", "SysAdmin"],
+      "url": "https://cloud.google.com/certification/cloud-database-engineer",
+      "description": "Bazy danych GCP: Cloud SQL, Spanner, Bigtable, migration, HA, tuning.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 5+ lat DB/IT, 2+ years with GCP DB",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pcd",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Development",
+      "title": "Professional Cloud Developer",
+      "roles": ["DevOps", "General"],
+      "url": "https://cloud.google.com/certification/cloud-developer",
+      "description": "Developing na GCP: Cloud Run, GKE, Cloud Functions, APIs, CI/CD.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years dev experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pcdo",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "DevOps",
+      "title": "Professional Cloud DevOps Engineer",
+      "roles": ["DevOps"],
+      "url": "https://cloud.google.com/certification/cloud-devops-engineer",
+      "description": "SRE/DevOps: CI/CD, observability, reliability, incident response.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years industry experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-psec",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Security",
+      "title": "Professional Cloud Security Engineer",
+      "roles": ["Security"],
+      "url": "https://cloud.google.com/certification/cloud-security-engineer",
+      "description": "IAM, security controls, monitoring, compliance, incident response.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years industry experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pne",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Networking",
+      "title": "Professional Cloud Network Engineer",
+      "roles": ["Architect", "SysAdmin"],
+      "url": "https://cloud.google.com/certification/cloud-network-engineer",
+      "description": "Networking GCP: VPC, hybrid connectivity, load balancing, security.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years networking experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-pmle",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "AI/ML",
+      "title": "Professional Machine Learning Engineer",
+      "roles": ["Data&AI"],
+      "url": "https://cloud.google.com/certification/machine-learning-engineer",
+      "description": "ML na GCP: Vertex AI, model training, deployment, MLOps, responsible AI.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years ML experience, 1+ year with GCP",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English", "Japanese"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+    {
+      "id": "gcp-psoc",
+      "vendor": "GCP",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Security",
+      "title": "Professional Security Operations Engineer",
+      "roles": ["Security"],
+      "url": "https://cloud.google.com/learn/certification/security-operations-engineer",
+      "description": "Security operations: Chronicle SIEM, threat detection, incident response.",
+      "price": "$200 USD",
+      "prerequisites": "Recommended: 3+ years security, 1+ year with GCP security tooling",
+      "validityPeriod": "2 years",
+      "examLength": "120 min",
+      "examFormat": "50-60 multiple choice questions",
+      "examLanguages": ["English"],
+      "renewalAvailable": false,
+      "officialResources": [
+        {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
+      ]
+    },
+
+    {
+      "id": "rh-ex200",
+      "vendor": "RedHat",
+      "level": "Associate",
+      "levelDisplay": "RHCSA",
+      "domain": "RHEL",
+      "title": "Red Hat Certified System Administrator (RHCSA)",
+      "exam": "EX200",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/certification/rhcsa",
+      "description": "RHEL administration: users, storage, network, security, containers.",
+      "price": "$450 USD",
+      "prerequisites": "No formal requirements, recommended: Linux basics",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i"}
+      ]
+    },
+    {
+      "id": "rh-ex294",
+      "vendor": "RedHat",
+      "level": "Associate",
+      "levelDisplay": "RHCE",
+      "domain": "Ansible",
+      "title": "Red Hat Certified Engineer (RHCE)",
+      "exam": "EX294",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://www.redhat.com/en/services/certification/rhce",
+      "description": "Automatyzacja z Ansible: playbooks, roles, inventory, templates.",
+      "price": "$450 USD",
+      "prerequisites": "Required: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible"}
+      ]
+    },
+    {
+      "id": "rh-ex180",
+      "vendor": "RedHat",
+      "level": "Fundamentals",
+      "levelDisplay": "Specialist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified System Administrator in Red Hat OpenShift",
+      "exam": "EX180",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers-and-kubernetes",
+      "description": "OpenShift basics: deployments, pods, services, routes, storage.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: basic container knowledge",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do180-red-hat-openshift-i-containers-kubernetes"}
+      ]
+    },
+    {
+      "id": "rh-ex280",
+      "vendor": "RedHat",
+      "level": "Professional-Expert",
+      "levelDisplay": "Administrator",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified OpenShift Administrator",
+      "exam": "EX280",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-administrator",
+      "description": "OpenShift administration: installation, configuration, cluster management.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200) + EX180",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do280-red-hat-openshift-administration-ii-operating-production-kubernetes-cluster"}
+      ]
+    },
+    {
+      "id": "rh-ex380",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Specialist in OpenShift Automation and Integration",
+      "exam": "EX380",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-automation-integration",
+      "description": "Advanced OpenShift automation: operators, GitOps, CI/CD.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: EX280 (OpenShift Administrator)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do380-red-hat-openshift-administration-iii-scaling-kubernetes-deployments-enterprise"}
+      ]
+    },
+    {
+      "id": "rh-rhca",
+      "vendor": "RedHat",
+      "level": "Professional-Expert",
+      "levelDisplay": "RHCA",
+      "domain": "Architecture",
+      "title": "Red Hat Certified Architect (RHCA)",
+      "roles": ["Architect", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/rhca",
+      "description": "Highest level Red Hat certification. Requires RHCE + 5 Specialist exams.",
+      "price": "Depends on selected exams",
+      "prerequisites": "Required: RHCE + 5 Specialist-level certifications",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Certifications", "url": "https://www.redhat.com/en/services/certification/rhca"}
+      ]
+    },
+    {
+      "id": "rh-ex188",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Containers",
+      "title": "Red Hat Certified Specialist in Containers",
+      "exam": "EX188",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers",
+      "description": "Container fundamentals: Podman, Buildah, Skopeo, container images, registries.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do188-red-hat-openshift-development-i-introduction-containers-kubernetes"}
+      ]
+    },
+    {
+      "id": "rh-ex415",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Security",
+      "title": "Red Hat Certified Specialist in Security: Linux",
+      "exam": "EX415",
+      "roles": ["Security", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-security-linux",
+      "description": "Linux security: SELinux, firewall, auditing, intrusion detection, compliance.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh415-red-hat-security-linux-physical-virtual-cloud"}
+      ]
+    },
+    {
+      "id": "rh-ex447",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Ansible",
+      "title": "Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices",
+      "exam": "EX447",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-advanced-automation-ansible-best-practices",
+      "description": "Advanced Ansible: best practices, optimization, Ansible Tower, complex automation.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCE (EX294)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do447-advanced-automation-ansible-best-practices"}
+      ]
+    },
+    {
+      "id": "rh-ex288",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Specialist in OpenShift Application Development",
+      "exam": "EX288",
+      "roles": ["DevOps", "General"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-application-development",
+      "description": "OpenShift development: building, deploying, scaling applications on OpenShift.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: EX180 or container experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do288-red-hat-openshift-development-ii-containerizing-applications"}
+      ]
+    },
+    {
+      "id": "rh-ex318",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Virtualization",
+      "title": "Red Hat Certified Specialist in Virtualization",
+      "exam": "EX318",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-virtualization",
+      "description": "Red Hat Virtualization: KVM, oVirt, VM management, migration, HA.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh318-red-hat-virtualization"}
+      ]
+    },
+    {
+      "id": "rh-ex342",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "RHEL",
+      "title": "Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting",
+      "exam": "EX342",
+      "roles": ["SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-linux-diagnostics-troubleshooting",
+      "description": "Advanced Linux troubleshooting: system logs, performance issues, kernel debugging.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh342-red-hat-enterprise-linux-diagnostics-and-troubleshooting"}
+      ]
+    },
+    {
+      "id": "rh-ex442",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "RHEL",
+      "title": "Red Hat Certified Specialist in Linux Performance Tuning",
+      "exam": "EX442",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-performance-tuning",
+      "description": "Linux performance: tuning profiles, CPU, memory, I/O, network optimization.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh442-red-hat-enterprise-performance-tuning"}
+      ]
+    },
+    {
+      "id": "rh-ex362",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Security",
+      "title": "Red Hat Certified Specialist in Identity Management",
+      "exam": "EX362",
+      "roles": ["SysAdmin", "Security"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management",
+      "description": "IdM/FreeIPA: users, groups, policies, Kerberos, LDAP, AD integration.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh362-red-hat-identity-management"}
+      ]
+    },
+    {
+      "id": "rh-ex436",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "RHEL",
+      "title": "Red Hat Certified Specialist in High Availability Clustering",
+      "exam": "EX436",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-high-availability-clustering",
+      "description": "HA clustering: Pacemaker, Corosync, fencing, shared storage, failover.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh436-red-hat-high-availability-clustering"}
+      ]
+    },
+    {
+      "id": "rh-ex374",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Ansible",
+      "title": "Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform",
+      "exam": "EX374",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-developing-automation-ansible-automation-platform",
+      "description": "AAP development: execution environments, content collections, automation mesh.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCE (EX294)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do374-developing-automation-ansible-automation-platform"}
+      ]
+    },
+    {
+      "id": "rh-ex467",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Ansible",
+      "title": "Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform",
+      "exam": "EX467",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform",
+      "description": "AAP management: controller, hub, RBAC, workflows, notifications.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCE (EX294)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do467-managing-enterprise-automation-red-hat-ansible-automation-platform"}
+      ]
+    },
+    {
+      "id": "rh-ex480",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Specialist in MultiCluster Management with RHACM",
+      "exam": "EX480",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management",
+      "description": "RHACM: multi-cluster lifecycle, policies, observability, GitOps at scale.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: EX280 (OpenShift Admin)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do480-multicluster-management-red-hat-openshift-platform-plus"}
+      ]
+    },
+    {
+      "id": "rh-ex210",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Cloud",
+      "title": "Red Hat Certified System Administrator in Red Hat OpenStack Platform",
+      "exam": "EX210",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/rhcsa-openstack",
+      "description": "OpenStack administration: instances, networks, storage, identity, images.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/cl210-red-hat-openstack-administration-i-core-operations-cloud-operators"}
+      ]
+    },
+    {
+      "id": "rh-ex260",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "Storage",
+      "title": "Red Hat Certified Specialist in Ceph Cloud Storage",
+      "exam": "EX260",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-ceph-cloud-storage",
+      "description": "Ceph storage: cluster deployment, RADOS, RBD, RGW, CephFS.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ceph125-red-hat-ceph-storage-architecture-administration"}
+      ]
+    },
+    {
+      "id": "rh-ex370",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Specialist in OpenShift Data Foundation",
+      "exam": "EX370",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-data-foundation",
+      "description": "ODF: Ceph on OpenShift, persistent storage, data services, disaster recovery.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: EX280 (OpenShift Admin)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do370-enterprise-kubernetes-storage-red-hat-openshift-data-foundation"}
+      ]
+    },
+    {
+      "id": "rh-ex403",
+      "vendor": "RedHat",
+      "level": "Specialty",
+      "levelDisplay": "Specialist",
+      "domain": "RHEL",
+      "title": "Red Hat Certified Specialist in Deployment and Systems Management",
+      "exam": "EX403",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-deployment-systems-management",
+      "description": "Satellite: provisioning, patching, configuration management, content views.",
+      "price": "$450 USD",
+      "prerequisites": "Recommended: RHCSA (EX200)",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh403-red-hat-satellite-6-administration"}
+      ]
+    },
+
+    {
+      "id": "hc-terraform-associate",
+      "vendor": "HashiCorp",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Terraform",
+      "title": "HashiCorp Certified: Terraform Associate",
+      "exam": "TA-003",
+      "roles": ["DevOps", "Architect", "SysAdmin"],
+      "url": "https://www.hashicorp.com/certification/terraform-associate",
+      "description": "Infrastructure as Code z Terraform: providers, state, modules, workspaces.",
+      "price": "$70.50 USD",
+      "prerequisites": "No formal requirements, recommended: IaC basics",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003"},
+        {"title": "Exam Review", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-review-003"}
+      ]
+    },
+    {
+      "id": "hc-vault-associate",
+      "vendor": "HashiCorp",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Vault",
+      "title": "HashiCorp Certified: Vault Associate",
+      "exam": "VA-003",
+      "roles": ["Security", "DevOps", "SysAdmin"],
+      "url": "https://www.hashicorp.com/certification/vault-associate",
+      "description": "Secrets management: auth methods, policies, secrets engines, encryption.",
+      "price": "$70.50 USD",
+      "prerequisites": "No formal requirements, recommended: security basics",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert"},
+        {"title": "Exam Review", "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert/associate-review"}
+      ]
+    },
+    {
+      "id": "hc-consul-associate",
+      "vendor": "HashiCorp",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Consul",
+      "title": "HashiCorp Certified: Consul Associate",
+      "exam": "CA-003",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.hashicorp.com/certification/consul-associate",
+      "description": "Service mesh i service discovery: agents, catalog, health checks, intentions.",
+      "price": "$70.50 USD",
+      "prerequisites": "No formal requirements, recommended: networking basics",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/consul/tutorials/certification-003/associate-study"}
+      ]
+    },
+    {
+      "id": "hc-vault-pro",
+      "vendor": "HashiCorp",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Vault",
+      "title": "HashiCorp Certified: Vault Operations Professional",
+      "exam": "VP-100",
+      "roles": ["Security", "DevOps", "Architect"],
+      "url": "https://www.hashicorp.com/certification/vault-operations-professional",
+      "description": "Advanced Vault operations: HA, DR, replication, performance tuning.",
+      "price": "$295 USD",
+      "prerequisites": "Recommended: Vault Associate + production experience",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert"}
+      ]
+    },
+    {
+      "id": "hc-terraform-pro",
+      "vendor": "HashiCorp",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "Terraform",
+      "title": "HashiCorp Certified: Terraform Associate Plus",
+      "exam": "TP-100",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.hashicorp.com/certification/terraform-authoring-and-operations-professional",
+      "description": "Advanced Terraform: policy as code, Terraform Cloud, enterprise patterns.",
+      "price": "$295 USD",
+      "prerequisites": "Recommended: Terraform Associate + production experience",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Exam Overview", "url": "https://www.hashicorp.com/certification/terraform-authoring-and-operations-professional"}
+      ]
+    },
+
+    {
+      "id": "k8s-kcna",
+      "vendor": "Kubernetes",
+      "level": "Fundamentals",
+      "levelDisplay": "KCNA",
+      "domain": "Cloud Native",
+      "title": "Kubernetes and Cloud Native Associate (KCNA)",
+      "exam": "KCNA",
+      "roles": ["General", "DevOps"],
+      "url": "https://training.linuxfoundation.org/certification/kubernetes-cloud-native-associate/",
+      "description": "Kubernetes and cloud native basics: containers, orchestration, GitOps, observability.",
+      "price": "$250 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/KCNA_Curriculum.pdf"},
+        {"title": "CNCF Training", "url": "https://training.linuxfoundation.org/training/kubernetes-and-cloud-native-essentials-lfs250/"}
+      ]
+    },
+    {
+      "id": "k8s-cka",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CKA",
+      "domain": "Administration",
+      "title": "Certified Kubernetes Administrator (CKA)",
+      "exam": "CKA",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+      "description": "K8s cluster administration: installation, networking, storage, troubleshooting.",
+      "price": "$395 USD",
+      "prerequisites": "Recommended: KCNA or basic K8s knowledge",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKA_Curriculum.pdf"},
+        {"title": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}
+      ]
+    },
+    {
+      "id": "k8s-ckad",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CKAD",
+      "domain": "Development",
+      "title": "Certified Kubernetes Application Developer (CKAD)",
+      "exam": "CKAD",
+      "roles": ["DevOps", "General"],
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "description": "Building apps on K8s: pods, deployments, services, ConfigMaps, Secrets.",
+      "price": "$395 USD",
+      "prerequisites": "Recommended: KCNA or basic K8s knowledge",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum.pdf"},
+        {"title": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}
+      ]
+    },
+    {
+      "id": "k8s-cks",
+      "vendor": "Kubernetes",
+      "level": "Professional-Expert",
+      "levelDisplay": "CKS",
+      "domain": "Security",
+      "title": "Certified Kubernetes Security Specialist (CKS)",
+      "exam": "CKS",
+      "roles": ["Security", "DevOps"],
+      "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/",
+      "description": "K8s security: supply chain, runtime, network policies, secrets management.",
+      "price": "$395 USD",
+      "prerequisites": "Required: CKA (aktywny)",
+      "validityPeriod": "2 years",
+      "officialResources": [
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum.pdf"},
+        {"title": "Security Docs", "url": "https://kubernetes.io/docs/concepts/security/"}
+      ]
+    },
+    {
+      "id": "k8s-kcsa",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "KCSA",
+      "domain": "Security",
+      "title": "Kubernetes and Cloud Native Security Associate (KCSA)",
+      "exam": "KCSA",
+      "roles": ["Security", "DevOps"],
+      "url": "https://training.linuxfoundation.org/certification/kubernetes-and-cloud-native-security-associate-kcsa/",
+      "description": "Cloud native security basics: RBAC, network policies, pod security.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/KCSA_Curriculum.pdf"}
+      ]
+    },
+
+    {
+      "id": "ms-ms900",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "Microsoft 365",
+      "title": "Microsoft 365 Fundamentals",
+      "exam": "MS-900",
+      "roles": ["General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/exams/ms-900",
+      "description": "Microsoft 365 basics: cloud concepts, core services, security, compliance, pricing.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-01-24",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-900"}
+      ]
+    },
+    {
+      "id": "ms-ms102",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Administrator Expert",
+      "domain": "Microsoft 365",
+      "title": "Microsoft 365 Administrator",
+      "exam": "MS-102",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/m365-administrator-expert/",
+      "description": "Microsoft 365 administration: tenant, users, groups, Teams, SharePoint, Exchange.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-23",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: MS-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"}
+      ]
+    },
+    {
+      "id": "ms-sc900",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "Security",
+      "title": "Security, Compliance, and Identity Fundamentals",
+      "exam": "SC-900",
+      "roles": ["Security", "General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/exams/sc-900",
+      "description": "Security basics: Zero Trust, identity, compliance, Microsoft security solutions.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900"}
+      ]
+    },
+    {
+      "id": "ms-sc200",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Security",
+      "title": "Microsoft Security Operations Analyst",
+      "exam": "SC-200",
+      "roles": ["Security"],
+      "url": "https://learn.microsoft.com/en-us/certifications/security-operations-analyst/",
+      "description": "Security operations: Microsoft Sentinel, Defender XDR, threat hunting, incident response.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-23",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: SC-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"}
+      ]
+    },
+    {
+      "id": "ms-sc300",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Identity",
+      "title": "Microsoft Identity and Access Administrator",
+      "exam": "SC-300",
+      "roles": ["Security", "SysAdmin"],
+      "url": "https://learn.microsoft.com/en-us/certifications/identity-and-access-administrator/",
+      "description": "Identity: Entra ID, authentication, authorization, conditional access, governance.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: SC-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"}
+      ]
+    },
+    {
+      "id": "ms-sc100",
+      "vendor": "Microsoft",
+      "level": "Professional-Expert",
+      "levelDisplay": "Expert",
+      "domain": "Security",
+      "title": "Microsoft Cybersecurity Architect",
+      "exam": "SC-100",
+      "roles": ["Security", "Architect"],
+      "url": "https://learn.microsoft.com/en-us/certifications/cybersecurity-architect-expert/",
+      "description": "Security architecture: Zero Trust, GRC, security operations, identity, infrastructure.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Required: SC-200/SC-300/AZ-500",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100"}
+      ]
+    },
+    {
+      "id": "ms-ai900",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "AI",
+      "title": "Microsoft Azure AI Fundamentals",
+      "exam": "AI-900",
+      "roles": ["General", "Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/certifications/exams/ai-900",
+      "description": "AI basics: machine learning, computer vision, NLP, generative AI on Azure.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-05-02",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900"}
+      ]
+    },
+    {
+      "id": "ms-ai102",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "AI",
+      "title": "Azure AI Engineer Associate",
+      "exam": "AI-102",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/certifications/azure-ai-engineer/",
+      "description": "Azure AI services: Cognitive Services, OpenAI, Bot Service, ML solutions.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-12-23",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: AI-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102"}
+      ]
+    },
+    {
+      "id": "ms-dp900",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "Data",
+      "title": "Microsoft Azure Data Fundamentals",
+      "exam": "DP-900",
+      "roles": ["General", "Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/certifications/exams/dp-900",
+      "description": "Data basics: relational, non-relational, analytics, data processing on Azure.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900"}
+      ]
+    },
+    {
+      "id": "ms-dp100",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Data Science",
+      "title": "Azure Data Scientist Associate",
+      "exam": "DP-100",
+      "roles": ["Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/certifications/azure-data-scientist/",
+      "description": "Data science na Azure: ML pipelines, experiments, model training, deployment.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-04-11",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900 + Python",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-100"}
+      ]
+    },
+    {
+      "id": "ms-dp203",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Data Engineering",
+      "title": "Azure Data Engineer Associate",
+      "exam": "DP-203",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/certifications/azure-data-engineer/",
+      "description": "Data engineering: Synapse, Data Factory, Databricks, data pipelines, storage.",
+      "price": "$165 USD",
+      "lastUpdate": "2024-10-24",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-203"}
+      ]
+    },
+    {
+      "id": "ms-dp300",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Database",
+      "title": "Azure Database Administrator Associate",
+      "exam": "DP-300",
+      "roles": ["SysAdmin", "Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/certifications/azure-database-administrator-associate/",
+      "description": "Database admin: SQL Server, Azure SQL, HA, DR, security, performance tuning.",
+      "price": "$165 USD",
+      "lastUpdate": "2024-10-25",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300"}
+      ]
+    },
+    {
+      "id": "ms-dp600",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Fabric",
+      "title": "Fabric Analytics Engineer Associate",
+      "exam": "DP-600",
+      "roles": ["Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/certifications/fabric-analytics-engineer-associate/",
+      "description": "Microsoft Fabric: lakehouse, data warehouse, semantic models, analytics.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900 + Power BI",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600"}
+      ]
+    },
+    {
+      "id": "ms-pl900",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "Power Platform",
+      "title": "Microsoft Power Platform Fundamentals",
+      "exam": "PL-900",
+      "roles": ["General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/exams/pl-900",
+      "description": "Power Platform basics: Power Apps, Power Automate, Power BI, Copilot Studio.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900"}
+      ]
+    },
+    {
+      "id": "ms-pl300",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Power BI",
+      "title": "Microsoft Power BI Data Analyst",
+      "exam": "PL-300",
+      "roles": ["Data&AI", "General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/power-bi-data-analyst-associate/",
+      "description": "Power BI: data modeling, DAX, visualizations, reports, dashboards.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: PL-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300"}
+      ]
+    },
+    {
+      "id": "ms-pl400",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Power Platform",
+      "title": "Microsoft Power Platform Developer",
+      "exam": "PL-400",
+      "roles": ["DevOps", "General"],
+      "url": "https://learn.microsoft.com/en-us/certifications/power-platform-developer-associate/",
+      "description": "Power Platform development: custom connectors, plugins, PCF, ALM.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: PL-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400"}
+      ]
+    },
+    {
+      "id": "ms-pl600",
+      "vendor": "Microsoft",
+      "level": "Professional-Expert",
+      "levelDisplay": "Expert",
+      "domain": "Power Platform",
+      "title": "Microsoft Power Platform Solution Architect",
+      "exam": "PL-600",
+      "roles": ["Architect"],
+      "url": "https://learn.microsoft.com/en-us/certifications/power-platform-solution-architect-expert/",
+      "description": "Solution architecture: requirements, design, implementation, governance.",
+      "price": "$165 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Required: PL-200 lub PL-400",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-600"}
+      ]
+    },
+
+    {
+      "id": "gh-900",
+      "vendor": "GitHub",
+      "level": "Fundamentals",
+      "levelDisplay": "Foundations",
+      "domain": "General",
+      "title": "GitHub Foundations",
+      "exam": "GH-900",
+      "roles": ["General", "DevOps"],
+      "url": "https://resources.github.com/learn/certifications/",
+      "description": "GitHub basics: repos, branches, commits, PRs, issues, projects, actions.",
+      "price": "$99 USD",
+      "lastUpdate": "2025-01-15",
+      "scoreToPass": 700,
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900"},
+        {"title": "GitHub Skills", "url": "https://skills.github.com/"}
+      ]
+    },
+    {
+      "id": "gh-100",
+      "vendor": "GitHub",
+      "level": "Associate",
+      "levelDisplay": "Certified",
+      "domain": "Administration",
+      "title": "GitHub Administration",
+      "exam": "GH-100",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://resources.github.com/learn/certifications/",
+      "description": "GitHub administration: enterprise, organizations, teams, permissions, security.",
+      "price": "$200 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: GH-900",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100"}
+      ]
+    },
+    {
+      "id": "gh-200",
+      "vendor": "GitHub",
+      "level": "Associate",
+      "levelDisplay": "Certified",
+      "domain": "Actions",
+      "title": "GitHub Actions",
+      "exam": "GH-200",
+      "roles": ["DevOps"],
+      "url": "https://resources.github.com/learn/certifications/",
+      "description": "GitHub Actions: workflows, runners, secrets, artifacts, reusable workflows, CI/CD.",
+      "price": "$200 USD",
+      "lastUpdate": "2025-01-23",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: GH-900",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200"}
+      ]
+    },
+    {
+      "id": "gh-300",
+      "vendor": "GitHub",
+      "level": "Associate",
+      "levelDisplay": "Certified",
+      "domain": "Copilot",
+      "title": "GitHub Copilot",
+      "exam": "GH-300",
+      "roles": ["DevOps", "General"],
+      "url": "https://resources.github.com/learn/certifications/",
+      "description": "GitHub Copilot: AI pair programming, prompts, suggestions, customization.",
+      "price": "$200 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: GH-900",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300"}
+      ]
+    },
+    {
+      "id": "gh-500",
+      "vendor": "GitHub",
+      "level": "Professional-Expert",
+      "levelDisplay": "Certified",
+      "domain": "Advanced Security",
+      "title": "GitHub Advanced Security",
+      "exam": "GH-500",
+      "roles": ["Security", "DevOps"],
+      "url": "https://resources.github.com/learn/certifications/",
+      "description": "GHAS: code scanning, secret scanning, dependency review, security policies.",
+      "price": "$200 USD",
+      "lastUpdate": "2025-01-14",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: GH-100 lub GH-200",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500"}
+      ]
+    }
+  ],
+  "links": [
+    { "id": "l-aws-clf-saa", "sourceId": "aws-clf-c02", "targetId": "aws-saa-c03", "type": "recommended" },
+    { "id": "l-aws-clf-dva", "sourceId": "aws-clf-c02", "targetId": "aws-dva-c02", "type": "recommended" },
+    { "id": "l-aws-clf-soa", "sourceId": "aws-clf-c02", "targetId": "aws-soa-c03", "type": "recommended" },
+    { "id": "l-aws-saa-sap", "sourceId": "aws-saa-c03", "targetId": "aws-sap-c02", "type": "recommended" },
+    { "id": "l-aws-dva-dop", "sourceId": "aws-dva-c02", "targetId": "aws-dop-c02", "type": "recommended" },
+    { "id": "l-aws-soa-dop", "sourceId": "aws-soa-c03", "targetId": "aws-dop-c02", "type": "recommended" },
+    { "id": "l-aws-saa-scs", "sourceId": "aws-saa-c03", "targetId": "aws-scs-c02", "type": "recommended" },
+    { "id": "l-aws-saa-ans", "sourceId": "aws-saa-c03", "targetId": "aws-ans-c01", "type": "recommended" },
+    { "id": "l-aws-saa-dbs", "sourceId": "aws-saa-c03", "targetId": "aws-dbs-c01", "type": "recommended" },
+    { "id": "l-aws-clf-aif", "sourceId": "aws-clf-c02", "targetId": "aws-aif-c01", "type": "recommended" },
+    { "id": "l-aws-clf-dea", "sourceId": "aws-clf-c02", "targetId": "aws-dea-c01", "type": "recommended" },
+    { "id": "l-aws-clf-mla", "sourceId": "aws-clf-c02", "targetId": "aws-mla-c01", "type": "recommended" },
+    { "id": "l-aws-aif-mla", "sourceId": "aws-aif-c01", "targetId": "aws-mla-c01", "type": "recommended" },
+    { "id": "l-aws-mla-mls", "sourceId": "aws-mla-c01", "targetId": "aws-mls-c01", "type": "recommended" },
+    { "id": "l-aws-dea-mls", "sourceId": "aws-dea-c01", "targetId": "aws-mls-c01", "type": "recommended" },
+
+    { "id": "l-az-900-104", "sourceId": "az-900", "targetId": "az-104", "type": "recommended" },
+    { "id": "l-az-900-204", "sourceId": "az-900", "targetId": "az-204", "type": "recommended" },
+    { "id": "l-az-104-305", "sourceId": "az-104", "targetId": "az-305", "type": "required" },
+    { "id": "l-az-104-400", "sourceId": "az-104", "targetId": "az-400", "type": "required" },
+    { "id": "l-az-204-400", "sourceId": "az-204", "targetId": "az-400", "type": "required" },
+    { "id": "l-az-104-500", "sourceId": "az-104", "targetId": "az-500", "type": "recommended" },
+    { "id": "l-az-104-700", "sourceId": "az-104", "targetId": "az-700", "type": "recommended" },
+    { "id": "l-az-104-140", "sourceId": "az-104", "targetId": "az-140", "type": "recommended" },
+    { "id": "l-az-104-120", "sourceId": "az-104", "targetId": "az-120", "type": "recommended" },
+    { "id": "l-az-800-801", "sourceId": "az-800", "targetId": "az-801", "type": "required" },
+
+    { "id": "l-gcp-cdl-ace", "sourceId": "gcp-cdl", "targetId": "gcp-ace", "type": "recommended" },
+    { "id": "l-gcp-cdl-adp", "sourceId": "gcp-cdl", "targetId": "gcp-adp", "type": "recommended" },
+    { "id": "l-gcp-gai-pmle", "sourceId": "gcp-gai", "targetId": "gcp-pmle", "type": "recommended" },
+    { "id": "l-gcp-gai-pde", "sourceId": "gcp-gai", "targetId": "gcp-pde", "type": "recommended" },
+    { "id": "l-gcp-ace-pca", "sourceId": "gcp-ace", "targetId": "gcp-pca", "type": "recommended" },
+    { "id": "l-gcp-ace-pcd", "sourceId": "gcp-ace", "targetId": "gcp-pcd", "type": "recommended" },
+    { "id": "l-gcp-ace-pcdo", "sourceId": "gcp-ace", "targetId": "gcp-pcdo", "type": "recommended" },
+    { "id": "l-gcp-ace-psec", "sourceId": "gcp-ace", "targetId": "gcp-psec", "type": "recommended" },
+    { "id": "l-gcp-ace-pne", "sourceId": "gcp-ace", "targetId": "gcp-pne", "type": "recommended" },
+    { "id": "l-gcp-ace-pde", "sourceId": "gcp-ace", "targetId": "gcp-pde", "type": "recommended" },
+    { "id": "l-gcp-adp-pde", "sourceId": "gcp-adp", "targetId": "gcp-pde", "type": "recommended" },
+    { "id": "l-gcp-adp-pdbe", "sourceId": "gcp-adp", "targetId": "gcp-pdbe", "type": "recommended" },
+    { "id": "l-gcp-adp-pmle", "sourceId": "gcp-adp", "targetId": "gcp-pmle", "type": "recommended" },
+    { "id": "l-gcp-psec-psoc", "sourceId": "gcp-psec", "targetId": "gcp-psoc", "type": "recommended" },
+
+    { "id": "l-rh-ex200-ex294", "sourceId": "rh-ex200", "targetId": "rh-ex294", "type": "required" },
+    { "id": "l-rh-ex200-ex188", "sourceId": "rh-ex200", "targetId": "rh-ex188", "type": "recommended" },
+    { "id": "l-rh-ex200-ex415", "sourceId": "rh-ex200", "targetId": "rh-ex415", "type": "recommended" },
+    { "id": "l-rh-ex200-ex318", "sourceId": "rh-ex200", "targetId": "rh-ex318", "type": "recommended" },
+    { "id": "l-rh-ex200-ex342", "sourceId": "rh-ex200", "targetId": "rh-ex342", "type": "recommended" },
+    { "id": "l-rh-ex200-ex442", "sourceId": "rh-ex200", "targetId": "rh-ex442", "type": "recommended" },
+    { "id": "l-rh-ex200-ex362", "sourceId": "rh-ex200", "targetId": "rh-ex362", "type": "recommended" },
+    { "id": "l-rh-ex200-ex436", "sourceId": "rh-ex200", "targetId": "rh-ex436", "type": "recommended" },
+    { "id": "l-rh-ex200-ex210", "sourceId": "rh-ex200", "targetId": "rh-ex210", "type": "recommended" },
+    { "id": "l-rh-ex200-ex260", "sourceId": "rh-ex200", "targetId": "rh-ex260", "type": "recommended" },
+    { "id": "l-rh-ex200-ex403", "sourceId": "rh-ex200", "targetId": "rh-ex403", "type": "recommended" },
+    { "id": "l-rh-ex188-ex180", "sourceId": "rh-ex188", "targetId": "rh-ex180", "type": "recommended" },
+    { "id": "l-rh-ex180-ex280", "sourceId": "rh-ex180", "targetId": "rh-ex280", "type": "recommended" },
+    { "id": "l-rh-ex180-ex288", "sourceId": "rh-ex180", "targetId": "rh-ex288", "type": "recommended" },
+    { "id": "l-rh-ex200-ex280", "sourceId": "rh-ex200", "targetId": "rh-ex280", "type": "recommended" },
+    { "id": "l-rh-ex280-ex380", "sourceId": "rh-ex280", "targetId": "rh-ex380", "type": "recommended" },
+    { "id": "l-rh-ex280-ex480", "sourceId": "rh-ex280", "targetId": "rh-ex480", "type": "recommended" },
+    { "id": "l-rh-ex280-ex370", "sourceId": "rh-ex280", "targetId": "rh-ex370", "type": "recommended" },
+    { "id": "l-rh-ex288-ex280", "sourceId": "rh-ex288", "targetId": "rh-ex280", "type": "recommended" },
+    { "id": "l-rh-ex294-ex447", "sourceId": "rh-ex294", "targetId": "rh-ex447", "type": "recommended" },
+    { "id": "l-rh-ex294-ex374", "sourceId": "rh-ex294", "targetId": "rh-ex374", "type": "recommended" },
+    { "id": "l-rh-ex294-ex467", "sourceId": "rh-ex294", "targetId": "rh-ex467", "type": "recommended" },
+    { "id": "l-rh-ex294-rhca", "sourceId": "rh-ex294", "targetId": "rh-rhca", "type": "required" },
+    { "id": "l-rh-ex188-rhca", "sourceId": "rh-ex188", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex280-rhca", "sourceId": "rh-ex280", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex288-rhca", "sourceId": "rh-ex288", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex380-rhca", "sourceId": "rh-ex380", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex480-rhca", "sourceId": "rh-ex480", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex370-rhca", "sourceId": "rh-ex370", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex342-rhca", "sourceId": "rh-ex342", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex442-rhca", "sourceId": "rh-ex442", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex362-rhca", "sourceId": "rh-ex362", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex436-rhca", "sourceId": "rh-ex436", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex415-rhca", "sourceId": "rh-ex415", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex318-rhca", "sourceId": "rh-ex318", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex210-rhca", "sourceId": "rh-ex210", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex260-rhca", "sourceId": "rh-ex260", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex374-rhca", "sourceId": "rh-ex374", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex467-rhca", "sourceId": "rh-ex467", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex447-rhca", "sourceId": "rh-ex447", "targetId": "rh-rhca", "type": "recommended" },
+    { "id": "l-rh-ex403-rhca", "sourceId": "rh-ex403", "targetId": "rh-rhca", "type": "recommended" },
+
+    { "id": "l-hc-tf-assoc-pro", "sourceId": "hc-terraform-associate", "targetId": "hc-terraform-pro", "type": "recommended" },
+    { "id": "l-hc-vault-assoc-pro", "sourceId": "hc-vault-associate", "targetId": "hc-vault-pro", "type": "recommended" },
+
+    { "id": "l-k8s-kcna-cka", "sourceId": "k8s-kcna", "targetId": "k8s-cka", "type": "recommended" },
+    { "id": "l-k8s-kcna-ckad", "sourceId": "k8s-kcna", "targetId": "k8s-ckad", "type": "recommended" },
+    { "id": "l-k8s-kcna-kcsa", "sourceId": "k8s-kcna", "targetId": "k8s-kcsa", "type": "recommended" },
+    { "id": "l-k8s-cka-cks", "sourceId": "k8s-cka", "targetId": "k8s-cks", "type": "required" },
+    { "id": "l-k8s-kcsa-cks", "sourceId": "k8s-kcsa", "targetId": "k8s-cks", "type": "recommended" },
+
+    { "id": "l-ms-ms900-ms102", "sourceId": "ms-ms900", "targetId": "ms-ms102", "type": "recommended" },
+    { "id": "l-ms-sc900-sc200", "sourceId": "ms-sc900", "targetId": "ms-sc200", "type": "recommended" },
+    { "id": "l-ms-sc900-sc300", "sourceId": "ms-sc900", "targetId": "ms-sc300", "type": "recommended" },
+    { "id": "l-ms-sc200-sc100", "sourceId": "ms-sc200", "targetId": "ms-sc100", "type": "recommended" },
+    { "id": "l-ms-sc300-sc100", "sourceId": "ms-sc300", "targetId": "ms-sc100", "type": "recommended" },
+    { "id": "l-ms-ai900-ai102", "sourceId": "ms-ai900", "targetId": "ms-ai102", "type": "recommended" },
+    { "id": "l-ms-dp900-dp100", "sourceId": "ms-dp900", "targetId": "ms-dp100", "type": "recommended" },
+    { "id": "l-ms-dp900-dp203", "sourceId": "ms-dp900", "targetId": "ms-dp203", "type": "recommended" },
+    { "id": "l-ms-dp900-dp300", "sourceId": "ms-dp900", "targetId": "ms-dp300", "type": "recommended" },
+    { "id": "l-ms-dp900-dp600", "sourceId": "ms-dp900", "targetId": "ms-dp600", "type": "recommended" },
+    { "id": "l-ms-pl900-pl300", "sourceId": "ms-pl900", "targetId": "ms-pl300", "type": "recommended" },
+    { "id": "l-ms-pl900-pl400", "sourceId": "ms-pl900", "targetId": "ms-pl400", "type": "recommended" },
+    { "id": "l-ms-pl400-pl600", "sourceId": "ms-pl400", "targetId": "ms-pl600", "type": "recommended" },
+
+    { "id": "l-gh-900-100", "sourceId": "gh-900", "targetId": "gh-100", "type": "recommended" },
+    { "id": "l-gh-900-200", "sourceId": "gh-900", "targetId": "gh-200", "type": "recommended" },
+    { "id": "l-gh-900-300", "sourceId": "gh-900", "targetId": "gh-300", "type": "recommended" },
+    { "id": "l-gh-100-500", "sourceId": "gh-100", "targetId": "gh-500", "type": "recommended" },
+    { "id": "l-gh-200-500", "sourceId": "gh-200", "targetId": "gh-500", "type": "recommended" }
+  ]
+}

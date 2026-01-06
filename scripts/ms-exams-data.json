@@ -1,0 +1,1343 @@
+[
+  {
+    "examCode": "AI-102",
+    "title": "Study guide for Exam AI-102: Designing and Implementing a Microsoft Azure AI Solution",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "December 23, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Plan and manage an Azure AI solution",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement generative AI solutions",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement an agentic solution",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Implement computer vision solutions",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Implement natural language processing solutions",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement knowledge mining and information extraction solutions",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "AI-900",
+    "title": "Study guide for Exam AI-900: Microsoft Azure AI Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "May 2, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe Artificial Intelligence workloads and considerations",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Describe fundamental principles of machine learning on Azure",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Describe features of computer vision workloads on Azure",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Describe features of Natural Language Processing (NLP) workloads on Azure",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Describe features of generative AI workloads on Azure",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-104",
+    "title": "Study guide for Exam AZ-104: Microsoft Azure Administrator",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 18, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Manage Azure identities and governance",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement and manage storage",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Deploy and manage Azure compute resources",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement and manage virtual networking",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Monitor and maintain Azure resources",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-120",
+    "title": "Study guide for Exam AZ-120: Planning and Administering Azure for SAP Workloads",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Migrate SAP workloads to Azure",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design and implement an infrastructure to support SAP workloads on Azure",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design and implement high availability and disaster recovery (HADR)",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Maintain SAP workloads on Azure",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-140",
+    "title": "Study guide for Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Plan and implement an Azure Virtual Desktop infrastructure",
+        "percent": "40–45%"
+      },
+      {
+        "area": "Plan and implement identity and security",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Plan and implement user environments and apps",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Monitor and maintain an Azure Virtual Desktop infrastructure",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-204",
+    "title": "Study guide for Exam AZ-204: Developing Solutions for Microsoft Azure",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Develop Azure compute solutions",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Develop for Azure storage",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement Azure security",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Monitor, troubleshoot, and optimize Azure solutions",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Connect to and consume Azure services and third-party services",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-305",
+    "title": "Study guide for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 18, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Design identity, governance, and monitoring solutions",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design data storage solutions",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Design business continuity solutions",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Design infrastructure solutions",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-400",
+    "title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "July 26, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Design and implement processes and communications",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Design and implement a source control strategy",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Design and implement build and release pipelines",
+        "percent": "50–55%"
+      },
+      {
+        "area": "Develop a security and compliance plan",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Implement an instrumentation strategy",
+        "percent": "5–10%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-500",
+    "title": "Study guide for Exam AZ-500: Microsoft Azure Security Technologies",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 22, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Secure identity and access",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Secure networking",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Secure compute, storage, and databases",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-700",
+    "title": "Study guide for Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 21, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Design and implement core networking infrastructure",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design, implement, and manage connectivity services",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Design and implement application delivery services",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Design and implement private access to Azure services",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Design and implement Azure network security services",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-800",
+    "title": "Study guide for Exam AZ-800: Administering Windows Server Hybrid Core Infrastructure",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 21, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Deploy and manage Active Directory Domain Services (AD DS) in on-premises and cloud environments",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Manage Windows Servers and workloads in a hybrid environment",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage virtual machines and containers",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement and manage an on-premises and hybrid networking infrastructure",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage storage and file services",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-801",
+    "title": "Study guide for Exam AZ-801: Configuring Windows Server Hybrid Advanced Services",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 6, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Secure Windows Server on-premises and hybrid infrastructures",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Implement and manage Windows Server high availability",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement disaster recovery",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Migrate servers and workloads",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Monitor and troubleshoot Windows Server environments",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "AZ-900",
+    "title": "Study guide for Exam AZ-900: Microsoft Azure Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe cloud concepts",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Describe Azure architecture and services",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Describe Azure management and governance",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-100",
+    "title": "Study guide for Exam DP-100: Designing and Implementing a Data Science Solution on Azure",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-100",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 11, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Design and prepare a machine learning solution",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Explore data, and run experiments",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Train and deploy models",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Optimize language models for AI applications",
+        "percent": "25–30%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-203",
+    "title": "Study guide for Exam DP-203: Data Engineering on Microsoft Azure",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-203",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 24, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Design and implement data storage",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Develop data processing",
+        "percent": "40–45%"
+      },
+      {
+        "area": "Secure, monitor, and optimize data storage and data processing",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-300",
+    "title": "Study guide for Exam DP-300: Administering Microsoft Azure SQL Solutions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 25, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Plan and implement data platform resources",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement a secure environment",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Monitor, configure, and optimize database resources",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Configure and manage automation of tasks",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Plan and configure a high availability and disaster recovery (HA/DR) environment",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-420",
+    "title": "Study Guide for Exam DP-420: Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 27, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Design and implement data models",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Design and implement data distribution",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Integrate an Azure Cosmos DB solution",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Optimize an Azure Cosmos DB solution",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Maintain an Azure Cosmos DB solution",
+        "percent": "25–30%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-600",
+    "title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 15, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Maintain a data analytics solution",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Prepare data",
+        "percent": "45–50%"
+      },
+      {
+        "area": "Implement and manage semantic models",
+        "percent": "25–30%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-700",
+    "title": "Study Guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 26, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Implement and manage an analytics solution",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Ingest and transform data",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Monitor and optimize an analytics solution",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "DP-900",
+    "title": "Study guide for Exam DP-900: Microsoft Azure Data Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "November 1, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe core data concepts",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Identify considerations for relational data on Azure",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Describe considerations for working with non-relational data on Azure",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Describe an analytics workload on Azure",
+        "percent": "25–30%"
+      }
+    ]
+  },
+  {
+    "examCode": "GH-100",
+    "title": "Study guide for GH-100: GitHub Administration",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100"
+  },
+  {
+    "examCode": "GH-200",
+    "title": "Study guide for GH-200: GitHub Actions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200"
+  },
+  {
+    "examCode": "GH-300",
+    "title": "Study guide for GH-300: GitHub Copilot",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300"
+  },
+  {
+    "examCode": "GH-500",
+    "title": "Study guide for GH-500: GitHub Advanced Security",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500"
+  },
+  {
+    "examCode": "GH-900",
+    "title": "Study guide for GH-900: GitHub Foundations",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900"
+  },
+  {
+    "examCode": "MB-210",
+    "title": "Study guide for Exam MB-210: Microsoft Dynamics 365 Sales Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-210",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 19, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure Dynamics 365 Sales",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Manage core sales features",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Configure additional tools and services",
+        "percent": "25–30%"
+      }
+    ],
+    "warnings": [
+      "will retire on November 30, 2024"
+    ]
+  },
+  {
+    "examCode": "MB-220",
+    "title": "Study guide for Exam MB-220: Microsoft Dynamics 365 Customer Insights (Journeys) Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-220",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "March 20, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure Dynamics 365 Customer Insights – Journeys",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage segments and preferences",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage leads, contacts, and accounts",
+        "percent": "1–5%"
+      },
+      {
+        "area": "Manage marketing channels",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage journeys",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Manage events and webinars",
+        "percent": "10–15%"
+      }
+    ],
+    "warnings": [
+      "will retire on November 30, 2024"
+    ]
+  },
+  {
+    "examCode": "MB-230",
+    "title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 3, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Manage cases in Customer Service",
+        "percent": "51–55%"
+      },
+      {
+        "area": "Configure representative experience and routing",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Extend Customer Service",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-240",
+    "title": "Study Guide for Exam MB-240: Microsoft Dynamics 365 Field Service Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-240",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "September 18, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure field service applications",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Manage work orders and customer assets",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Schedule and dispatch work orders",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage the Field Service mobile app",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Manage inventory and purchasing by using the built-in inventory management system",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Implement Microsoft Power Platform",
+        "percent": "5–10%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-260",
+    "title": "Study guide for Exam MB-260: Microsoft Dynamics 365 Customer Insights (Data) Specialist",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-260",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 15, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe Dynamics 365 Customer Insights – Data",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Ingest data",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Create customer profiles through data unification",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Implement AI predictions",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Configure measures and segments",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Configure third-party connections",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Administer Customer Insights – Data",
+        "percent": "5–10%"
+      }
+    ],
+    "warnings": [
+      "will retire on November 30, 2024"
+    ]
+  },
+  {
+    "examCode": "MB-280",
+    "title": "Study guide for Exam MB-280: Microsoft Dynamics 365 Customer Experience Analyst",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-280",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "September 24, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Implement Dynamics 365 Sales",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Configure and customize Dataverse and model-driven apps",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Demonstrate Dynamics 365 Customer Insights capabilities",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Extend and enhance Dynamics 365 Sales capabilities",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-310",
+    "title": "Study guide for Exam MB-310: Microsoft Dynamics 365 Finance Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "July 25, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Implement financial management",
+        "percent": "40–45%"
+      },
+      {
+        "area": "Implement accounts receivable, credit, collections, and subscription billing",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement and manage accounts payable and expenses",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage budgeting",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage fixed assets",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-330",
+    "title": "Study guide for Exam MB-330: Microsoft Dynamics 365 Supply Chain Management Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "June 20, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Implement product information management",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Implement inventory and asset management",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement and manage supply chain processes",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement warehouse management and transportation management",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement master planning",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-335",
+    "title": "Study guide for Exam MB-335: Microsoft Dynamics 365 Supply Chain Management Functional Consultant Expert",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-335",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "June 20, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure products",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Configure production prerequisites",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement production methods",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Configure and manage production control",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement additional supply chain management features",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-500",
+    "title": "Study guide for Exam MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 30, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Plan the architecture and solution design",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Apply developer tools",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Design and develop AOT elements",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Develop and test code",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement reporting",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Integrate and manage data solutions",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Implement security and optimize performance",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-700",
+    "title": "Study guide for Exam MB-700: Microsoft Dynamics 365: Finance and Operations Apps Solution Architect",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-700",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "October 9, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Architect solutions",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Define solution strategies",
+        "percent": "45–50%"
+      },
+      {
+        "area": "Manage implementations",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage testing",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-800",
+    "title": "Study guide for Exam MB-800: Microsoft Dynamics 365 Business Central Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "December 17, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Set up Business Central",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Configure financials",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Configure sales and purchasing",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Perform Business Central operations",
+        "percent": "25–30%"
+      }
+    ]
+  },
+  {
+    "examCode": "MB-820",
+    "title": "Study guide for Exam MB-820: Microsoft Dynamics 365 Business Central Developer",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "June 10, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe Business Central",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Install, develop, and deploy for Business Central",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Develop by using AL objects",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Develop by using AL",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Work with development tools",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Integrate Business Central with other applications",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MD-102",
+    "title": "Study guide for Exam MD-102: Endpoint Administrator",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 23, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Prepare infrastructure for devices",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage and maintain devices",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Manage applications",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Protect devices",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "MS-102",
+    "title": "Study guide for Exam MS-102: Microsoft 365 Administrator",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "November 10, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Deploy and manage a Microsoft 365 tenant",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Implement and manage Microsoft Entra identity and access",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage security and threats by using Microsoft Defender XDR",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Manage compliance by using Microsoft Purview",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "MS-700",
+    "title": "Study guide for Exam MS-700: Managing Microsoft Teams",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 23, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure and manage a Teams environment",
+        "percent": "40–45%"
+      },
+      {
+        "area": "Manage teams, channels, chats, and apps",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Manage meetings and calling",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Monitor, report on, and troubleshoot Teams",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "MS-721",
+    "title": "Study guide for Exam MS-721: Collaboration Communications Systems Engineer",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "November 10, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Plan and design collaboration communications systems",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Configure and manage Teams meetings, webinars, and town halls",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Configure and manage Teams Phone",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Configure and manage Teams Rooms and devices",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "MS-900",
+    "title": "Study guide for Exam MS-900: Microsoft 365 Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 30, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe cloud concepts",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Describe Microsoft 365 apps and services",
+        "percent": "45–50%"
+      },
+      {
+        "area": "Describe security, compliance, privacy, and trust in Microsoft 365",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Describe Microsoft 365 pricing, licensing, and support",
+        "percent": "10–15%"
+      }
+    ],
+    "warnings": [
+      "will retire on March 31, 2026"
+    ]
+  },
+  {
+    "examCode": "PL-200",
+    "title": "Study guide for Exam PL-200: Microsoft Power Platform Functional Consultant",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-200",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "December 26, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Configure Microsoft Dataverse",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Create apps by using Microsoft Power Apps",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Create and manage logic and process automation",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage environments",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "PL-300",
+    "title": "Study guide for Exam PL-300: Microsoft Power BI Data Analyst",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 15, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Prepare the data",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Model the data",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Visualize and analyze the data",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage and secure Power BI",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "PL-400",
+    "title": "Study guide for Exam PL-400: Microsoft Power Platform Developer",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "August 29, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Create a technical design",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Build Power Platform solutions",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Implement Power Apps improvements",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Extend the user experience",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Extend the platform",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Develop integrations",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "PL-500",
+    "title": "Study guide for Exam PL-500: Microsoft Power Automate RPA Developer",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-500",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "July 8, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Design automations",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Develop automations",
+        "percent": "45–50%"
+      },
+      {
+        "area": "Deploy and manage automations",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "PL-600",
+    "title": "Study guide for PL-600: Microsoft Power Platform Solution Architect",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-600",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "September 23, 2024",
+    "skillsAtAGlance": [
+      {
+        "area": "Perform solution envisioning and requirement analysis",
+        "percent": "45–50%"
+      },
+      {
+        "area": "Architect a solution",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Implement the solution",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "PL-900",
+    "title": "Study guide for Exam PL-900: Microsoft Power Platform Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "June 20, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe the business value of Microsoft Power Platform",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage the Microsoft Power Platform environment",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Demonstrate the capabilities of Power Apps",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Demonstrate the capabilities of Power Automate",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Demonstrate the capabilities of Power Pages",
+        "percent": "10–15%"
+      }
+    ]
+  },
+  {
+    "examCode": "SC-100",
+    "title": "Study guide for Exam SC-100: Microsoft Cybersecurity Architect",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 22, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Design solutions that align with security best practices and priorities",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Design security operations, identity, and compliance capabilities",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design security solutions for infrastructure",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Design security solutions for applications and data",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "SC-200",
+    "title": "Study guide for Exam SC-200: Microsoft Security Operations Analyst",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "January 22, 2026",
+    "skillsAtAGlance": [
+      {
+        "area": "Manage a security operations environment",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Configure protections and detections",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage incident response",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Manage security threats",
+        "percent": "15–20%"
+      }
+    ]
+  },
+  {
+    "examCode": "SC-300",
+    "title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "November 7, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Implement and manage user identities",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Implement authentication and access management",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Plan and implement workload identities",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Plan and automate identity governance",
+        "percent": "20–25%"
+      }
+    ]
+  },
+  {
+    "examCode": "SC-401",
+    "title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+    "scoreToPass": 700,
+    "skillsAtAGlance": [
+      {
+        "area": "Implement information protection",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Implement data loss prevention and retention",
+        "percent": "30–35%"
+      },
+      {
+        "area": "Manage risks, alerts, and activities",
+        "percent": "30–35%"
+      }
+    ]
+  },
+  {
+    "examCode": "SC-900",
+    "title": "Study guide for Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+    "scoreToPass": 700,
+    "skillsMeasuredAsOf": "November 7, 2025",
+    "skillsAtAGlance": [
+      {
+        "area": "Describe the concepts of security, compliance, and identity",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Describe the capabilities of Microsoft Entra",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Describe the capabilities of Microsoft security solutions",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Describe the capabilities of Microsoft compliance solutions",
+        "percent": "20–25%"
+      }
+    ]
+  }
+]
