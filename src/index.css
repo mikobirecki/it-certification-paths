@@ -19,6 +19,43 @@ html, body, #root {
   padding: 16px;
 }
 
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .appShell {
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    overflow: auto;
+  }
+  
+  .sidebar {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: unset !important;
+    max-height: 45vh;
+    overflow-y: auto;
+  }
+  
+  .sidebar.collapsed {
+    max-height: 60px;
+    overflow: hidden;
+  }
+  
+  .canvas {
+    min-height: 50vh;
+    flex: 1;
+  }
+  
+  .kv {
+    grid-template-columns: 100px 1fr;
+  }
+  
+  select, input {
+    padding: 10px 12px;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+}
+
 .sidebar {
   width: 380px;
   min-width: 360px;
@@ -32,6 +69,26 @@ html, body, #root {
   flex-direction: column;
   gap: 14px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.mobileToggle {
+  display: none;
+  padding: 8px 12px;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  border-radius: 8px;
+  color: #a5b4fc;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mobileToggle {
+    display: block;
+  }
 }
 
 .canvas {
@@ -43,6 +100,43 @@ html, body, #root {
   overflow: hidden;
   position: relative;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  /* Fix for touch devices */
+  touch-action: none;
+}
+
+/* React Flow controls styling */
+.react-flow__controls {
+  background: rgba(15, 23, 42, 0.9) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.react-flow__controls-button {
+  background: transparent !important;
+  border: none !important;
+  color: #94a3b8 !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.react-flow__controls-button:hover {
+  background: rgba(99, 102, 241, 0.2) !important;
+  color: #e2e8f0 !important;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor !important;
+}
+
+/* Fix blurry edges in Firefox */
+.react-flow__edge-path {
+  shape-rendering: geometricPrecision;
+}
+
+.react-flow__node {
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .h1 {

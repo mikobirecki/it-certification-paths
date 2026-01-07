@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
   ReactFlow,
   Background,
+  Controls,
+  MiniMap,
   useEdgesState,
   useNodesState,
 } from '@xyflow/react'
@@ -34,6 +36,7 @@ export default function App() {
   const [showRecommended, setShowRecommended] = useState(true)
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
 
   const filteredCertsByVendor = useMemo(() => {
     return certData.filter(c => c.vendor === vendor)
@@ -128,13 +131,22 @@ export default function App() {
 
   return (
     <div className="appShell">
-      <aside className="sidebar">
-        <div>
-          <h1 className="h1">IT Certification Paths</h1>
-          <p className="small">
-            Certification paths map. Select a vendor to explore available certifications.
-          </p>
+      <aside className={`sidebar ${sidebarCollapsed ? 'collapsed' : ''}`}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
+          <div>
+            <h1 className="h1">IT Certification Paths</h1>
+            <p className="small">
+              Certification paths map. Select a vendor to explore available certifications.
+            </p>
+          </div>
         </div>
+        
+        <button 
+          className="mobileToggle" 
+          onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+        >
+          {sidebarCollapsed ? '▼ Show Filters & Details' : '▲ Hide Filters'}
+        </button>
 
         <hr className="hr" />
 
@@ -305,12 +317,19 @@ export default function App() {
           nodesConnectable={false}
           elementsSelectable={true}
           panOnDrag={true}
-          zoomOnScroll={true}
+          panOnScroll={true}
+          zoomOnScroll={false}
           zoomOnPinch={true}
           zoomOnDoubleClick={false}
           minZoom={0.3}
-          maxZoom={1.5}
+          maxZoom={2}
         >
+          <Controls showInteractive={false} />
+          <MiniMap 
+            nodeColor={() => 'rgba(99, 102, 241, 0.8)'}
+            maskColor="rgba(15, 23, 42, 0.8)"
+            style={{ background: 'rgba(15, 23, 42, 0.9)', border: '1px solid rgba(148, 163, 184, 0.2)', borderRadius: 8 }}
+          />
           <LegendPanel />
           <Background />
         </ReactFlow>
