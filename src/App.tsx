@@ -3,7 +3,6 @@ import {
   ReactFlow,
   Background,
   Controls,
-  MiniMap,
   useEdgesState,
   useNodesState,
 } from '@xyflow/react'
@@ -150,44 +149,127 @@ export default function App() {
 
         <hr className="hr" />
 
-        <div className="col">
-          <div className="col">
-            <label>Vendor</label>
-            <select
-              value={vendor}
-              onChange={(e) => setVendor(e.target.value as Vendor)}
-            >
-              {allVendors.map((v) => <option key={v} value={v}>{v}</option>)}
-            </select>
-          </div>
-
-          {vendor === 'RedHat' && (
-            <div style={{ padding: '10px 12px', background: 'rgba(204, 0, 0, 0.1)', borderRadius: 10, border: '1px solid rgba(204, 0, 0, 0.3)', fontSize: 11, lineHeight: 1.5 }}>
-              <div style={{ fontWeight: 700, color: '#cc0000', marginBottom: 6 }}>🎯 Red Hat Certification Model</div>
-              <div style={{ color: '#94a3b8' }}>
-                <b style={{ color: '#e2e8f0' }}>3-tier structure:</b><br/>
-                <b>1. Core:</b> RHCSA (EX200) → RHCE (EX294)<br/>
-                <b>2. Specialist:</b> Domain-specific exams (OpenShift, Ansible, Security...)<br/>
-                <b>3. RHCA:</b> RHCE + 5 specialist exams<br/><br/>
-                <span style={{ color: '#64748b' }}>Specialist exams "count toward" RHCA. Certifications stay current for 3 years.</span>
-              </div>
+        {/* Certification Details - pokazywane na górze gdy wybrany */}
+        {selectedCert && (
+          <div style={{ 
+            padding: '12px', 
+            background: 'rgba(99, 102, 241, 0.1)', 
+            borderRadius: 12, 
+            border: '1px solid rgba(99, 102, 241, 0.3)',
+            marginBottom: 8
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+              <span className={`vendorBadge ${selectedCert.vendor.toLowerCase()}`}>{selectedCert.vendor}</span>
+              <button 
+                onClick={() => setSelectedId(null)} 
+                style={{ 
+                  background: 'rgba(239, 68, 68, 0.2)', 
+                  border: '1px solid rgba(239, 68, 68, 0.4)', 
+                  borderRadius: 6, 
+                  color: '#fca5a5', 
+                  padding: '4px 8px', 
+                  fontSize: 10, 
+                  cursor: 'pointer' 
+                }}
+              >
+                ✕ Close
+              </button>
             </div>
-          )}
+            <div style={{ fontWeight: 800, fontSize: 14, lineHeight: 1.3, marginBottom: 8 }}>{selectedCert.title}</div>
+            
+            <div className="kv" style={{ fontSize: 11 }}>
+              <div className="k">Level</div><div className="v">{selectedCert.levelDisplay ?? selectedCert.level}</div>
+              {selectedCert.domain && <><div className="k">Domain</div><div className="v">{selectedCert.domain}</div></>}
+              <div className="k">Exam</div><div className="v">{selectedCert.exam ?? '—'}</div>
+              <div className="k">💰 Price</div><div className="v" style={{ color: '#34d399', fontWeight: 700 }}>{selectedCert.price ?? '—'}</div>
+              <div className="k">⏱️ Validity</div><div className="v">{selectedCert.validityPeriod ?? '—'}</div>
+              {selectedCert.scoreToPass && <><div className="k">🎯 Pass score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
+            </div>
 
-          <div className="row">
+            {selectedCert.prerequisites && (
+              <div className="small" style={{ padding: '8px 10px', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 8, border: '1px solid rgba(251, 191, 36, 0.3)', marginTop: 8, fontSize: 11 }}>
+                <span style={{ color: '#fbbf24' }}>⚠️</span> <b style={{ color: '#fcd34d' }}>Prerequisites:</b> {selectedCert.prerequisites}
+              </div>
+            )}
+
+            {selectedCert.description && (
+              <p className="small" style={{ margin: '8px 0 0 0', color: '#94a3b8', fontSize: 11 }}>{selectedCert.description}</p>
+            )}
+
+            {selectedCert.url && (
+              <a href={selectedCert.url} target="_blank" rel="noreferrer" style={{ 
+                padding: '8px 12px', 
+                background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)', 
+                borderRadius: 8, 
+                color: 'white',
+                fontWeight: 700,
+                fontSize: 11,
+                textAlign: 'center',
+                display: 'block',
+                marginTop: 10,
+                boxShadow: '0 4px 14px rgba(99, 102, 241, 0.4)'
+              }}>
+                🔗 Official certification page
+              </a>
+            )}
+
+            {selectedCert.officialResources && selectedCert.officialResources.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: 4 }}>📚 Resources</div>
+                {selectedCert.officialResources.slice(0, 2).map((res, i) => (
+                  <a key={i} href={res.url} target="_blank" rel="noreferrer" style={{ 
+                    padding: '6px 10px', 
+                    background: 'rgba(99, 102, 241, 0.15)', 
+                    borderRadius: 6, 
+                    border: '1px solid rgba(99, 102, 241, 0.3)',
+                    fontSize: 11,
+                    display: 'block',
+                    marginTop: 4
+                  }}>
+                    📖 {res.title}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="col">
+          <div className="row" style={{ gap: 8 }}>
+            <div className="col" style={{ flex: 1 }}>
+              <label>Vendor</label>
+              <select
+                value={vendor}
+                onChange={(e) => setVendor(e.target.value as Vendor)}
+              >
+                {allVendors.map((v) => <option key={v} value={v}>{v}</option>)}
+              </select>
+            </div>
             <div className="col" style={{ flex: 1 }}>
               <label>Level</label>
               <select value={level} onChange={(e) => setLevel(e.target.value)}>
                 {vendorLevels.map((l) => <option key={l} value={l}>{l}</option>)}
               </select>
             </div>
+          </div>
 
-            <div className="col" style={{ flex: 1 }}>
-              <label>Domain</label>
-              <select value={domain} onChange={(e) => setDomain(e.target.value)}>
-                {vendorDomains.map((d) => <option key={d} value={d}>{d}</option>)}
-              </select>
+          {vendor === 'RedHat' && !selectedCert && (
+            <div style={{ padding: '10px 12px', background: 'rgba(204, 0, 0, 0.1)', borderRadius: 10, border: '1px solid rgba(204, 0, 0, 0.3)', fontSize: 11, lineHeight: 1.5 }}>
+              <div style={{ fontWeight: 700, color: '#cc0000', marginBottom: 6 }}>🎯 Red Hat Certification Model</div>
+              <div style={{ color: '#94a3b8' }}>
+                <b style={{ color: '#e2e8f0' }}>3-tier structure:</b><br/>
+                <b>1. Core:</b> RHCSA (EX200) → RHCE (EX294)<br/>
+                <b>2. Specialist:</b> Domain-specific exams<br/>
+                <b>3. RHCA:</b> RHCE + 5 specialists
+              </div>
             </div>
+          )}
+
+          <div className="col" style={{ flex: 1 }}>
+            <label>Domain</label>
+            <select value={domain} onChange={(e) => setDomain(e.target.value)}>
+              {vendorDomains.map((d) => <option key={d} value={d}>{d}</option>)}
+            </select>
           </div>
 
           <div className="col">
@@ -225,83 +307,11 @@ export default function App() {
           </div>
         </div>
 
-        <hr className="hr" />
-
-        <div style={{ flex: 1, overflow: 'auto' }}>
-          <div style={{ fontWeight: 800, fontSize: 11, marginBottom: 10, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Certification details</div>
-
-          {!selectedCert ? (
-            <p className="small">Click a node on the map to see certification details.</p>
-          ) : (
-            <div className="col" style={{ gap: 12 }}>
-              <div>
-                <span className={`vendorBadge ${selectedCert.vendor.toLowerCase()}`}>{selectedCert.vendor}</span>
-              </div>
-              <div style={{ fontWeight: 800, fontSize: 15, lineHeight: 1.3 }}>{selectedCert.title}</div>
-
-              <div className="kv">
-                <div className="k">Level</div><div className="v">{selectedCert.levelDisplay ?? selectedCert.level}</div>
-                {selectedCert.domain && <><div className="k">Domain</div><div className="v">{selectedCert.domain}</div></>}
-                <div className="k">Exam</div><div className="v">{selectedCert.exam ?? '—'}</div>
-                <div className="k">💰 Price</div><div className="v" style={{ color: '#34d399', fontWeight: 700 }}>{selectedCert.price ?? '—'}</div>
-                {selectedCert.scoreToPass && <><div className="k">🎯 Passing score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
-                <div className="k">⏱️ Validity</div><div className="v">{selectedCert.validityPeriod ?? '—'}</div>
-                {selectedCert.examLength && <><div className="k">⏰ Duration</div><div className="v">{selectedCert.examLength}</div></>}
-                {selectedCert.examFormat && <><div className="k">📝 Format</div><div className="v">{selectedCert.examFormat}</div></>}
-                {selectedCert.examLanguages && <><div className="k">🌐 Languages</div><div className="v">{selectedCert.examLanguages.join(', ')}</div></>}
-                {selectedCert.renewalAvailable && <><div className="k">🔄 Renewal</div><div className="v" style={{ color: '#34d399' }}>{selectedCert.renewalPrice ?? 'Available'}</div></>}
-                {selectedCert.lastUpdate && <><div className="k">📅 Last update</div><div className="v">{selectedCert.lastUpdate}</div></>}
-                <div className="k">🎭 Roles</div><div className="v">{(selectedCert.rolesDisplay ?? selectedCert.roles).join(', ')}</div>
-              </div>
-
-              {selectedCert.prerequisites ? (
-                <div className="small" style={{ padding: '10px 12px', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 10, border: '1px solid rgba(251, 191, 36, 0.3)' }}>
-                  <span style={{ color: '#fbbf24' }}>⚠️</span> <b style={{ color: '#fcd34d' }}>Prerequisites:</b> {selectedCert.prerequisites}
-                </div>
-              ) : null}
-
-              {selectedCert.description ? (
-                <p className="small" style={{ marginTop: 0, color: '#94a3b8' }}>{selectedCert.description}</p>
-              ) : null}
-
-              {selectedCert.officialResources && selectedCert.officialResources.length > 0 ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-                  <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase' }}>📚 Official resources</div>
-                  {selectedCert.officialResources.map((res, i) => (
-                    <a key={i} href={res.url} target="_blank" rel="noreferrer" style={{ 
-                      padding: '8px 12px', 
-                      background: 'rgba(99, 102, 241, 0.15)', 
-                      borderRadius: 8, 
-                      border: '1px solid rgba(99, 102, 241, 0.3)',
-                      fontSize: 12,
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 6
-                    }}>
-                      📖 {res.title}
-                    </a>
-                  ))}
-                </div>
-              ) : null}
-
-              {selectedCert.url ? (
-                <a href={selectedCert.url} target="_blank" rel="noreferrer" style={{ 
-                  padding: '10px 14px', 
-                  background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)', 
-                  borderRadius: 10, 
-                  color: 'white',
-                  fontWeight: 700,
-                  fontSize: 12,
-                  textAlign: 'center',
-                  display: 'block',
-                  boxShadow: '0 4px 14px rgba(99, 102, 241, 0.4)'
-                }}>
-                  🔗 Official certification page
-                </a>
-              ) : null}
-            </div>
-          )}
-        </div>
+        {!selectedCert && (
+          <p className="small" style={{ marginTop: 8, color: '#64748b' }}>
+            👆 Click a certification on the map to see details
+          </p>
+        )}
       </aside>
 
       <main className="canvas">
@@ -325,11 +335,6 @@ export default function App() {
           maxZoom={2}
         >
           <Controls showInteractive={false} />
-          <MiniMap 
-            nodeColor={() => 'rgba(99, 102, 241, 0.8)'}
-            maskColor="rgba(15, 23, 42, 0.8)"
-            style={{ background: 'rgba(15, 23, 42, 0.9)', border: '1px solid rgba(148, 163, 184, 0.2)', borderRadius: 8 }}
-          />
           <LegendPanel />
           <Background />
         </ReactFlow>
