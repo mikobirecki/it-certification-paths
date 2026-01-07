@@ -19,7 +19,7 @@ export default function LegendPanel() {
       onClick={() => setCollapsed(!collapsed)}
       >
         <div style={{ fontWeight: 700, fontSize: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, color: '#e2e8f0' }}>
-          <span>📋 Legenda</span>
+          <span>📋 Legend</span>
           <span style={{ fontSize: 10, color: '#64748b', transition: 'transform 0.2s', transform: collapsed ? 'rotate(-90deg)' : 'rotate(0deg)' }}>▼</span>
         </div>
 
@@ -27,12 +27,12 @@ export default function LegendPanel() {
           <div style={{ marginTop: 12 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
               <span style={{ width: 40, height: 3, background: '#f1f5f9', borderRadius: 2, display: 'inline-block' }} />
-              <span style={{ fontSize: 12, color: '#94a3b8' }}><b style={{ color: '#e2e8f0' }}>Required</b> — wymagane</span>
+              <span style={{ fontSize: 12, color: '#94a3b8' }}><b style={{ color: '#e2e8f0' }}>Required</b> — prerequisite path</span>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <span style={{ width: 40, height: 0, borderTop: '2px dashed #64748b', display: 'inline-block' }} />
-              <span style={{ fontSize: 12, color: '#94a3b8' }}><b style={{ color: '#e2e8f0' }}>Recommended</b> — sugerowane</span>
+              <span style={{ fontSize: 12, color: '#94a3b8' }}><b style={{ color: '#e2e8f0' }}>Recommended</b> — suggested path</span>
             </div>
           </div>
         )}
