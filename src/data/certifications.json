@@ -478,7 +478,7 @@
       "renewalAvailable": true,
       "renewalPrice": "$60 USD",
       "officialResources": [
-        {"title": "Exam Guide", "url": "https://services.google.com/fh/files/misc/cloud-digital-leader-exam-guide.pdf"},
+        {"title": "Exam Guide", "url": "https://services.google.com/fh/files/misc/cloud_digital_leader_exam_guide_english.pdf"},
         {"title": "Google Cloud Skills Boost", "url": "https://www.cloudskillsboost.google/"}
       ]
     },
@@ -804,7 +804,7 @@
       "title": "Red Hat Certified System Administrator in Red Hat OpenShift",
       "exam": "EX180",
       "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers-and-kubernetes",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-container-and-kubernetes",
       "description": "OpenShift basics: deployments, pods, services, routes, storage.",
       "price": "$450 USD",
       "prerequisites": "Recommended: basic container knowledge",
@@ -822,7 +822,7 @@
       "title": "Red Hat Certified OpenShift Administrator",
       "exam": "EX280",
       "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-administrator",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-paas",
       "description": "OpenShift administration: installation, configuration, cluster management.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200) + EX180",
@@ -840,7 +840,7 @@
       "title": "Red Hat Certified Specialist in OpenShift Automation and Integration",
       "exam": "EX380",
       "roles": ["DevOps", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-automation-integration",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration",
       "description": "Advanced OpenShift automation: operators, GitOps, CI/CD.",
       "price": "$450 USD",
       "prerequisites": "Recommended: EX280 (OpenShift Administrator)",
@@ -875,7 +875,7 @@
       "title": "Red Hat Certified Specialist in Containers",
       "exam": "EX188",
       "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-in-containers",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-container",
       "description": "Container fundamentals: Podman, Buildah, Skopeo, container images, registries.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -893,7 +893,7 @@
       "title": "Red Hat Certified Specialist in Security: Linux",
       "exam": "EX415",
       "roles": ["Security", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-security-linux",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-security-linux",
       "description": "Linux security: SELinux, firewall, auditing, intrusion detection, compliance.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -929,7 +929,7 @@
       "title": "Red Hat Certified Specialist in OpenShift Application Development",
       "exam": "EX288",
       "roles": ["DevOps", "General"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-application-development",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-application-development",
       "description": "OpenShift development: building, deploying, scaling applications on OpenShift.",
       "price": "$450 USD",
       "prerequisites": "Recommended: EX180 or container experience",
@@ -947,7 +947,7 @@
       "title": "Red Hat Certified Specialist in Virtualization",
       "exam": "EX318",
       "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-virtualization",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-virtualization",
       "description": "Red Hat Virtualization: KVM, oVirt, VM management, migration, HA.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -965,7 +965,7 @@
       "title": "Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting",
       "exam": "EX342",
       "roles": ["SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-linux-diagnostics-troubleshooting",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting",
       "description": "Advanced Linux troubleshooting: system logs, performance issues, kernel debugging.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -983,7 +983,7 @@
       "title": "Red Hat Certified Specialist in Linux Performance Tuning",
       "exam": "EX442",
       "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-performance-tuning",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-performance-tuning",
       "description": "Linux performance: tuning profiles, CPU, memory, I/O, network optimization.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -1019,7 +1019,7 @@
       "title": "Red Hat Certified Specialist in High Availability Clustering",
       "exam": "EX436",
       "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-high-availability-clustering",
+      "url": "https://www.redhat.com/en/services/training/ex436-red-hat-certificate-expertise-high-availability-clustering-exam",
       "description": "HA clustering: Pacemaker, Corosync, fencing, shared storage, failover.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -1037,7 +1037,7 @@
       "title": "Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform",
       "exam": "EX374",
       "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-developing-automation-ansible-automation-platform",
+      "url": "https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible",
       "description": "AAP development: execution environments, content collections, automation mesh.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCE (EX294)",
@@ -1091,7 +1091,7 @@
       "title": "Red Hat Certified System Administrator in Red Hat OpenStack Platform",
       "exam": "EX210",
       "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcsa-openstack",
+      "url": "https://www.redhat.com/en/services/certification/rhcsa-rhos",
       "description": "OpenStack administration: instances, networks, storage, identity, images.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -1145,7 +1145,7 @@
       "title": "Red Hat Certified Specialist in Deployment and Systems Management",
       "exam": "EX403",
       "roles": ["SysAdmin", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-deployment-systems-management",
+      "url": "https://www.redhat.com/en/services/training/ex403-red-hat-certificate-expertise-deployment-systems-management-exam",
       "description": "Satellite: provisioning, patching, configuration management, content views.",
       "price": "$450 USD",
       "prerequisites": "Recommended: RHCSA (EX200)",
@@ -1208,7 +1208,7 @@
       "prerequisites": "No formal requirements, recommended: networking basics",
       "validityPeriod": "2 years",
       "officialResources": [
-        {"title": "Study Guide", "url": "https://developer.hashicorp.com/consul/tutorials/certification-003/associate-study"}
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/consul/tutorials/certification-003/associate-study-003"}
       ]
     },
     {
@@ -1282,7 +1282,7 @@
       "prerequisites": "Recommended: KCNA or basic K8s knowledge",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKA_Curriculum.pdf"},
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/tree/master/cka"},
         {"title": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}
       ]
     },
@@ -1301,7 +1301,7 @@
       "prerequisites": "Recommended: KCNA or basic K8s knowledge",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum.pdf"},
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/tree/master/ckad"},
         {"title": "Kubernetes Docs", "url": "https://kubernetes.io/docs/"}
       ]
     },
@@ -1320,7 +1320,7 @@
       "prerequisites": "Required: CKA (aktywny)",
       "validityPeriod": "2 years",
       "officialResources": [
-        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/CKS_Curriculum.pdf"},
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/tree/master/cks"},
         {"title": "Security Docs", "url": "https://kubernetes.io/docs/concepts/security/"}
       ]
     },
@@ -1339,7 +1339,7 @@
       "prerequisites": "Recommended: KCNA",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/blob/master/KCSA_Curriculum.pdf"}
+        {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/tree/master/kcsa"}
       ]
     },
 
@@ -1592,7 +1592,7 @@
       "title": "Fabric Analytics Engineer Associate",
       "exam": "DP-600",
       "roles": ["Data&AI"],
-      "url": "https://learn.microsoft.com/en-us/certifications/fabric-analytics-engineer-associate/",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/?practice-assessment-type=certification",
       "description": "Microsoft Fabric: lakehouse, data warehouse, semantic models, analytics.",
       "price": "$165 USD",
       "lastUpdate": "2026-01-15",
