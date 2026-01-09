@@ -45,11 +45,25 @@ export function buildFlowElements(certs: Cert[], links: CertLink[], options?: Bu
       source: l.sourceId,
       target: l.targetId,
       animated: false,
+      label: l.trainingTitle ?? undefined,
+      labelStyle: { 
+        fill: '#a5b4fc', 
+        fontSize: 10, 
+        fontWeight: 600,
+        cursor: l.trainingUrl ? 'pointer' : 'default'
+      },
+      labelBgStyle: { 
+        fill: 'rgba(15, 23, 42, 0.9)', 
+        fillOpacity: 0.9,
+        rx: 6,
+        ry: 6
+      },
+      labelBgPadding: [6, 4] as [number, number],
       style: isRequired
         ? { stroke: '#0f172a', strokeWidth: 2.6 }
         : { stroke: '#64748b', strokeWidth: 1.6, strokeDasharray: '6 6' },
       markerEnd: { type: MarkerType.ArrowClosed, color: isRequired ? '#0f172a' : '#64748b' },
-      data: { type: l.type },
+      data: { type: l.type, trainingUrl: l.trainingUrl, trainingTitle: l.trainingTitle },
     }
   })
 

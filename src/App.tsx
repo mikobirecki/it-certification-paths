@@ -114,6 +114,12 @@ export default function App() {
     setSelectedId(node.id)
   }, [])
 
+  const onEdgeClick = useCallback((_evt: React.MouseEvent, edge: { data?: { trainingUrl?: string } }) => {
+    if (edge.data?.trainingUrl) {
+      window.open(edge.data.trainingUrl, '_blank', 'noreferrer')
+    }
+  }, [])
+
   const resetFilters = useCallback(() => {
     setDomain('All')
     setLevel('All')
@@ -320,6 +326,7 @@ export default function App() {
           edges={render.edges}
           nodeTypes={nodeTypes}
           onNodeClick={onNodeClick}
+          onEdgeClick={onEdgeClick}
           fitView
           fitViewOptions={{ padding: 0.18 }}
           proOptions={{ hideAttribution: true }}

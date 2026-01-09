@@ -38,4 +38,6 @@ export type CertLink = {
   sourceId: string
   targetId: string
   type: LinkType
+  trainingTitle?: string
+  trainingUrl?: string
 }
