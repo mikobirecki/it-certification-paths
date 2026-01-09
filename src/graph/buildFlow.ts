@@ -44,25 +44,25 @@ export function buildFlowElements(certs: Cert[], links: CertLink[], options?: Bu
       id: l.id,
       source: l.sourceId,
       target: l.targetId,
+      type: 'default',
       animated: false,
-      label: l.trainingTitle ?? undefined,
+      label: l.trainingTitle || '',
       labelStyle: { 
         fill: '#a5b4fc', 
         fontSize: 10, 
         fontWeight: 600,
-        cursor: l.trainingUrl ? 'pointer' : 'default'
       },
+      labelShowBg: true,
       labelBgStyle: { 
-        fill: 'rgba(15, 23, 42, 0.9)', 
-        fillOpacity: 0.9,
-        rx: 6,
-        ry: 6
+        fill: '#0f172a', 
+        fillOpacity: 0.95,
       },
       labelBgPadding: [6, 4] as [number, number],
+      labelBgBorderRadius: 6,
       style: isRequired
-        ? { stroke: '#0f172a', strokeWidth: 2.6 }
-        : { stroke: '#64748b', strokeWidth: 1.6, strokeDasharray: '6 6' },
-      markerEnd: { type: MarkerType.ArrowClosed, color: isRequired ? '#0f172a' : '#64748b' },
+        ? { stroke: '#f1f5f9', strokeWidth: 2.5 }
+        : { stroke: '#64748b', strokeWidth: 1.5, strokeDasharray: '6 4' },
+      markerEnd: { type: MarkerType.ArrowClosed, color: isRequired ? '#f1f5f9' : '#64748b', width: 16, height: 16 },
       data: { type: l.type, trainingUrl: l.trainingUrl, trainingTitle: l.trainingTitle },
     }
   })
