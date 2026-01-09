@@ -44,7 +44,7 @@ export function buildFlowElements(certs: Cert[], links: CertLink[], options?: Bu
       id: l.id,
       source: l.sourceId,
       target: l.targetId,
-      type: 'default',
+      type: 'training',
       animated: false,
       label: l.trainingTitle || '',
       labelStyle: { 

@@ -12,9 +12,11 @@ import type { Cert, Vendor } from './types'
 import { defaultCerts, defaultLinks } from './data/defaultData'
 import { buildFlowElements } from './graph/buildFlow'
 import CertNode from './components/CertNode'
+import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
 
 const nodeTypes = { certNode: CertNode }
+const edgeTypes = { training: TrainingEdge }
 
 const allVendors: Vendor[] = ['AWS', 'Azure', 'GCP', 'Microsoft', 'GitHub', 'RedHat', 'HashiCorp', 'Kubernetes']
 
@@ -325,6 +327,7 @@ export default function App() {
           nodes={render.nodes}
           edges={render.edges}
           nodeTypes={nodeTypes}
+          edgeTypes={edgeTypes}
           onNodeClick={onNodeClick}
           onEdgeClick={onEdgeClick}
           fitView
