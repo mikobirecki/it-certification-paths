@@ -760,595 +760,607 @@
     },
 
     {
+      "id": "rh-rh024",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Free)",
+      "domain": "RHCSA",
+      "title": "Red Hat Enterprise Linux Technical Overview",
+      "code": "RH024",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview",
+      "description": "Free on-demand video series providing technical introduction to RHEL 10.",
+      "price": "Free",
+      "prerequisites": "None",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview"}
+      ]
+    },
+    {
+      "id": "rh-rh124",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "RHCSA",
+      "title": "Red Hat System Administration I",
+      "code": "RH124",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i",
+      "description": "Core administration skills for managing Red Hat Enterprise Linux servers.",
+      "price": "$3,790 USD",
+      "prerequisites": "Basic computer literacy",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i"}
+      ]
+    },
+    {
+      "id": "rh-rh134",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "RHCSA",
+      "title": "Red Hat System Administration II",
+      "code": "RH134",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii",
+      "description": "Skills and knowledge needed to become a full-time Linux administrator.",
+      "price": "$3,790 USD",
+      "prerequisites": "RH124 or equivalent experience",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii"}
+      ]
+    },
+    {
       "id": "rh-ex200",
       "vendor": "RedHat",
-      "level": "Fundamentals",
-      "levelDisplay": "RHCSA",
-      "domain": "Core",
-      "title": "Red Hat Certified System Administrator (RHCSA)",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "RHCSA",
+      "title": "Red Hat Certified System Administrator (RHCSA) exam",
       "exam": "EX200",
       "roles": ["SysAdmin", "General"],
       "url": "https://www.redhat.com/en/services/certification/rhcsa",
-      "description": "RHEL administration: users, storage, network, security, containers.",
+      "description": "Performance-based exam testing ability to perform core system administration tasks on RHEL.",
       "price": "$450 USD",
-      "prerequisites": "No formal requirements, recommended: Linux basics",
+      "prerequisites": "RH124 + RH134 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam"}
+      ]
+    },
+    {
+      "id": "rh-rh135",
+      "vendor": "RedHat",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "RHCSA",
+      "title": "Red Hat System Administration II with exam",
+      "code": "RH135",
+      "exam": "EX200",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh135-red-hat-system-administration-ii-exam",
+      "description": "RH134 course + EX200 exam bundle. Teaches and validates Linux administration skills.",
+      "price": "$4,240 USD",
+      "prerequisites": "RH124 or equivalent",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/rh135-red-hat-system-administration-ii-exam"}
+      ]
+    },
+    {
+      "id": "rh-rh199",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Rapid Track)",
+      "domain": "RHCSA",
+      "title": "RHCSA Rapid Track course",
+      "code": "RH199",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh199-rhcsa-rapid-track-course",
+      "description": "Accelerated course covering RH124 + RH134 content for experienced Linux users.",
+      "price": "$3,790 USD",
+      "prerequisites": "Linux experience recommended",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh199-rhcsa-rapid-track-course"}
+      ]
+    },
+    {
+      "id": "rh-rh200",
+      "vendor": "RedHat",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "RHCSA",
+      "title": "RHCSA Rapid Track course with exam",
+      "code": "RH200",
+      "exam": "EX200",
+      "roles": ["SysAdmin", "General"],
+      "url": "https://www.redhat.com/en/services/training/rh200-rhcsa-rapid-track-course-exam",
+      "description": "Rapid Track course + EX200 exam bundle for experienced Linux users.",
+      "price": "$4,240 USD",
+      "prerequisites": "Linux experience recommended",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/rh200-rhcsa-rapid-track-course-exam"}
+      ]
+    },
+    {
+      "id": "rh-au294",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "RHCE",
+      "title": "Red Hat Enterprise Linux Automation with Ansible",
+      "code": "AU294",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible",
+      "description": "Automate provisioning, configuration, application deployment, and orchestration with Ansible.",
+      "price": "$3,790 USD",
+      "prerequisites": "RHCSA (EX200) required",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible"}
       ]
     },
     {
       "id": "rh-ex294",
       "vendor": "RedHat",
-      "level": "Associate",
-      "levelDisplay": "RHCE",
-      "domain": "Core",
-      "title": "Red Hat Certified Engineer (RHCE)",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "RHCE",
+      "title": "Red Hat Certified Engineer (RHCE) exam",
       "exam": "EX294",
       "roles": ["SysAdmin", "DevOps"],
       "url": "https://www.redhat.com/en/services/certification/rhce",
-      "description": "Automatyzacja z Ansible: playbooks, roles, inventory, templates.",
+      "description": "Performance-based exam testing system administration skills with Ansible automation on RHEL 9.",
       "price": "$450 USD",
-      "prerequisites": "Required: RHCSA (EX200)",
+      "prerequisites": "RHCSA (EX200) required, AU294 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh294-red-hat-linux-automation-with-ansible"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux-9"}
       ]
     },
     {
-      "id": "rh-ex180",
+      "id": "rh-rh295",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified System Administrator in Red Hat OpenShift",
-      "exam": "EX180",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-container-and-kubernetes",
-      "description": "OpenShift basics: deployments, pods, services, routes, storage.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: basic container knowledge",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "RHCE",
+      "title": "Red Hat Enterprise Linux Automation with Ansible and exam",
+      "code": "RH295",
+      "exam": "EX294",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/rh295-red-hat-linux-automation-ansible-exam",
+      "description": "AU294 course + EX294 exam bundle. Teaches and tests Ansible automation ability.",
+      "price": "$4,240 USD",
+      "prerequisites": "RHCSA (EX200) required",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do180-red-hat-openshift-i-containers-kubernetes"}
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/rh295-red-hat-linux-automation-ansible-exam"}
       ]
     },
-    {
-      "id": "rh-ex280",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified OpenShift Administrator",
-      "exam": "EX280",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-paas",
-      "description": "OpenShift administration: installation, configuration, cluster management.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200) + EX180",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do280-red-hat-openshift-administration-ii-operating-production-kubernetes-cluster"}
-      ]
-    },
-    {
-      "id": "rh-ex380",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified Specialist in OpenShift Automation and Integration",
-      "exam": "EX380",
-      "roles": ["DevOps", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration",
-      "description": "Advanced OpenShift automation: operators, GitOps, CI/CD.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: EX280 (OpenShift Administrator)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do380-red-hat-openshift-administration-iii-scaling-kubernetes-deployments-enterprise"}
-      ]
-    },
+
     {
       "id": "rh-rhca",
       "vendor": "RedHat",
-      "level": "Professional-Expert",
-      "levelDisplay": "RHCA",
-      "domain": "Core",
+      "level": "Meta",
+      "levelDisplay": "Meta-certification",
+      "domain": "RHCA",
       "title": "Red Hat Certified Architect (RHCA)",
-      "roles": ["Architect", "SysAdmin"],
+      "roles": ["Architect", "SysAdmin", "DevOps"],
       "url": "https://www.redhat.com/en/services/certification/rhca",
-      "description": "Meta-certification with 2 variants: Infrastructure or Enterprise Applications. Requires RHCE + 5 Specialist exams.",
+      "description": "NO SINGLE EXAM. Meta-certification earned by collecting RHCE + 5 specialist certifications. Two tracks: Infrastructure or Enterprise Applications.",
       "price": "Depends on selected exams",
-      "prerequisites": "Required: RHCE + 5 Specialist-level certifications",
+      "prerequisites": "Required: RHCE + any 5 Specialist-level certifications",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Certifications", "url": "https://www.redhat.com/en/services/certification/rhca"}
+        {"title": "View RHCA Path", "url": "https://www.redhat.com/en/services/certification/rhca"}
       ]
     },
     {
-      "id": "rh-ex188",
+      "id": "rh-ex229",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified Specialist in Containers",
-      "exam": "EX188",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-container",
-      "description": "Container fundamentals: Podman, Buildah, Skopeo, container images, registries.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do188-red-hat-openshift-development-i-introduction-containers-kubernetes"}
-      ]
-    },
-    {
-      "id": "rh-ex415",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Security",
-      "title": "Red Hat Certified Specialist in Security: Linux",
-      "exam": "EX415",
-      "roles": ["Security", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-security-linux",
-      "description": "Linux security: SELinux, firewall, auditing, intrusion detection, compliance.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh415-red-hat-security-linux-physical-virtual-cloud"}
-      ]
-    },
-    {
-      "id": "rh-ex447",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Automation",
-      "title": "Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices",
-      "exam": "EX447",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-advanced-automation-ansible-best-practices",
-      "description": "Advanced Ansible: best practices, optimization, Ansible Tower, complex automation.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCE (EX294)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do447-advanced-automation-ansible-best-practices"}
-      ]
-    },
-    {
-      "id": "rh-ex288",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified Specialist in OpenShift Application Development",
-      "exam": "EX288",
-      "roles": ["DevOps", "General"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-application-development",
-      "description": "OpenShift development: building, deploying, scaling applications on OpenShift.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: EX180 or container experience",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do288-red-hat-openshift-development-ii-containerizing-applications"}
-      ]
-    },
-    {
-      "id": "rh-ex318",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in Virtualization",
-      "exam": "EX318",
-      "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-virtualization",
-      "description": "Red Hat Virtualization: KVM, oVirt, VM management, migration, HA.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh318-red-hat-virtualization"}
-      ]
-    },
-    {
-      "id": "rh-ex342",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in Linux Diagnostics and Troubleshooting",
-      "exam": "EX342",
-      "roles": ["SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-red-hat-enterprise-linux-diagnostics-and-troubleshooting",
-      "description": "Advanced Linux troubleshooting: system logs, performance issues, kernel debugging.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh342-red-hat-enterprise-linux-diagnostics-and-troubleshooting"}
-      ]
-    },
-    {
-      "id": "rh-ex442",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in Linux Performance Tuning",
-      "exam": "EX442",
-      "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-performance-tuning",
-      "description": "Linux performance: tuning profiles, CPU, memory, I/O, network optimization.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh442-red-hat-enterprise-performance-tuning"}
-      ]
-    },
-    {
-      "id": "rh-ex362",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in Identity Management",
-      "exam": "EX362",
-      "roles": ["SysAdmin", "Security"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-identity-management",
-      "description": "IdM/FreeIPA: users, groups, policies, Kerberos, LDAP, AD integration.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh362-red-hat-identity-management"}
-      ]
-    },
-    {
-      "id": "rh-ex436",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in High Availability Clustering",
-      "exam": "EX436",
-      "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/training/ex436-red-hat-certificate-expertise-high-availability-clustering-exam",
-      "description": "HA clustering: Pacemaker, Corosync, fencing, shared storage, failover.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh436-red-hat-high-availability-clustering"}
-      ]
-    },
-    {
-      "id": "rh-ex374",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Automation",
-      "title": "Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform",
-      "exam": "EX374",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible",
-      "description": "AAP development: execution environments, content collections, automation mesh.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCE (EX294)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do374-developing-automation-ansible-automation-platform"}
-      ]
-    },
-    {
-      "id": "rh-ex467",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Automation",
-      "title": "Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform",
-      "exam": "EX467",
-      "roles": ["DevOps", "SysAdmin"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform",
-      "description": "AAP management: controller, hub, RBAC, workflows, notifications.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCE (EX294)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do467-managing-enterprise-automation-red-hat-ansible-automation-platform"}
-      ]
-    },
-    {
-      "id": "rh-ex480",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified Specialist in MultiCluster Management with RHACM",
-      "exam": "EX480",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in ROSA",
+      "exam": "EX229",
       "roles": ["DevOps", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-multicluster-management",
-      "description": "RHACM: multi-cluster lifecycle, policies, observability, GitOps at scale.",
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa",
+      "description": "Performance-based exam testing skills to manage Red Hat OpenShift on AWS clusters.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: EX280 (OpenShift Admin)",
+      "prerequisites": "EX280 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do480-multicluster-management-red-hat-openshift-platform-plus"}
-      ]
-    },
-    {
-      "id": "rh-ex210",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified System Administrator in Red Hat OpenStack Platform",
-      "exam": "EX210",
-      "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcsa-rhos",
-      "description": "OpenStack administration: instances, networks, storage, identity, images.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/cl210-red-hat-openstack-administration-i-core-operations-cloud-operators"}
-      ]
-    },
-    {
-      "id": "rh-ex260",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Storage",
-      "title": "Red Hat Certified Specialist in Ceph Cloud Storage",
-      "exam": "EX260",
-      "roles": ["SysAdmin", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-ceph-cloud-storage",
-      "description": "Ceph storage: cluster deployment, RADOS, RBD, RGW, CephFS.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ceph125-red-hat-ceph-storage-architecture-administration"}
-      ]
-    },
-    {
-      "id": "rh-ex370",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Storage",
-      "title": "Red Hat Certified Specialist in OpenShift Data Foundation",
-      "exam": "EX370",
-      "roles": ["DevOps", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-data-foundation",
-      "description": "ODF: Ceph on OpenShift, persistent storage, data services, disaster recovery.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: EX280 (OpenShift Admin)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do370-enterprise-kubernetes-storage-red-hat-openshift-data-foundation"}
-      ]
-    },
-    {
-      "id": "rh-ex403",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "RHEL Infrastructure",
-      "title": "Red Hat Certified Specialist in Deployment and Systems Management",
-      "exam": "EX403",
-      "roles": ["SysAdmin", "DevOps"],
-      "url": "https://www.redhat.com/en/services/training/ex403-red-hat-certificate-expertise-deployment-systems-management-exam",
-      "description": "Satellite: provisioning, patching, configuration management, content views.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: RHCSA (EX200)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh403-red-hat-satellite-6-administration"}
-      ]
-    },
-    {
-      "id": "rh-ex425",
-      "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Security",
-      "title": "Red Hat Certified Specialist in Security: Containers and OpenShift Container Platform",
-      "exam": "EX425",
-      "roles": ["Security", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-security-containers-openshift",
-      "description": "OpenShift security: ACS, vulnerability scanning, compliance, network policies, RBAC.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: EX280 (OpenShift Administrator)",
-      "validityPeriod": "3 years",
-      "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do425-red-hat-security-securing-containers-openshift"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-rosa"}
       ]
     },
     {
       "id": "rh-ex267",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "OpenShift",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
       "title": "Red Hat Certified Specialist in OpenShift AI",
       "exam": "EX267",
       "roles": ["Data&AI", "DevOps"],
       "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-ai",
-      "description": "OpenShift AI: ML workflows, model serving, data science pipelines on OpenShift.",
+      "description": "Tests ability to deploy OpenShift AI and configure it to build, deploy and manage AI-enabled applications.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: EX280 (OpenShift Administrator)",
+      "prerequisites": "EX280 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ai267-red-hat-openshift-ai"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-openshift-ai"}
       ]
     },
     {
-      "id": "rh-ex358",
+      "id": "rh-ex374",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Automation",
-      "title": "Red Hat Certified Specialist in Services Management and Automation",
-      "exam": "EX358",
-      "roles": ["SysAdmin", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-services-management-automation",
-      "description": "ITSM automation: Event-Driven Ansible, ServiceNow integration, remediation workflows.",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in Developing Automation with Ansible Automation Platform",
+      "exam": "EX374",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible",
+      "description": "Tests ability to automate system administration tasks using Ansible Automation Platform.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: RHCE (EX294)",
+      "prerequisites": "RHCE (EX294) recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/rh358-red-hat-services-management-automation"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/rhcs-developing-automation-ansible"}
       ]
     },
     {
-      "id": "rh-ex417",
+      "id": "rh-ex380",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Automation",
-      "title": "Red Hat Certified Specialist in Microsoft Windows Automation with Ansible",
-      "exam": "EX417",
-      "roles": ["SysAdmin", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-windows-automation-ansible",
-      "description": "Windows automation with Ansible: WinRM, PowerShell, AD, IIS, Windows services.",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in OpenShift Automation and Integration",
+      "exam": "EX380",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration",
+      "description": "Tests ability to plan, implement, and manage large-scale OpenShift Container Platform deployments.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: RHCE (EX294)",
+      "prerequisites": "EX280 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do417-microsoft-windows-automation-red-hat-ansible-automation-platform"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/rhcs-openshift-automation-and-integration"}
       ]
     },
     {
-      "id": "rh-ex240",
+      "id": "rh-ex430",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Specialist in API Management",
-      "exam": "EX240",
-      "roles": ["Architect", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-api-management",
-      "description": "3scale API Management: API gateways, rate limiting, analytics, developer portals.",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in OpenShift Advanced Cluster Security",
+      "exam": "EX430",
+      "roles": ["Security", "DevOps"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-acs",
+      "description": "Tests skills to manage Red Hat Advanced Cluster Security for Kubernetes.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: development or API experience",
+      "prerequisites": "EX280 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do240-api-management-red-hat-3scale-api-management"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-acs"}
       ]
     },
     {
-      "id": "rh-ex221",
+      "id": "rh-ex447",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Specialist in Cloud-native Integration",
-      "exam": "EX221",
-      "roles": ["Architect", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-cloud-native-integration",
-      "description": "Camel K, Kafka, Debezium: event-driven integration, change data capture, serverless.",
-      "price": "$450 USD",
-      "prerequisites": "Recommended: Java/integration experience",
-      "validityPeriod": "3 years",
+      "level": "Exam",
+      "levelDisplay": "Exam (RETIRED)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in Advanced Automation: Ansible Best Practices (RETIRED)",
+      "exam": "EX447",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-advanced-automation-ansible-best-practices",
+      "description": "RETIRED EXAM. Validated mastery of Red Hat Ansible and Ansible Tower.",
+      "price": "N/A",
+      "prerequisites": "RHCE recommended",
+      "validityPeriod": "N/A",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ad221-cloud-native-integration-camel-k"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-advanced-automation-ansible-best-practices"}
       ]
     },
     {
-      "id": "rh-ex183",
+      "id": "rh-ex457",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Enterprise Application Developer",
-      "exam": "EX183",
-      "roles": ["General", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcead",
-      "description": "Java EE/Jakarta EE development: CDI, JPA, JAX-RS, microservices on JBoss EAP.",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "RHCA",
+      "title": "Red Hat Certified Specialist in Ansible Network Automation",
+      "exam": "EX457",
+      "roles": ["DevOps", "Network"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-ansible-network-automation",
+      "description": "Tests skills to manage network infrastructure using Red Hat Ansible.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: Java development experience",
+      "prerequisites": "RHCE recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ad183-red-hat-application-development-i-java-ee"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-ansible-network-automation"}
+      ]
+    },
+    {
+      "id": "rh-rh445",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "RHCA",
+      "title": "Red Hat High Availability Clustering for SAP Solutions",
+      "code": "RH445",
+      "roles": ["SysAdmin", "Architect"],
+      "url": "https://www.redhat.com/en/services/training/rh445-red-hat-high-availability-clustering-sap-solutions",
+      "description": "Learn to deploy, protect, and scale SAP infrastructure with RHEL for SAP Solutions.",
+      "price": "$3,790 USD",
+      "prerequisites": "RHCSA recommended",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh445-red-hat-high-availability-clustering-sap-solutions"}
+      ]
+    },
+
+    {
+      "id": "rh-ai010",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Free)",
+      "domain": "Cloud-native Dev",
+      "title": "Red Hat AI Inference Server Technical Overview",
+      "code": "AI010",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/ai010-red-hat-ai-inference-server-technical-overview",
+      "description": "Free overview: optimize AI workloads and reduce costs with Red Hat AI Inference Server.",
+      "price": "Free",
+      "prerequisites": "None",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Free Course", "url": "https://www.redhat.com/en/services/training/ai010-red-hat-ai-inference-server-technical-overview"}
+      ]
+    },
+    {
+      "id": "rh-do032",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Free)",
+      "domain": "Cloud-native Dev",
+      "title": "Red Hat Advanced Cluster Management for Kubernetes Technical Overview",
+      "code": "DO032",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.redhat.com/en/services/training/do032-red-hat-advanced-cluster-management-kubernetes-technical-overview",
+      "description": "Free overview: unlock the full potential of your Kubernetes infrastructure.",
+      "price": "Free",
+      "prerequisites": "None",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Free Course", "url": "https://www.redhat.com/en/services/training/do032-red-hat-advanced-cluster-management-kubernetes-technical-overview"}
+      ]
+    },
+    {
+      "id": "rh-do078",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Free)",
+      "domain": "Cloud-native Dev",
+      "title": "Quarkus Technical Overview",
+      "code": "DO078",
+      "roles": ["General", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview",
+      "description": "Free overview: elevate your Java development with Quarkus.",
+      "price": "Free",
+      "prerequisites": "None",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Free Course", "url": "https://www.redhat.com/en/services/training/do078-quarkus-technical-overview"}
       ]
     },
     {
       "id": "rh-ex378",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Cloud-Native Developer",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "Cloud-native Dev",
+      "title": "Red Hat Certified Cloud-native Developer exam",
       "exam": "EX378",
       "roles": ["General", "DevOps"],
       "url": "https://www.redhat.com/en/services/certification/rhccd",
-      "description": "Quarkus cloud-native development: microservices, reactive, GraalVM native compilation.",
+      "description": "Tests skills to create a complete microservice using a persistent data store with Quarkus.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: Java experience, EX183 helpful",
+      "prerequisites": "DO078 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do378-red-hat-cloud-native-microservices-development-quarkus"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/rhccd"}
       ]
     },
     {
-      "id": "rh-ex328",
+      "id": "rh-ex467",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Specialist in Building Resilient Microservices",
-      "exam": "EX328",
-      "roles": ["General", "Architect"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-building-resilient-microservices",
-      "description": "Microservices resilience: circuit breakers, retries, service mesh, observability.",
+      "level": "Exam",
+      "levelDisplay": "Exam (Specialist)",
+      "domain": "Cloud-native Dev",
+      "title": "Red Hat Certified Specialist in Managing Automation with Ansible Automation Platform",
+      "exam": "EX467",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform",
+      "description": "Tests ability to automate at scale using AAP automation hub, controller and mesh.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: EX288 or microservices experience",
+      "prerequisites": "RHCE recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/do328-building-resilient-microservices-istio-red-hat-openshift-service-mesh"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-managing-automation-ansible-automation-platform"}
+      ]
+    },
+
+    {
+      "id": "rh-rh415",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "Security: Linux",
+      "title": "Red Hat Security: Linux in Physical, Virtual, and Cloud",
+      "code": "RH415",
+      "roles": ["Security", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/training/rh415-red-hat-security-linux-physical-virtual-cloud",
+      "description": "Security course for personnel managing secure operation of RHEL systems.",
+      "price": "$3,790 USD",
+      "prerequisites": "RHCSA recommended",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/rh415-red-hat-security-linux-physical-virtual-cloud"}
       ]
     },
     {
-      "id": "rh-ex465",
+      "id": "rh-ex415",
       "vendor": "RedHat",
-      "level": "Specialty",
-      "levelDisplay": "Specialist",
-      "domain": "Integration",
-      "title": "Red Hat Certified Specialist in Business Rules",
-      "exam": "EX465",
-      "roles": ["Architect", "General"],
-      "url": "https://www.redhat.com/en/services/certification/rhcs-business-rules",
-      "description": "Drools/Decision Manager: business rules, decision tables, DMN, complex event processing.",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "Security: Linux",
+      "title": "Red Hat Certified Specialist in Security: Linux exam",
+      "exam": "EX415",
+      "roles": ["Security", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/rhcs-security-linux",
+      "description": "Validates knowledge and abilities in securing Red Hat Enterprise Linux.",
       "price": "$450 USD",
-      "prerequisites": "Recommended: Java experience",
+      "prerequisites": "RH415 recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Red Hat Training", "url": "https://www.redhat.com/en/services/training/ad371-implementing-red-hat-decision-manager"}
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/rhcs-security-linux"}
       ]
     },
     {
-      "id": "rh-openshift-architect",
+      "id": "rh-rh416",
       "vendor": "RedHat",
-      "level": "Professional-Expert",
-      "levelDisplay": "Architect",
-      "domain": "OpenShift",
-      "title": "Red Hat Certified OpenShift Architect",
-      "roles": ["Architect", "DevOps"],
-      "url": "https://www.redhat.com/en/services/certification/rhca/openshift",
-      "description": "Meta-certification for OpenShift mastery. Requires EX280 or EX288 + 5 OpenShift specialist exams.",
-      "price": "Depends on selected exams",
-      "prerequisites": "Required: EX280 or EX288 + 5 from OpenShift specialist list (ODF, ACM, ACS, AI, etc.)",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "Security: Linux",
+      "title": "Red Hat Security: Linux in Physical, Virtual, and Cloud with exam",
+      "code": "RH416",
+      "exam": "EX415",
+      "roles": ["Security", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/training/rh416-red-hat-security-linux-physical-virtual-cloud-exam",
+      "description": "RH415 course + EX415 exam bundle. Builds and validates ability to manage security.",
+      "price": "$4,240 USD",
+      "prerequisites": "RHCSA recommended",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "OpenShift Architect Path", "url": "https://www.redhat.com/en/services/certification/rhca/openshift"}
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/rh416-red-hat-security-linux-physical-virtual-cloud-exam"}
+      ]
+    },
+
+    {
+      "id": "rh-do080",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course (Free)",
+      "domain": "OpenShift Admin",
+      "title": "Containers, Kubernetes and Red Hat OpenShift Technical Overview",
+      "code": "DO080",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview",
+      "description": "Free on-demand videos about deploying apps in containers using Docker, K8s, and OpenShift.",
+      "price": "Free",
+      "prerequisites": "None",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview"}
+      ]
+    },
+    {
+      "id": "rh-ex280",
+      "vendor": "RedHat",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "OpenShift Admin",
+      "title": "Red Hat Certified OpenShift Administrator exam",
+      "exam": "EX280",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-administrator",
+      "description": "Tests ability to create, configure, and manage a cloud application platform using OpenShift.",
+      "price": "$450 USD",
+      "prerequisites": "DO080 recommended, RHCSA helpful",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-administrator"}
+      ]
+    },
+    {
+      "id": "rh-do281",
+      "vendor": "RedHat",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "OpenShift Admin",
+      "title": "Red Hat OpenShift Administration II: Configuring a Production Cluster with Exam",
+      "code": "DO281",
+      "exam": "EX280",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/training/do281-red-hat-openshift-administration-ii-configuring-production-cluster-exam",
+      "description": "Course + EX280 exam bundle. Teaches and validates ability to install and administer OpenShift.",
+      "price": "$4,240 USD",
+      "prerequisites": "DO080 recommended",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/do281-red-hat-openshift-administration-ii-configuring-production-cluster-exam"}
+      ]
+    },
+
+    {
+      "id": "rh-do288",
+      "vendor": "RedHat",
+      "level": "Course",
+      "levelDisplay": "Course",
+      "domain": "OpenShift App Dev",
+      "title": "Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications",
+      "code": "DO288",
+      "roles": ["General", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/do288-red-hat-openshift-development-ii-containerizing-applications",
+      "description": "Developer-focused OpenShift course exploring containerized software applications.",
+      "price": "$3,790 USD",
+      "prerequisites": "Container basics recommended",
+      "validityPeriod": "N/A",
+      "officialResources": [
+        {"title": "View Course", "url": "https://www.redhat.com/en/services/training/do288-red-hat-openshift-development-ii-containerizing-applications"}
+      ]
+    },
+    {
+      "id": "rh-ex288",
+      "vendor": "RedHat",
+      "level": "Exam",
+      "levelDisplay": "Exam",
+      "domain": "OpenShift App Dev",
+      "title": "Red Hat Certified OpenShift Application Developer exam",
+      "exam": "EX288",
+      "roles": ["General", "DevOps"],
+      "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-application-developer",
+      "description": "Tests ability to deploy existing applications in a Red Hat OpenShift Container Platform environment.",
+      "price": "$450 USD",
+      "prerequisites": "DO288 recommended",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Exam", "url": "https://www.redhat.com/en/services/certification/red-hat-certified-openshift-application-developer"}
+      ]
+    },
+    {
+      "id": "rh-do289",
+      "vendor": "RedHat",
+      "level": "Bundle",
+      "levelDisplay": "Course+Exam",
+      "domain": "OpenShift App Dev",
+      "title": "Red Hat OpenShift Developer II: Building and Deploying Cloud-native Applications with Exam",
+      "code": "DO289",
+      "exam": "EX288",
+      "roles": ["General", "DevOps"],
+      "url": "https://www.redhat.com/en/services/training/do289-red-hat-openshift-development-ii-containerizing-applications-exam",
+      "description": "DO288 course + EX288 exam bundle. Teaches and validates containerized application development.",
+      "price": "$4,240 USD",
+      "prerequisites": "Container basics recommended",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/do289-red-hat-openshift-development-ii-containerizing-applications-exam"}
       ]
     },
 
@@ -2026,41 +2038,30 @@
     { "id": "l-gcp-adp-pmle", "sourceId": "gcp-adp", "targetId": "gcp-pmle", "type": "recommended" },
     { "id": "l-gcp-psec-psoc", "sourceId": "gcp-psec", "targetId": "gcp-psoc", "type": "recommended" },
 
-    { "id": "l-rh-ex200-ex294", "sourceId": "rh-ex200", "targetId": "rh-ex294", "type": "required" },
-    { "id": "l-rh-ex294-rhca", "sourceId": "rh-ex294", "targetId": "rh-rhca", "type": "required" },
+    { "id": "l-rh-rh024-rh124", "sourceId": "rh-rh024", "targetId": "rh-rh124", "type": "recommended" },
+    { "id": "l-rh-rh124-rh134", "sourceId": "rh-rh124", "targetId": "rh-rh134", "type": "recommended" },
+    { "id": "l-rh-rh134-ex200", "sourceId": "rh-rh134", "targetId": "rh-ex200", "type": "recommended" },
+    { "id": "l-rh-rh199-ex200", "sourceId": "rh-rh199", "targetId": "rh-ex200", "type": "recommended" },
 
-    { "id": "l-rh-ex280-osarch", "sourceId": "rh-ex280", "targetId": "rh-openshift-architect", "type": "required" },
-    { "id": "l-rh-ex288-osarch", "sourceId": "rh-ex288", "targetId": "rh-openshift-architect", "type": "required" },
-
-    { "id": "l-rh-ex200-ex188", "sourceId": "rh-ex200", "targetId": "rh-ex188", "type": "recommended" },
-    { "id": "l-rh-ex188-ex280", "sourceId": "rh-ex188", "targetId": "rh-ex280", "type": "recommended" },
-    { "id": "l-rh-ex188-ex288", "sourceId": "rh-ex188", "targetId": "rh-ex288", "type": "recommended" },
-    { "id": "l-rh-ex280-ex380", "sourceId": "rh-ex280", "targetId": "rh-ex380", "type": "recommended" },
-    { "id": "l-rh-ex280-ex370", "sourceId": "rh-ex280", "targetId": "rh-ex370", "type": "recommended" },
-    { "id": "l-rh-ex280-ex480", "sourceId": "rh-ex280", "targetId": "rh-ex480", "type": "recommended" },
-    { "id": "l-rh-ex280-ex425", "sourceId": "rh-ex280", "targetId": "rh-ex425", "type": "recommended" },
-    { "id": "l-rh-ex280-ex267", "sourceId": "rh-ex280", "targetId": "rh-ex267", "type": "recommended" },
-    { "id": "l-rh-ex288-ex328", "sourceId": "rh-ex288", "targetId": "rh-ex328", "type": "recommended" },
-
-    { "id": "l-rh-ex294-ex447", "sourceId": "rh-ex294", "targetId": "rh-ex447", "type": "recommended" },
+    { "id": "l-rh-ex200-au294", "sourceId": "rh-ex200", "targetId": "rh-au294", "type": "required" },
+    { "id": "l-rh-au294-ex294", "sourceId": "rh-au294", "targetId": "rh-ex294", "type": "recommended" },
+    { "id": "l-rh-ex294-rhca", "sourceId": "rh-ex294", "targetId": "rh-rhca", "type": "recommended" },
     { "id": "l-rh-ex294-ex374", "sourceId": "rh-ex294", "targetId": "rh-ex374", "type": "recommended" },
-    { "id": "l-rh-ex294-ex467", "sourceId": "rh-ex294", "targetId": "rh-ex467", "type": "recommended" },
-    { "id": "l-rh-ex294-ex358", "sourceId": "rh-ex294", "targetId": "rh-ex358", "type": "recommended" },
-    { "id": "l-rh-ex294-ex417", "sourceId": "rh-ex294", "targetId": "rh-ex417", "type": "recommended" },
+    { "id": "l-rh-ex294-ex447", "sourceId": "rh-ex294", "targetId": "rh-ex447", "type": "recommended" },
+    { "id": "l-rh-ex294-ex457", "sourceId": "rh-ex294", "targetId": "rh-ex457", "type": "recommended" },
 
-    { "id": "l-rh-ex200-ex415", "sourceId": "rh-ex200", "targetId": "rh-ex415", "type": "recommended" },
-    { "id": "l-rh-ex200-ex342", "sourceId": "rh-ex200", "targetId": "rh-ex342", "type": "recommended" },
-    { "id": "l-rh-ex200-ex442", "sourceId": "rh-ex200", "targetId": "rh-ex442", "type": "recommended" },
-    { "id": "l-rh-ex200-ex362", "sourceId": "rh-ex200", "targetId": "rh-ex362", "type": "recommended" },
-    { "id": "l-rh-ex200-ex436", "sourceId": "rh-ex200", "targetId": "rh-ex436", "type": "recommended" },
-    { "id": "l-rh-ex200-ex210", "sourceId": "rh-ex200", "targetId": "rh-ex210", "type": "recommended" },
-    { "id": "l-rh-ex200-ex260", "sourceId": "rh-ex200", "targetId": "rh-ex260", "type": "recommended" },
-    { "id": "l-rh-ex200-ex318", "sourceId": "rh-ex200", "targetId": "rh-ex318", "type": "recommended" },
-    { "id": "l-rh-ex200-ex403", "sourceId": "rh-ex200", "targetId": "rh-ex403", "type": "recommended" },
+    { "id": "l-rh-do078-ex378", "sourceId": "rh-do078", "targetId": "rh-ex378", "type": "recommended" },
+    { "id": "l-rh-ex378-ex467", "sourceId": "rh-ex378", "targetId": "rh-ex467", "type": "recommended" },
 
-    { "id": "l-rh-ex183-ex378", "sourceId": "rh-ex183", "targetId": "rh-ex378", "type": "recommended" },
-    { "id": "l-rh-ex378-ex328", "sourceId": "rh-ex378", "targetId": "rh-ex328", "type": "recommended" },
-    { "id": "l-rh-ex328-ex221", "sourceId": "rh-ex328", "targetId": "rh-ex221", "type": "recommended" },
+    { "id": "l-rh-rh415-ex415", "sourceId": "rh-rh415", "targetId": "rh-ex415", "type": "recommended" },
+
+    { "id": "l-rh-do080-ex280", "sourceId": "rh-do080", "targetId": "rh-ex280", "type": "recommended" },
+    { "id": "l-rh-ex280-ex229", "sourceId": "rh-ex280", "targetId": "rh-ex229", "type": "recommended" },
+    { "id": "l-rh-ex280-ex267", "sourceId": "rh-ex280", "targetId": "rh-ex267", "type": "recommended" },
+    { "id": "l-rh-ex280-ex380", "sourceId": "rh-ex280", "targetId": "rh-ex380", "type": "recommended" },
+    { "id": "l-rh-ex280-ex430", "sourceId": "rh-ex280", "targetId": "rh-ex430", "type": "recommended" },
+
+    { "id": "l-rh-do288-ex288", "sourceId": "rh-do288", "targetId": "rh-ex288", "type": "recommended" },
 
     { "id": "l-hc-tf-assoc-pro", "sourceId": "hc-terraform-associate", "targetId": "hc-terraform-pro", "type": "recommended" },
     { "id": "l-hc-vault-assoc-pro", "sourceId": "hc-vault-associate", "targetId": "hc-vault-pro", "type": "recommended" },
