@@ -1,5 +1,5 @@
 export type Vendor = 'AWS' | 'Azure' | 'GCP' | 'Microsoft' | 'GitHub' | 'RedHat' | 'HashiCorp' | 'Kubernetes'
-export type Level = 'Fundamentals' | 'Associate' | 'Professional-Expert' | 'Specialty'
+export type Level = 'Fundamentals' | 'Associate' | 'Professional-Expert' | 'Specialty' | 'Course' | 'Exam' | 'Bundle' | 'Meta'
 export type RoleTrack = 'General' | 'Architect' | 'DevOps' | 'Data&AI' | 'Security' | 'SysAdmin'
 export type LinkType = 'required' | 'recommended'
 
@@ -15,6 +15,7 @@ export type Cert = {
   levelDisplay?: string // vendor-specific level name
   title: string
   exam?: string
+  code?: string // course/bundle code (e.g., RH124, DO288)
   roles: RoleTrack[]
   rolesDisplay?: string[] // vendor-specific role names
   domain?: string // vendor-specific domain/track

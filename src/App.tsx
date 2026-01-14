@@ -14,6 +14,7 @@ import { buildFlowElements } from './graph/buildFlow'
 import CertNode from './components/CertNode'
 import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
+import RedHatPathsView, { PATH_NAMES } from './components/RedHatPathsView'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
@@ -38,6 +39,7 @@ export default function App() {
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+  const [showSuggestions, setShowSuggestions] = useState(false)
 
   const filteredCertsByVendor = useMemo(() => {
     return certData.filter(c => c.vendor === vendor)
@@ -134,6 +136,8 @@ export default function App() {
   useEffect(() => {
     setLevel('All')
     setDomain('All')
+    setQuery('')
+    setSelectedId(null)
   }, [vendor])
 
   return (
@@ -253,12 +257,14 @@ export default function App() {
                 {allVendors.map((v) => <option key={v} value={v}>{v}</option>)}
               </select>
             </div>
-            <div className="col" style={{ flex: 1 }}>
-              <label>Level</label>
-              <select value={level} onChange={(e) => setLevel(e.target.value)}>
-                {vendorLevels.map((l) => <option key={l} value={l}>{l}</option>)}
-              </select>
-            </div>
+            {vendor !== 'RedHat' && (
+              <div className="col" style={{ flex: 1 }}>
+                <label>Level</label>
+                <select value={level} onChange={(e) => setLevel(e.target.value)}>
+                  {vendorLevels.map((l) => <option key={l} value={l}>{l}</option>)}
+                </select>
+              </div>
+            )}
           </div>
 
           {vendor === 'RedHat' && !selectedCert && (
@@ -274,27 +280,54 @@ export default function App() {
           )}
 
           <div className="col" style={{ flex: 1 }}>
-            <label>Domain</label>
+            <label>{vendor === 'RedHat' ? 'Certification Path' : 'Domain'}</label>
             <select value={domain} onChange={(e) => setDomain(e.target.value)}>
-              {vendorDomains.map((d) => <option key={d} value={d}>{d}</option>)}
+              {vendorDomains.map((d) => (
+                <option key={d} value={d}>
+                  {vendor === 'RedHat' && d !== 'All' ? PATH_NAMES[d] || d : d}
+                </option>
+              ))}
             </select>
           </div>
 
-          <div className="col">
+          <div className="col" style={{ position: 'relative' }}>
             <label>Search</label>
             <input
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => {
+                setQuery(e.target.value)
+                setShowSuggestions(e.target.value.length > 0)
+              }}
+              onFocus={() => query.length > 0 && setShowSuggestions(true)}
+              onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
               placeholder="e.g. AZ-104, DevOps, Architect..."
-              list="cert-list"
             />
-            <datalist id="cert-list">
-              {filteredCertsByVendor.map((c) => (
-                <option key={c.id} value={c.title} />
-              ))}
-            </datalist>
+            {showSuggestions && query.length > 0 && (
+              <div className="search-suggestions">
+                {filteredCertsByVendor
+                  .filter(c => matchesText(c, query))
+                  .slice(0, 8)
+                  .map(c => (
+                    <div 
+                      key={c.id} 
+                      className="suggestion-item"
+                      onMouseDown={() => {
+                        setQuery(c.title)
+                        setSelectedId(c.id)
+                        setShowSuggestions(false)
+                      }}
+                    >
+                      <span className="suggestion-exam">{c.exam || c.code || '—'}</span>
+                      <span className="suggestion-title">{c.title}</span>
+                    </div>
+                  ))}
+                {filteredCertsByVendor.filter(c => matchesText(c, query)).length === 0 && (
+                  <div className="suggestion-empty">No results found</div>
+                )}
+              </div>
+            )}
             <div style={{ fontSize: 11, color: '#64748b', marginTop: 4 }}>
-              {filteredCertsByVendor.length} certifications for {vendor}
+              {filteredCertsByVendor.filter(c => query ? matchesText(c, query) : true).length} certifications for {vendor}
             </div>
           </div>
 
@@ -320,34 +353,62 @@ export default function App() {
             👆 Click a certification on the map to see details
           </p>
         )}
+
+        <div className="hr" style={{ marginTop: 'auto' }} />
+        <div style={{ textAlign: 'center', padding: '8px 0' }}>
+          <a 
+            href={`mailto:${'mikolaj'}@${'birecki'}.it?subject=IT%20Certification%20Paths%20Feedback`}
+            style={{ 
+              fontSize: 12, 
+              color: '#94a3b8', 
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 6
+            }}
+          >
+            💬 <span style={{ textDecoration: 'underline' }}>Send Feedback</span>
+          </a>
+        </div>
       </aside>
 
       <main className="canvas">
-        <ReactFlow
-          nodes={render.nodes}
-          edges={render.edges}
-          nodeTypes={nodeTypes}
-          edgeTypes={edgeTypes}
-          onNodeClick={onNodeClick}
-          onEdgeClick={onEdgeClick}
-          fitView
-          fitViewOptions={{ padding: 0.18 }}
-          proOptions={{ hideAttribution: true }}
-          nodesDraggable={false}
-          nodesConnectable={false}
-          elementsSelectable={true}
-          panOnDrag={true}
-          panOnScroll={true}
-          zoomOnScroll={false}
-          zoomOnPinch={true}
-          zoomOnDoubleClick={false}
-          minZoom={0.3}
-          maxZoom={2}
-        >
-          <Controls showInteractive={false} />
-          <LegendPanel />
-          <Background />
-        </ReactFlow>
+        {vendor === 'RedHat' ? (
+          <RedHatPathsView 
+            certs={filteredCertsByVendor} 
+            onSelectCert={(cert) => setSelectedId(cert.id)}
+            selectedId={selectedId}
+            selectedDomain={domain}
+            searchQuery={query}
+          />
+        ) : (
+          <ReactFlow
+            nodes={render.nodes}
+            edges={render.edges}
+            nodeTypes={nodeTypes}
+            edgeTypes={edgeTypes}
+            onNodeClick={onNodeClick}
+            onEdgeClick={onEdgeClick}
+            fitView
+            fitViewOptions={{ padding: 0.18 }}
+            proOptions={{ hideAttribution: true }}
+            nodesDraggable={false}
+            nodesConnectable={false}
+            elementsSelectable={true}
+            panOnDrag={true}
+            panOnScroll={true}
+            zoomOnScroll={false}
+            zoomOnPinch={true}
+            zoomOnDoubleClick={false}
+            minZoom={0.3}
+            maxZoom={2}
+          >
+            <Controls showInteractive={false} />
+            <LegendPanel />
+            <Background />
+          </ReactFlow>
+        )}
       </main>
     </div>
   )
