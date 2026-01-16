@@ -15,6 +15,7 @@ import CertNode from './components/CertNode'
 import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
 import RedHatPathsView, { PATH_NAMES } from './components/RedHatPathsView'
+import AboutSection from './components/AboutSection'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
@@ -40,6 +41,17 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const [showSuggestions, setShowSuggestions] = useState(false)
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    const saved = localStorage.getItem('theme')
+    return (saved === 'light' || saved === 'dark') ? saved : 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
 
   const filteredCertsByVendor = useMemo(() => {
     return certData.filter(c => c.vendor === vendor)
@@ -150,6 +162,9 @@ export default function App() {
               Certification paths map. Select a vendor to explore available certifications.
             </p>
           </div>
+          <button className="theme-toggle" onClick={toggleTheme} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
         </div>
         
         <button 
@@ -349,10 +364,12 @@ export default function App() {
         </div>
 
         {!selectedCert && (
-          <p className="small" style={{ marginTop: 8, color: '#64748b' }}>
+          <p className="small" style={{ marginTop: 8, color: 'var(--text-muted)' }}>
             👆 Click a certification on the map to see details
           </p>
         )}
+
+        <AboutSection />
 
         <div className="hr" style={{ marginTop: 'auto' }} />
         <div style={{ textAlign: 'center', padding: '8px 0' }}>
