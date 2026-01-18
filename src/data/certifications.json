@@ -239,7 +239,7 @@
 
     {
       "id": "az-900",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Fundamentals",
       "levelDisplay": "Fundamentals",
       "domain": "Azure",
@@ -260,7 +260,7 @@
     },
     {
       "id": "az-104",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Infrastructure",
@@ -280,7 +280,7 @@
     },
     {
       "id": "az-120",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Specialty",
       "levelDisplay": "Specialty",
       "domain": "SAP",
@@ -300,7 +300,7 @@
     },
     {
       "id": "az-140",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Specialty",
       "domain": "Virtual Desktop",
@@ -320,7 +320,7 @@
     },
     {
       "id": "az-204",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Developer",
@@ -340,7 +340,7 @@
     },
     {
       "id": "az-305",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Professional-Expert",
       "levelDisplay": "Expert",
       "domain": "Architecture",
@@ -360,7 +360,7 @@
     },
     {
       "id": "az-400",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Professional-Expert",
       "levelDisplay": "Expert",
       "domain": "DevOps",
@@ -380,7 +380,7 @@
     },
     {
       "id": "az-500",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Security",
@@ -400,7 +400,7 @@
     },
     {
       "id": "az-700",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Networking",
@@ -420,7 +420,7 @@
     },
     {
       "id": "az-800",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Windows Server",
@@ -440,7 +440,7 @@
     },
     {
       "id": "az-801",
-      "vendor": "Azure",
+      "vendor": "Microsoft",
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Windows Server",

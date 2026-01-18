@@ -94,13 +94,21 @@ export default function AboutSection() {
             <li>Plan your certification path based on your career goals.</li>
           </ul>
 
-          <p className="about-footer">
-            <em>
-              This tool is maintained by the community. Data is regularly updated to reflect 
-              the latest certification offerings. If you notice any errors or have suggestions, 
-              please use the feedback link above.
-            </em>
-          </p>
+          <div className="about-footer">
+            <p style={{ marginBottom: 8 }}>
+              <strong>📅 Last updated:</strong> January 2026
+            </p>
+            <p style={{ marginBottom: 8 }}>
+              <strong>🔄 Update schedule:</strong> We aim to update the certification data at least 
+              once a month to reflect any changes in exams, courses, or certification paths.
+            </p>
+            <p>
+              <em>
+                This tool is maintained by the community. If you notice any errors or have suggestions, 
+                please use the feedback link above.
+              </em>
+            </p>
+          </div>
         </div>
       )}
     </div>

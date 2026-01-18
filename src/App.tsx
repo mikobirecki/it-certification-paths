@@ -14,13 +14,13 @@ import { buildFlowElements } from './graph/buildFlow'
 import CertNode from './components/CertNode'
 import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
-import RedHatPathsView, { PATH_NAMES } from './components/RedHatPathsView'
 import AboutSection from './components/AboutSection'
+import TableView from './components/TableView'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
 
-const allVendors: Vendor[] = ['AWS', 'Azure', 'GCP', 'Microsoft', 'GitHub', 'RedHat', 'HashiCorp', 'Kubernetes']
+const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub']
 
 function matchesText(cert: Cert, q: string) {
   const hay = `${cert.title} ${cert.exam ?? ''} ${cert.vendor} ${cert.level} ${cert.roles.join(' ')} ${cert.description ?? ''}` 
@@ -45,6 +45,7 @@ export default function App() {
     const saved = localStorage.getItem('theme')
     return (saved === 'light' || saved === 'dark') ? saved : 'dark'
   })
+  const [viewMode, setViewMode] = useState<'graph' | 'table'>('graph')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -299,7 +300,7 @@ export default function App() {
             <select value={domain} onChange={(e) => setDomain(e.target.value)}>
               {vendorDomains.map((d) => (
                 <option key={d} value={d}>
-                  {vendor === 'RedHat' && d !== 'All' ? PATH_NAMES[d] || d : d}
+                  {d}
                 </option>
               ))}
             </select>
@@ -356,6 +357,18 @@ export default function App() {
             />
           </div>
 
+          <div className="row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
+            <span className="small" style={{ margin: 0 }}>View mode</span>
+            <div className="view-toggle">
+              <button className={viewMode === 'graph' ? 'active' : ''} onClick={() => setViewMode('graph')}>
+                🗂️ Graph
+              </button>
+              <button className={viewMode === 'table' ? 'active' : ''} onClick={() => setViewMode('table')}>
+                📝 Table
+              </button>
+            </div>
+          </div>
+
           <div className="row">
             <button className="btnSecondary" onClick={resetFilters} style={{ flex: 1 }}>
               Reset filters
@@ -391,9 +404,9 @@ export default function App() {
       </aside>
 
       <main className="canvas">
-        {vendor === 'RedHat' ? (
-          <RedHatPathsView 
-            certs={filteredCertsByVendor} 
+        {viewMode === 'table' ? (
+          <TableView
+            certs={filteredCertsByVendor}
             onSelectCert={(cert) => setSelectedId(cert.id)}
             selectedId={selectedId}
             selectedDomain={domain}

@@ -140,10 +140,30 @@ html, body, #root {
 
 /* React Flow controls styling */
 .react-flow__controls {
-  background: rgba(15, 23, 42, 0.9) !important;
-  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
   border-radius: 12px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 4px 12px var(--shadow-color) !important;
+}
+
+/* Edge styling for light/dark modes */
+.edge-required {
+  stroke: var(--text-primary);
+  stroke-width: 2.5;
+}
+
+.edge-recommended {
+  stroke: var(--text-muted);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 4;
+}
+
+[data-theme="light"] .edge-required {
+  stroke: #1e293b;
+}
+
+[data-theme="light"] .edge-recommended {
+  stroke: #64748b;
 }
 
 .react-flow__controls-button {
@@ -649,4 +669,139 @@ a:hover {
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
   font-size: 11px;
+}
+
+/* Table View */
+.table-view {
+  padding: 24px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.table-section {
+  margin-bottom: 20px;
+}
+
+.table-domain-header {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color-hover);
+}
+
+.table-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.table-cert-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+}
+
+.table-cert-item:hover {
+  transform: translateX(4px);
+  border-color: var(--border-color-hover);
+}
+
+.table-cert-item.selected {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.6);
+}
+
+.table-cert-exam {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.table-cert-title {
+  font-size: 12px;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-cert-level {
+  font-size: 11px;
+  font-weight: 600;
+  text-align: right;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.level-fundamentals .table-cert-level {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.level-associate .table-cert-level {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.level-expert .table-cert-level {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+}
+
+.level-specialty .table-cert-level {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
+.level-other .table-cert-level {
+  background: var(--accent-bg);
+  color: var(--text-secondary);
+}
+
+/* View toggle button */
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.view-toggle button {
+  padding: 6px 10px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.view-toggle button:hover {
+  color: var(--text-secondary);
+}
+
+.view-toggle button.active {
+  background: var(--accent-bg);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .table-cert-item {
+    grid-template-columns: 60px 1fr;
+  }
+  
+  .table-cert-level {
+    display: none;
+  }
 }

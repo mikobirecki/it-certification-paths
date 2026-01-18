@@ -39,11 +39,7 @@ export default function TrainingEdge({
       <BaseEdge
         id={id}
         path={edgePath}
-        style={{
-          stroke: isRequired ? '#f1f5f9' : '#64748b',
-          strokeWidth: isRequired ? 2.5 : 1.5,
-          strokeDasharray: isRequired ? undefined : '6 4',
-        }}
+        className={isRequired ? 'edge-required' : 'edge-recommended'}
         markerEnd={isRequired ? 'url(#arrow-required)' : 'url(#arrow-recommended)'}
       />
       {edgeData?.trainingTitle && (

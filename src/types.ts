@@ -1,4 +1,4 @@
-export type Vendor = 'AWS' | 'Azure' | 'GCP' | 'Microsoft' | 'GitHub' | 'RedHat' | 'HashiCorp' | 'Kubernetes'
+export type Vendor = 'AWS' | 'GCP' | 'Microsoft' | 'GitHub' | 'RedHat' | 'HashiCorp' | 'Kubernetes'
 export type Level = 'Fundamentals' | 'Associate' | 'Professional-Expert' | 'Specialty' | 'Course' | 'Exam' | 'Bundle' | 'Meta'
 export type RoleTrack = 'General' | 'Architect' | 'DevOps' | 'Data&AI' | 'Security' | 'SysAdmin'
 export type LinkType = 'required' | 'recommended'
