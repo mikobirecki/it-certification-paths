@@ -28,12 +28,20 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
 
   const sortedDomains = Object.keys(groupedByDomain).sort()
 
-  const getLevelClass = (level: string) => {
-    const l = level.toLowerCase()
-    if (l.includes('fundamental') || l.includes('foundational')) return 'level-fundamentals'
-    if (l.includes('associate')) return 'level-associate'
-    if (l.includes('professional') || l.includes('expert')) return 'level-expert'
-    if (l.includes('specialty')) return 'level-specialty'
+  const getLevelClass = (cert: Cert) => {
+    const level = cert.level.toLowerCase()
+    const display = (cert.levelDisplay || '').toLowerCase()
+    
+    // Use base level for color matching
+    if (level === 'fundamentals' || display.includes('fundamental') || display.includes('foundational') || display.includes('practitioner') || display.includes('foundations')) return 'level-fundamentals'
+    if (level === 'associate' || display.includes('associate')) return 'level-associate'
+    if (level === 'professional-expert' || display.includes('professional') || display.includes('expert')) return 'level-expert'
+    if (level === 'specialty' || display.includes('specialty') || display.includes('specialist')) return 'level-specialty'
+    // RedHat levels
+    if (level === 'course' || display.includes('course') || display.includes('free')) return 'level-course'
+    if (level === 'exam') return 'level-exam'
+    if (level === 'bundle' || display.includes('course+exam')) return 'level-bundle'
+    if (level === 'meta') return 'level-meta'
     return 'level-other'
   }
 
@@ -54,7 +62,7 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
             {groupedByDomain[domain].map(cert => (
               <div
                 key={cert.id}
-                className={`table-cert-item ${getLevelClass(cert.levelDisplay || cert.level)} ${selectedId === cert.id ? 'selected' : ''}`}
+                className={`table-cert-item ${getLevelClass(cert)} ${selectedId === cert.id ? 'selected' : ''}`}
                 onClick={() => onSelectCert(cert)}
               >
                 <span className="table-cert-exam">{cert.exam || '—'}</span>

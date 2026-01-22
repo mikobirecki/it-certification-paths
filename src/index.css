@@ -765,6 +765,27 @@ a:hover {
   color: var(--text-secondary);
 }
 
+/* RedHat/GitHub/HashiCorp levels */
+.level-course .table-cert-level {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.level-exam .table-cert-level {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.level-bundle .table-cert-level {
+  background: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+}
+
+.level-meta .table-cert-level {
+  background: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+}
+
 /* View toggle button */
 .view-toggle {
   display: flex;
