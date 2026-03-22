@@ -10,7 +10,7 @@ interface RedHatPathsViewProps {
 
 const PATH_ORDER = ['RHCSA', 'RHCE', 'RHCA', 'Cloud-native Dev', 'Security: Linux', 'OpenShift Admin', 'OpenShift App Dev']
 
-export const PATH_NAMES: Record<string, string> = {
+const PATH_NAMES: Record<string, string> = {
   'RHCSA': 'Red Hat Certified System Administrator (RHCSA)',
   'RHCE': 'Red Hat Certified Engineer (RHCE)',
   'RHCA': 'Red Hat Certified Architect (RHCA)',

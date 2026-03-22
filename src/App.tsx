@@ -1,8 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
-  ReactFlow,
-  Background,
-  Controls,
   useEdgesState,
   useNodesState,
 } from '@xyflow/react'
@@ -11,16 +8,12 @@ import '@xyflow/react/dist/style.css'
 import type { Cert, Vendor } from './types'
 import { defaultCerts, defaultLinks } from './data/defaultData'
 import { buildFlowElements } from './graph/buildFlow'
-import CertNode from './components/CertNode'
-import TrainingEdge from './components/TrainingEdge'
-import LegendPanel from './components/LegendPanel'
 import AboutSection from './components/AboutSection'
 import TableView from './components/TableView'
+import GraphView from './components/GraphView'
+import NodeDetailsPanel from './components/NodeDetailsPanel'
 
-const nodeTypes = { certNode: CertNode }
-const edgeTypes = { training: TrainingEdge }
-
-const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub']
+const allVendors: Vendor[] = ['Microsoft']
 
 function matchesText(cert: Cert, q: string) {
   const hay = `${cert.title} ${cert.exam ?? ''} ${cert.vendor} ${cert.level} ${cert.roles.join(' ')} ${cert.description ?? ''}` 
@@ -32,7 +25,7 @@ export default function App() {
   const certData = defaultCerts
   const linkData = defaultLinks
 
-  const [vendor, setVendor] = useState<Vendor>('AWS')
+  const [vendor, setVendor] = useState<Vendor>('Microsoft')
   const [domain, setDomain] = useState<string>('All')
   const [level, setLevel] = useState<string>('All')
   const [query, setQuery] = useState('')
@@ -177,89 +170,8 @@ export default function App() {
 
         <hr className="hr" />
 
-        {/* Certification Details - pokazywane na górze gdy wybrany */}
         {selectedCert && (
-          <div style={{ 
-            padding: '12px', 
-            background: 'rgba(99, 102, 241, 0.1)', 
-            borderRadius: 12, 
-            border: '1px solid rgba(99, 102, 241, 0.3)',
-            marginBottom: 8
-          }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
-              <span className={`vendorBadge ${selectedCert.vendor.toLowerCase()}`}>{selectedCert.vendor}</span>
-              <button 
-                onClick={() => setSelectedId(null)} 
-                style={{ 
-                  background: 'rgba(239, 68, 68, 0.2)', 
-                  border: '1px solid rgba(239, 68, 68, 0.4)', 
-                  borderRadius: 6, 
-                  color: '#fca5a5', 
-                  padding: '4px 8px', 
-                  fontSize: 10, 
-                  cursor: 'pointer' 
-                }}
-              >
-                ✕ Close
-              </button>
-            </div>
-            <div style={{ fontWeight: 800, fontSize: 14, lineHeight: 1.3, marginBottom: 8 }}>{selectedCert.title}</div>
-            
-            <div className="kv" style={{ fontSize: 11 }}>
-              <div className="k">Level</div><div className="v">{selectedCert.levelDisplay ?? selectedCert.level}</div>
-              {selectedCert.domain && <><div className="k">Domain</div><div className="v">{selectedCert.domain}</div></>}
-              <div className="k">Exam</div><div className="v">{selectedCert.exam ?? '—'}</div>
-              <div className="k">💰 Price</div><div className="v" style={{ color: '#34d399', fontWeight: 700 }}>{selectedCert.price ?? '—'}</div>
-              <div className="k">⏱️ Validity</div><div className="v">{selectedCert.validityPeriod ?? '—'}</div>
-              {selectedCert.scoreToPass && <><div className="k">🎯 Pass score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
-            </div>
-
-            {selectedCert.prerequisites && (
-              <div className="small" style={{ padding: '8px 10px', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 8, border: '1px solid rgba(251, 191, 36, 0.3)', marginTop: 8, fontSize: 11 }}>
-                <span style={{ color: '#fbbf24' }}>⚠️</span> <b style={{ color: '#fcd34d' }}>Prerequisites:</b> {selectedCert.prerequisites}
-              </div>
-            )}
-
-            {selectedCert.description && (
-              <p className="small" style={{ margin: '8px 0 0 0', color: '#94a3b8', fontSize: 11 }}>{selectedCert.description}</p>
-            )}
-
-            {selectedCert.url && (
-              <a href={selectedCert.url} target="_blank" rel="noreferrer" style={{ 
-                padding: '8px 12px', 
-                background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)', 
-                borderRadius: 8, 
-                color: 'white',
-                fontWeight: 700,
-                fontSize: 11,
-                textAlign: 'center',
-                display: 'block',
-                marginTop: 10,
-                boxShadow: '0 4px 14px rgba(99, 102, 241, 0.4)'
-              }}>
-                🔗 Official certification page
-              </a>
-            )}
-
-            {selectedCert.officialResources && selectedCert.officialResources.length > 0 && (
-              <div style={{ marginTop: 8 }}>
-                <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: 4 }}>📚 Resources</div>
-                {selectedCert.officialResources.slice(0, 2).map((res, i) => (
-                  <a key={i} href={res.url} target="_blank" rel="noreferrer" style={{ 
-                    padding: '6px 10px', 
-                    background: 'rgba(99, 102, 241, 0.15)', 
-                    borderRadius: 6, 
-                    border: '1px solid rgba(99, 102, 241, 0.3)',
-                    fontSize: 11,
-                    display: 'block',
-                    marginTop: 4
-                  }}>
-                    📖 {res.title}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+          <NodeDetailsPanel cert={selectedCert} onClose={() => setSelectedId(null)} />
         )}
 
         <div className="col">
@@ -413,31 +325,12 @@ export default function App() {
             searchQuery={query}
           />
         ) : (
-          <ReactFlow
+          <GraphView
             nodes={render.nodes}
             edges={render.edges}
-            nodeTypes={nodeTypes}
-            edgeTypes={edgeTypes}
             onNodeClick={onNodeClick}
             onEdgeClick={onEdgeClick}
-            fitView
-            fitViewOptions={{ padding: 0.18 }}
-            proOptions={{ hideAttribution: true }}
-            nodesDraggable={false}
-            nodesConnectable={false}
-            elementsSelectable={true}
-            panOnDrag={true}
-            panOnScroll={true}
-            zoomOnScroll={false}
-            zoomOnPinch={true}
-            zoomOnDoubleClick={false}
-            minZoom={0.3}
-            maxZoom={2}
-          >
-            <Controls showInteractive={false} />
-            <LegendPanel />
-            <Background />
-          </ReactFlow>
+          />
         )}
       </main>
     </div>

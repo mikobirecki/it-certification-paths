@@ -116,8 +116,9 @@ async function fetchExam(examCode: string): Promise<ExamData> {
       ...(skillsAtAGlance ? { skillsAtAGlance } : {}),
       ...(warnings.length ? { warnings } : {})
     };
-  } catch (e: any) {
-    return { ...base, fetchError: e?.message ?? String(e) };
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : String(e);
+    return { ...base, fetchError: message };
   }
 }
 
