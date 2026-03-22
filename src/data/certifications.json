@@ -301,7 +301,7 @@
     {
       "id": "az-140",
       "vendor": "Microsoft",
-      "level": "Associate",
+      "level": "Specialty",
       "levelDisplay": "Specialty",
       "domain": "Virtual Desktop",
       "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
@@ -2284,6 +2284,11 @@
 
     { "id": "l-az-900-104", "sourceId": "az-900", "targetId": "az-104", "type": "recommended", "trainingTitle": "📚 AZ-104 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/az-104-administrator-prerequisites/" },
     { "id": "l-az-900-204", "sourceId": "az-900", "targetId": "az-204", "type": "recommended", "trainingTitle": "📚 AZ-204 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/create-azure-app-service-web-apps/" },
+    { "id": "l-az-900-500", "sourceId": "az-900", "targetId": "az-500", "type": "recommended" },
+    { "id": "l-az-900-700", "sourceId": "az-900", "targetId": "az-700", "type": "recommended" },
+    { "id": "l-az-900-800", "sourceId": "az-900", "targetId": "az-800", "type": "recommended" },
+    { "id": "l-az-900-140", "sourceId": "az-900", "targetId": "az-140", "type": "recommended" },
+    { "id": "l-az-900-120", "sourceId": "az-900", "targetId": "az-120", "type": "recommended" },
     { "id": "l-az-104-305", "sourceId": "az-104", "targetId": "az-305", "type": "required", "trainingTitle": "📚 AZ-305 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-architect-design-prerequisites/" },
     { "id": "l-az-104-400", "sourceId": "az-104", "targetId": "az-400", "type": "required", "trainingTitle": "📚 AZ-400 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/" },
     { "id": "l-az-204-400", "sourceId": "az-204", "targetId": "az-400", "type": "required", "trainingTitle": "📚 AZ-400 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/" },

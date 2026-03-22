@@ -5,6 +5,101 @@ import { MarkerType } from '@xyflow/react'
 const levelOrder: Level[] = ['Fundamentals', 'Associate', 'Professional-Expert', 'Specialty']
 const redHatLevelOrder: Level[] = ['Course', 'Exam', 'Bundle', 'Meta']
 
+function buildMicrosoftLayout(certs: Cert[], xOffset: number, yOffset: number) {
+  const levelGap = 360
+  const domainGap = 170
+  const slotGap = 78
+  const sectionGap = 260
+
+  const azureDomainOrder = [
+    'Azure',
+    'Infrastructure',
+    'Developer',
+    'Architecture',
+    'DevOps',
+    'Security',
+    'Networking',
+    'Virtual Desktop',
+    'SAP',
+    'Windows Server',
+  ]
+
+  const sortedCerts = [...certs].sort((a, b) => {
+    const aKey = (a.exam || a.id).toUpperCase()
+    const bKey = (b.exam || b.id).toUpperCase()
+    return aKey.localeCompare(bKey)
+  })
+
+  const isAzureExam = (c: Cert) => (c.exam || '').toUpperCase().startsWith('AZ-')
+  const azureCerts = sortedCerts.filter(isAzureExam)
+  const otherCerts = sortedCerts.filter((c) => !isAzureExam(c))
+
+  const placeByDomainAndLevel = (
+    list: Cert[],
+    preferredDomains: string[],
+    startY: number,
+  ): { nodes: Node[]; endY: number } => {
+    const allDomains = Array.from(new Set(list.map((c) => c.domain || 'General')))
+    const remainingDomains = allDomains
+      .filter((d) => !preferredDomains.includes(d))
+      .sort((a, b) => a.localeCompare(b))
+    const orderedDomains = [...preferredDomains.filter((d) => allDomains.includes(d)), ...remainingDomains]
+
+    const slotCounter = new Map<string, number>()
+    const placed: Node[] = list.map((c) => {
+      const domain = c.domain || 'General'
+      const domainIndex = orderedDomains.indexOf(domain)
+      const levelIndex = levelOrder.indexOf(c.level)
+
+      const key = `${domain}__${c.level}`
+      const slot = slotCounter.get(key) ?? 0
+      slotCounter.set(key, slot + 1)
+
+      const x = xOffset + Math.max(0, levelIndex) * levelGap
+      const y = startY + Math.max(0, domainIndex) * domainGap + slot * slotGap
+
+      return {
+        id: c.id,
+        type: 'certNode',
+        position: { x, y },
+        data: { cert: c },
+      }
+    })
+
+    const maxY = placed.reduce((acc, node) => Math.max(acc, node.position.y), startY)
+    return { nodes: placed, endY: maxY + domainGap }
+  }
+
+  const azureSectionBase = placeByDomainAndLevel(azureCerts, azureDomainOrder, yOffset)
+  const azureSection = {
+    ...azureSectionBase,
+    nodes: azureSectionBase.nodes.map((n) => {
+      if (n.id !== 'az-900') return n
+      return {
+        ...n,
+        position: {
+          x: xOffset,
+          y: yOffset,
+        },
+      }
+    }),
+  }
+  const otherPreferredDomains = [
+    'AI',
+    'Data',
+    'Security',
+    'Power Platform',
+    'Microsoft 365',
+    'Dynamics 365',
+    'GitHub',
+  ]
+  const otherSection = placeByDomainAndLevel(otherCerts, otherPreferredDomains, azureSection.endY + sectionGap)
+
+  const nodes: Node[] = [...azureSection.nodes, ...otherSection.nodes]
+
+  return nodes
+}
+
 export type BuildOptions = {
   xGap?: number
   yGap?: number
@@ -91,13 +186,16 @@ export function buildFlowElements(certs: Cert[], links: CertLink[], options?: Bu
   const xOffset = options?.vendorXOffset ?? 40
   const yOffset = options?.levelYOffset ?? 40
 
-  // Check if this is RedHat
+  // Check if this is vendor-specific layout
   const isRedHat = certs.length > 0 && certs[0].vendor === 'RedHat'
+  const isMicrosoft = certs.length > 0 && certs[0].vendor === 'Microsoft'
 
   let nodes: Node[]
 
   if (isRedHat) {
     nodes = buildRedHatLayout(certs, xOffset, yOffset)
+  } else if (isMicrosoft) {
+    nodes = buildMicrosoftLayout(certs, xOffset, yOffset)
   } else {
     const slotCounter = new Map<string, number>()
     const slotKey = (v: Vendor, l: Level) => `${v}__${l}` 
