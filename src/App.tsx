@@ -214,6 +214,12 @@ export default function App() {
               {selectedCert.scoreToPass && <><div className="k">🎯 Pass score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
             </div>
 
+            {selectedCert.retiring && (
+              <div className="small" style={{ padding: '8px 10px', background: 'rgba(239, 68, 68, 0.15)', borderRadius: 8, border: '1px solid rgba(239, 68, 68, 0.4)', marginTop: 8, fontSize: 11 }}>
+                <span style={{ color: '#f87171' }}>⚠</span> <b style={{ color: '#f87171' }}>Retiring:</b> This exam will be retired on {selectedCert.retirementDate}. Consider planning accordingly.
+              </div>
+            )}
+
             {selectedCert.prerequisites && (
               <div className="small" style={{ padding: '8px 10px', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 8, border: '1px solid rgba(251, 191, 36, 0.3)', marginTop: 8, fontSize: 11 }}>
                 <span style={{ color: '#fbbf24' }}>⚠️</span> <b style={{ color: '#fcd34d' }}>Prerequisites:</b> {selectedCert.prerequisites}
