@@ -62,16 +62,17 @@
       "level": "Associate",
       "levelDisplay": "Associate",
       "domain": "Operations",
-      "title": "AWS Certified SysOps Administrator – Associate",
+      "title": "AWS Certified CloudOps Engineer – Associate",
       "exam": "SOA-C03",
       "roles": ["DevOps", "SysAdmin", "Security"],
-      "url": "https://aws.amazon.com/certification/certified-sysops-admin-associate/",
-      "description": "Operacje: monitoring, incident response, automatyzacja.",
+      "url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      "description": "Cloud operations: monitoring, incident response, automation, reliability.",
       "price": "$150 USD",
       "prerequisites": "Recommended: 1 year experience with AWS",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-sysops-associate/AWS-Certified-SysOps-Administrator-Associate_Exam-Guide.pdf"}
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-cloudops-engineer-associate/AWS-Certified-CloudOps-Engineer-Associate_Exam-Guide.pdf"},
+        {"title": "AWS Skill Builder", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9313/exam-readiness-aws-certified-sysops-administrator-associate"}
       ]
     },
     {
@@ -165,21 +166,22 @@
       ]
     },
     {
-      "id": "aws-mls-c01",
+      "id": "aws-gai-c01",
       "vendor": "AWS",
-      "level": "Specialty",
-      "levelDisplay": "Specialty",
-      "domain": "Machine Learning",
-      "title": "AWS Certified Machine Learning – Specialty",
-      "exam": "MLS-C01",
-      "roles": ["Data&AI"],
-      "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
-      "description": "ML na AWS: SageMaker, data engineering, modeling, deployment, MLOps.",
+      "level": "Professional-Expert",
+      "levelDisplay": "Professional",
+      "domain": "AI/ML",
+      "title": "AWS Certified Generative AI Developer – Professional",
+      "exam": "GAI-C01",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://aws.amazon.com/certification/certified-generative-ai-developer-professional/",
+      "description": "Generative AI on AWS: Amazon Bedrock, RAG, agents, model evaluation, responsible AI.",
       "price": "$300 USD",
-      "prerequisites": "Recommended: 2+ years ML/DS experience",
+      "prerequisites": "Recommended: AIF-C01 + professional AI/ML experience",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-ml/AWS-Certified-Machine-Learning-Specialty_Exam-Guide.pdf"}
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-generative-ai-developer-professional/AWS-Certified-Generative-AI-Developer-Professional_Exam-Guide.pdf"},
+        {"title": "AWS Skill Builder", "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/19610/exam-prep-aws-certified-generative-ai-developer-professional"}
       ]
     },
     {
@@ -1649,16 +1651,16 @@
       "levelDisplay": "Associate",
       "domain": "Terraform",
       "title": "HashiCorp Certified: Terraform Associate",
-      "exam": "TA-003",
+      "exam": "TA-004",
       "roles": ["DevOps", "Architect", "SysAdmin"],
       "url": "https://www.hashicorp.com/certification/terraform-associate",
-      "description": "Infrastructure as Code z Terraform: providers, state, modules, workspaces.",
+      "description": "Infrastructure as Code with Terraform: providers, state, modules, workspaces, HCP Terraform.",
       "price": "$70.50 USD",
       "prerequisites": "No formal requirements, recommended: IaC basics",
       "validityPeriod": "2 years",
       "officialResources": [
-        {"title": "Study Guide", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-study-003"},
-        {"title": "Exam Review", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-003/associate-review-003"}
+        {"title": "Study Guide", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004"},
+        {"title": "Exam Review", "url": "https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004"}
       ]
     },
     {
@@ -1722,7 +1724,7 @@
       "level": "Professional-Expert",
       "levelDisplay": "Professional",
       "domain": "Terraform",
-      "title": "HashiCorp Certified: Terraform Associate Plus",
+      "title": "HashiCorp Certified: Terraform Authoring and Operations Professional",
       "exam": "TP-100",
       "roles": ["DevOps", "Architect"],
       "url": "https://www.hashicorp.com/certification/terraform-authoring-and-operations-professional",
@@ -2419,8 +2421,8 @@
     { "id": "l-aws-clf-dea", "sourceId": "aws-clf-c02", "targetId": "aws-dea-c01", "type": "recommended" },
     { "id": "l-aws-clf-mla", "sourceId": "aws-clf-c02", "targetId": "aws-mla-c01", "type": "recommended" },
     { "id": "l-aws-aif-mla", "sourceId": "aws-aif-c01", "targetId": "aws-mla-c01", "type": "recommended" },
-    { "id": "l-aws-mla-mls", "sourceId": "aws-mla-c01", "targetId": "aws-mls-c01", "type": "recommended" },
-    { "id": "l-aws-dea-mls", "sourceId": "aws-dea-c01", "targetId": "aws-mls-c01", "type": "recommended" },
+    { "id": "l-aws-aif-gai", "sourceId": "aws-aif-c01", "targetId": "aws-gai-c01", "type": "recommended" },
+    { "id": "l-aws-mla-gai", "sourceId": "aws-mla-c01", "targetId": "aws-gai-c01", "type": "recommended" },
 
     { "id": "l-az-900-104", "sourceId": "az-900", "targetId": "az-104", "type": "recommended", "trainingTitle": "📚 AZ-104 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/az-104-administrator-prerequisites/" },
     { "id": "l-az-900-204", "sourceId": "az-900", "targetId": "az-204", "type": "recommended", "trainingTitle": "📚 AZ-204 Path", "trainingUrl": "https://learn.microsoft.com/en-us/training/paths/create-azure-app-service-web-apps/" },
