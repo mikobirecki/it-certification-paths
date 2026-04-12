@@ -1643,6 +1643,42 @@
         {"title": "View Course With Exam", "url": "https://www.redhat.com/en/services/training/do289-red-hat-openshift-development-ii-containerizing-applications-exam"}
       ]
     },
+    {
+      "id": "rh-ex180",
+      "vendor": "RedHat",
+      "level": "Exam",
+      "levelDisplay": "Technologist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Technologist in OpenShift",
+      "exam": "EX180",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.redhat.com/en/services/certification/ex180-red-hat-certified-technologist-openshift",
+      "description": "Deploy and manage applications in OpenShift: containers, pods, scaling, config maps, persistent volumes, health probes, autoscaling.",
+      "price": "$400 USD",
+      "prerequisites": "Recommended: RHCSA + OpenShift Administration I",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://www.redhat.com/en/services/certification/ex180-red-hat-certified-technologist-openshift"}
+      ]
+    },
+    {
+      "id": "rh-ex156",
+      "vendor": "RedHat",
+      "level": "Exam",
+      "levelDisplay": "Technologist",
+      "domain": "OpenShift",
+      "title": "Red Hat Certified Technologist in OpenShift Virtualization",
+      "exam": "EX156",
+      "roles": ["SysAdmin", "DevOps"],
+      "url": "https://www.redhat.com/en/services/certification/ex156-red-hat-certified-technologist-openshift-virtualization",
+      "description": "Deploy and manage VMs in OpenShift Virtualization: run/access VMs, networking, storage, snapshots, cloning, migration.",
+      "price": "$400 USD",
+      "prerequisites": "Recommended: RHCSA + OpenShift Virtualization Administration I",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://www.redhat.com/en/services/certification/ex156-red-hat-certified-technologist-openshift-virtualization"}
+      ]
+    },
 
     {
       "id": "hc-terraform-associate",
@@ -1829,6 +1865,150 @@
       "validityPeriod": "3 years",
       "officialResources": [
         {"title": "Exam Curriculum", "url": "https://github.com/cncf/curriculum/tree/master/kcsa"}
+      ]
+    },
+    {
+      "id": "k8s-pca",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "PCA",
+      "domain": "Observability",
+      "title": "Prometheus Certified Associate (PCA)",
+      "exam": "PCA",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.cncf.io/training/certification/pca/",
+      "description": "Foundational knowledge of Prometheus: metrics collection, PromQL, alerting, Alertmanager, monitoring best practices.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or cloud native experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/pca/"}
+      ]
+    },
+    {
+      "id": "k8s-ica",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "ICA",
+      "domain": "Service Mesh",
+      "title": "Istio Certified Associate (ICA)",
+      "exam": "ICA",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.cncf.io/training/certification/ica/",
+      "description": "Foundational knowledge of Istio service mesh: traffic management, observability, security policies.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: CKA or CKAD",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/ica/"}
+      ]
+    },
+    {
+      "id": "k8s-cca",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CCA",
+      "domain": "Networking",
+      "title": "Cilium Certified Associate (CCA)",
+      "exam": "CCA",
+      "roles": ["DevOps", "Security"],
+      "url": "https://www.cncf.io/training/certification/cca/",
+      "description": "Foundational knowledge of Cilium: eBPF-based networking, security, and observability for Kubernetes clusters.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or CKA",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/cca/"}
+      ]
+    },
+    {
+      "id": "k8s-capa",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CAPA",
+      "domain": "GitOps",
+      "title": "Certified Argo Project Associate (CAPA)",
+      "exam": "CAPA",
+      "roles": ["DevOps"],
+      "url": "https://www.cncf.io/training/certification/capa/",
+      "description": "Understanding of Argo Project ecosystem: Argo Workflows, Argo CD, Argo Events, Argo Rollouts.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or Kubernetes experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/capa/"}
+      ]
+    },
+    {
+      "id": "k8s-cgoa",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CGOA",
+      "domain": "GitOps",
+      "title": "GitOps Certified Associate (CGOA)",
+      "exam": "CGOA",
+      "roles": ["DevOps"],
+      "url": "https://www.cncf.io/training/certification/cgoa/",
+      "description": "GitOps principles, terminology, and best practices: IaC, CI/CD, configuration as code, GitOps-managed software systems.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or DevOps experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/cgoa/"}
+      ]
+    },
+    {
+      "id": "k8s-otca",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "OTCA",
+      "domain": "Observability",
+      "title": "OpenTelemetry Certified Associate (OTCA)",
+      "exam": "OTCA",
+      "roles": ["DevOps", "SysAdmin"],
+      "url": "https://www.cncf.io/training/certification/otca/",
+      "description": "OpenTelemetry fundamentals: tracing, metrics, logs, instrumentation, exporters, and the OTel Collector.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or observability experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/otca/"}
+      ]
+    },
+    {
+      "id": "k8s-cnpa",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CNPA",
+      "domain": "Platform Engineering",
+      "title": "Cloud Native Platform Engineering Associate (CNPA)",
+      "exam": "CNPA",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.cncf.io/training/certification/cnpa/",
+      "description": "Platform engineering fundamentals: automation, security, developer experience, cloud native platform management.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: KCNA or platform engineering experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/cnpa/"}
+      ]
+    },
+    {
+      "id": "k8s-cnpe",
+      "vendor": "Kubernetes",
+      "level": "Professional-Expert",
+      "levelDisplay": "CNPE",
+      "domain": "Platform Engineering",
+      "title": "Certified Cloud Native Platform Engineer (CNPE)",
+      "exam": "CNPE",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.cncf.io/training/certification/cnpe/",
+      "description": "Performance-based exam: platform architecture, GitOps & CD, self-service APIs, observability, security & policy enforcement at enterprise scale.",
+      "price": "$395 USD",
+      "prerequisites": "Recommended: CKA + CNPA or equivalent experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/cnpe/"}
       ]
     },
 
@@ -2487,6 +2667,18 @@
     { "id": "l-k8s-kcna-kcsa", "sourceId": "k8s-kcna", "targetId": "k8s-kcsa", "type": "recommended" },
     { "id": "l-k8s-cka-cks", "sourceId": "k8s-cka", "targetId": "k8s-cks", "type": "required" },
     { "id": "l-k8s-kcsa-cks", "sourceId": "k8s-kcsa", "targetId": "k8s-cks", "type": "recommended" },
+    { "id": "l-k8s-kcna-pca", "sourceId": "k8s-kcna", "targetId": "k8s-pca", "type": "recommended" },
+    { "id": "l-k8s-cka-ica", "sourceId": "k8s-cka", "targetId": "k8s-ica", "type": "recommended" },
+    { "id": "l-k8s-ckad-ica", "sourceId": "k8s-ckad", "targetId": "k8s-ica", "type": "recommended" },
+    { "id": "l-k8s-kcna-cca", "sourceId": "k8s-kcna", "targetId": "k8s-cca", "type": "recommended" },
+    { "id": "l-k8s-kcna-capa", "sourceId": "k8s-kcna", "targetId": "k8s-capa", "type": "recommended" },
+    { "id": "l-k8s-kcna-cgoa", "sourceId": "k8s-kcna", "targetId": "k8s-cgoa", "type": "recommended" },
+    { "id": "l-k8s-kcna-otca", "sourceId": "k8s-kcna", "targetId": "k8s-otca", "type": "recommended" },
+    { "id": "l-k8s-kcna-cnpa", "sourceId": "k8s-kcna", "targetId": "k8s-cnpa", "type": "recommended" },
+    { "id": "l-k8s-cnpa-cnpe", "sourceId": "k8s-cnpa", "targetId": "k8s-cnpe", "type": "recommended" },
+    { "id": "l-k8s-cka-cnpe", "sourceId": "k8s-cka", "targetId": "k8s-cnpe", "type": "recommended" },
+    { "id": "l-rh-ex280-ex180", "sourceId": "rh-ex280", "targetId": "rh-ex180", "type": "recommended" },
+    { "id": "l-rh-ex200-ex156", "sourceId": "rh-ex200", "targetId": "rh-ex156", "type": "recommended" },
 
     { "id": "l-ms-ms900-ms102", "sourceId": "ms-ms900", "targetId": "ms-ms102", "type": "recommended" },
     { "id": "l-ms-sc900-sc200", "sourceId": "ms-sc900", "targetId": "ms-sc200", "type": "recommended" },

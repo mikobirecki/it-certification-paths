@@ -37,6 +37,11 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
     if (level === 'associate' || display.includes('associate')) return 'level-associate'
     if (level === 'professional-expert' || display.includes('professional') || display.includes('expert')) return 'level-expert'
     if (level === 'specialty' || display.includes('specialty') || display.includes('specialist')) return 'level-specialty'
+    // CNCF specialty associate certs (PCA, ICA, CCA, CAPA, CGOA, OTCA, CNPA, KCSA, KCNA)
+    if (['pca','ica','cca','capa','cgoa','otca','cnpa','kcsa','kcna'].includes(display)) return 'level-associate'
+    if (display === 'cnpe') return 'level-expert'
+    // RedHat Technologist level
+    if (display === 'technologist') return 'level-exam'
     // RedHat levels
     if (level === 'course' || display.includes('course') || display.includes('free')) return 'level-course'
     if (level === 'exam') return 'level-exam'
