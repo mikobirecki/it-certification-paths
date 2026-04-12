@@ -326,6 +326,8 @@
       "domain": "Developer",
       "title": "Microsoft Certified: Azure Developer Associate",
       "exam": "AZ-204",
+      "retiring": true,
+      "retirementDate": "2026-07-31",
       "roles": ["DevOps", "General"],
       "url": "https://learn.microsoft.com/credentials/certifications/azure-developer/",
       "description": "Dev: App Services, Functions, containers, auth, storage, integration.",
@@ -386,6 +388,8 @@
       "domain": "Security",
       "title": "Microsoft Certified: Azure Security Engineer Associate",
       "exam": "AZ-500",
+      "retiring": true,
+      "retirementDate": "2026-08-31",
       "roles": ["Security"],
       "url": "https://learn.microsoft.com/credentials/certifications/azure-security-engineer/",
       "description": "Security: identity, networking, compute, storage, Defender, Sentinel.",
@@ -426,6 +430,8 @@
       "domain": "Windows Server",
       "title": "Windows Server Hybrid Administrator Associate (AZ-800)",
       "exam": "AZ-800",
+      "retiring": true,
+      "retirementDate": "2026-09-30",
       "roles": ["SysAdmin"],
       "url": "https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator/",
       "description": "Windows Server: AD DS, hybrid, VMs, containers, networking, storage.",
@@ -446,6 +452,8 @@
       "domain": "Windows Server",
       "title": "Windows Server Hybrid Administrator Associate (AZ-801)",
       "exam": "AZ-801",
+      "retiring": true,
+      "retirementDate": "2026-09-30",
       "roles": ["SysAdmin"],
       "url": "https://learn.microsoft.com/credentials/certifications/windows-server-hybrid-administrator/",
       "description": "Windows Server: security, HA, DR, migration, monitoring.",
@@ -1950,6 +1958,8 @@
       "domain": "AI",
       "title": "Microsoft Azure AI Fundamentals",
       "exam": "AI-900",
+      "retiring": true,
+      "retirementDate": "2026-06-30",
       "roles": ["General", "Data&AI"],
       "url": "https://learn.microsoft.com/en-us/certifications/exams/ai-900",
       "description": "AI basics: machine learning, computer vision, NLP, generative AI on Azure.",
@@ -1970,6 +1980,8 @@
       "domain": "AI",
       "title": "Azure AI Engineer Associate",
       "exam": "AI-102",
+      "retiring": true,
+      "retirementDate": "2026-06-30",
       "roles": ["Data&AI", "DevOps"],
       "url": "https://learn.microsoft.com/en-us/certifications/azure-ai-engineer/",
       "description": "Azure AI services: Cognitive Services, OpenAI, Bot Service, ML solutions.",
@@ -2010,6 +2022,8 @@
       "domain": "Data Science",
       "title": "Azure Data Scientist Associate",
       "exam": "DP-100",
+      "retiring": true,
+      "retirementDate": "2026-06-01",
       "roles": ["Data&AI"],
       "url": "https://learn.microsoft.com/en-us/certifications/azure-data-scientist/",
       "description": "Data science na Azure: ML pipelines, experiments, model training, deployment.",
@@ -2160,6 +2174,132 @@
       "validityPeriod": "1 year",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-600"}
+      ]
+    },
+
+    {
+      "id": "ms-dp420",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Database",
+      "title": "Azure Cosmos DB Developer Specialty",
+      "exam": "DP-420",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "description": "Cosmos DB: designing, implementing, and monitoring cloud-native apps using Azure Cosmos DB.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-20",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420"}
+      ]
+    },
+
+    {
+      "id": "ms-dp700",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Fabric",
+      "title": "Implement Data Engineering Solutions Using Microsoft Fabric",
+      "exam": "DP-700",
+      "roles": ["Data&AI"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "description": "Microsoft Fabric data engineering: ingestion, transformation, lakehouse, pipelines.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-20",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900 + DP-600",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700"}
+      ]
+    },
+
+    {
+      "id": "ms-sc401",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Security",
+      "title": "Administering Information Security in Microsoft 365",
+      "exam": "SC-401",
+      "roles": ["Security"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator-associate/",
+      "description": "Information protection and compliance: Microsoft Purview, DLP, insider risk, eDiscovery.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-27",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: SC-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"}
+      ]
+    },
+
+    {
+      "id": "ms-md102",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Microsoft 365",
+      "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+      "exam": "MD-102",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+      "description": "Endpoint management: Intune, Autopilot, Windows deployment, compliance, security.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-28",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: MS-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102"}
+      ]
+    },
+
+    {
+      "id": "ms-ms700",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Microsoft 365",
+      "title": "Microsoft 365 Certified: Teams Administrator Associate",
+      "exam": "MS-700",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+      "description": "Microsoft Teams: deployment, configuration, governance, security, phone systems.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-28",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: MS-900",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700"}
+      ]
+    },
+
+    {
+      "id": "ms-ms721",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Microsoft 365",
+      "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+      "exam": "MS-721",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer-associate/",
+      "description": "Teams voice: Direct Routing, Operator Connect, audio conferencing, devices.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-04-28",
+      "scoreToPass": 700,
+      "prerequisites": "Required: MS-700",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"}
       ]
     },
 
@@ -2359,6 +2499,13 @@
     { "id": "l-ms-pl900-pl300", "sourceId": "ms-pl900", "targetId": "ms-pl300", "type": "recommended" },
     { "id": "l-ms-pl900-pl400", "sourceId": "ms-pl900", "targetId": "ms-pl400", "type": "recommended" },
     { "id": "l-ms-pl400-pl600", "sourceId": "ms-pl400", "targetId": "ms-pl600", "type": "recommended" },
+    { "id": "l-ms-dp900-dp420", "sourceId": "ms-dp900", "targetId": "ms-dp420", "type": "recommended" },
+    { "id": "l-ms-dp600-dp700", "sourceId": "ms-dp600", "targetId": "ms-dp700", "type": "recommended" },
+    { "id": "l-ms-dp900-dp700", "sourceId": "ms-dp900", "targetId": "ms-dp700", "type": "recommended" },
+    { "id": "l-ms-sc900-sc401", "sourceId": "ms-sc900", "targetId": "ms-sc401", "type": "recommended" },
+    { "id": "l-ms-ms900-md102", "sourceId": "ms-ms900", "targetId": "ms-md102", "type": "recommended" },
+    { "id": "l-ms-ms900-ms700", "sourceId": "ms-ms900", "targetId": "ms-ms700", "type": "recommended" },
+    { "id": "l-ms-ms700-ms721", "sourceId": "ms-ms700", "targetId": "ms-ms721", "type": "required" },
 
     { "id": "l-gh-900-100", "sourceId": "gh-900", "targetId": "gh-100", "type": "recommended" },
     { "id": "l-gh-900-200", "sourceId": "gh-900", "targetId": "gh-200", "type": "recommended" },

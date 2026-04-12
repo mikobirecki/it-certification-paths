@@ -32,6 +32,8 @@ export type Cert = {
   renewalAvailable?: boolean
   renewalPrice?: string
   officialResources?: OfficialResource[]
+  retiring?: boolean
+  retirementDate?: string
 }
 
 export type CertLink = {

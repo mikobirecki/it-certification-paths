@@ -63,7 +63,16 @@ export default function CertNode(props: CertNodeProps) {
           }}>
             {cert.levelDisplay ?? cert.level}
           </span>
-          <div style={{ display: 'flex', gap: 6 }}>
+          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+            {cert.retiring ? <span style={{ 
+              padding: '4px 8px', 
+              borderRadius: 6, 
+              fontSize: 10, 
+              fontWeight: 700,
+              background: 'rgba(239, 68, 68, 0.2)',
+              color: '#f87171',
+              border: '1px solid rgba(239, 68, 68, 0.4)'
+            }}>⚠ Retiring</span> : null}
             {cert.exam ? <span style={{ 
               padding: '4px 8px', 
               borderRadius: 6, 

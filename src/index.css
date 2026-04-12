@@ -786,6 +786,21 @@ a:hover {
   color: #fbbf24;
 }
 
+/* Retiring badge */
+.badge-retiring {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 /* View toggle button */
 .view-toggle {
   display: flex;

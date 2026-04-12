@@ -30,6 +30,9 @@
         "area": "Implement knowledge mining and information extraction solutions",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -59,6 +62,9 @@
         "area": "Describe features of generative AI workloads on Azure",
         "percent": "20–25%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -66,7 +72,7 @@
     "title": "Study guide for Exam AZ-104: Microsoft Azure Administrator",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "April 18, 2025",
+    "skillsMeasuredAsOf": "April 17, 2026",
     "skillsAtAGlance": [
       {
         "area": "Manage Azure identities and governance",
@@ -95,7 +101,7 @@
     "title": "Study guide for Exam AZ-120: Planning and Administering Azure for SAP Workloads",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsMeasuredAsOf": "April 17, 2026",
     "skillsAtAGlance": [
       {
         "area": "Migrate SAP workloads to Azure",
@@ -120,7 +126,7 @@
     "title": "Study guide for Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 14, 2026",
+    "skillsMeasuredAsOf": "April 17, 2026",
     "skillsAtAGlance": [
       {
         "area": "Plan and implement an Azure Virtual Desktop infrastructure",
@@ -167,6 +173,9 @@
         "area": "Connect to and consume Azure services and third-party services",
         "percent": "20–25%"
       }
+    ],
+    "warnings": [
+      "will retire on July 31, 2026"
     ]
   },
   {
@@ -174,7 +183,7 @@
     "title": "Study guide for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "October 18, 2024",
+    "skillsMeasuredAsOf": "April 17, 2026",
     "skillsAtAGlance": [
       {
         "area": "Design identity, governance, and monitoring solutions",
@@ -199,7 +208,7 @@
     "title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "July 26, 2024",
+    "skillsMeasuredAsOf": "April 24, 2026",
     "skillsAtAGlance": [
       {
         "area": "Design and implement processes and communications",
@@ -246,6 +255,9 @@
         "area": "Secure Azure using Microsoft Defender for Cloud and Microsoft Sentinel",
         "percent": "30–35%"
       }
+    ],
+    "warnings": [
+      "will retire on August 31, 2026"
     ]
   },
   {
@@ -253,7 +265,7 @@
     "title": "Study guide for Exam AZ-700: Designing and Implementing Microsoft Azure Networking Solutions",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 21, 2026",
+    "skillsMeasuredAsOf": "April 24, 2026",
     "skillsAtAGlance": [
       {
         "area": "Design and implement core networking infrastructure",
@@ -304,6 +316,9 @@
         "area": "Manage storage and file services",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on September 30, 2026"
     ]
   },
   {
@@ -333,6 +348,9 @@
         "area": "Monitor and troubleshoot Windows Server environments",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on September 30, 2026"
     ]
   },
   {
@@ -379,6 +397,9 @@
         "area": "Optimize language models for AI applications",
         "percent": "25–30%"
       }
+    ],
+    "warnings": [
+      "will retire on June 1, 2026"
     ]
   },
   {
@@ -407,15 +428,15 @@
     "title": "Study guide for Exam DP-300: Administering Microsoft Azure SQL Solutions",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "October 25, 2024",
+    "skillsMeasuredAsOf": "April 24, 2026",
     "skillsAtAGlance": [
       {
         "area": "Plan and implement data platform resources",
-        "percent": "20–25%"
+        "percent": "15–20%"
       },
       {
         "area": "Implement a secure environment",
-        "percent": "15–20%"
+        "percent": "20–25%"
       },
       {
         "area": "Monitor, configure, and optimize database resources",
@@ -436,7 +457,7 @@
     "title": "Study Guide for Exam DP-420: Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 27, 2025",
+    "skillsMeasuredAsOf": "April 20, 2026",
     "skillsAtAGlance": [
       {
         "area": "Design and implement data models",
@@ -465,7 +486,7 @@
     "title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 15, 2026",
+    "skillsMeasuredAsOf": "April 20, 2026",
     "skillsAtAGlance": [
       {
         "area": "Maintain a data analytics solution",
@@ -486,7 +507,7 @@
     "title": "Study Guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 26, 2026",
+    "skillsMeasuredAsOf": "April 20, 2026",
     "skillsAtAGlance": [
       {
         "area": "Implement and manage an analytics solution",
@@ -534,13 +555,67 @@
   },
   {
     "examCode": "GH-200",
-    "title": "Study guide for GH-200: GitHub Actions",
-    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200"
+    "title": "Study guide for Exam GH-200: GitHub Actions",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200",
+    "scoreToPass": 700,
+    "skillsAtAGlance": [
+      {
+        "area": "Author and manage workflows",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Consume and troubleshoot workflows",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Author and maintain actions",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Manage GitHub Actions for the enterprise",
+        "percent": "20–25%"
+      },
+      {
+        "area": "Secure and optimize automation",
+        "percent": "10–15%"
+      }
+    ]
   },
   {
     "examCode": "GH-300",
-    "title": "Study guide for GH-300: GitHub Copilot",
-    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300"
+    "title": "Study guide for Exam GH-300: GitHub Copilot",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300",
+    "scoreToPass": 700,
+    "skillsAtAGlance": [
+      {
+        "area": "Use GitHub Copilot responsibly",
+        "percent": "15–20%"
+      },
+      {
+        "area": "Use GitHub Copilot features",
+        "percent": "25–30%"
+      },
+      {
+        "area": "GitHub Copilot features",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Understand GitHub Copilot data and architecture",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Apply prompt engineering and context crafting",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Improve developer productivity with GitHub Copilot",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Configure privacy, content exclusions, and safeguards",
+        "percent": "10–15%"
+      }
+    ]
   },
   {
     "examCode": "GH-500",
@@ -549,8 +624,39 @@
   },
   {
     "examCode": "GH-900",
-    "title": "Study guide for GH-900: GitHub Foundations",
-    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900"
+    "title": "Study guide for Exam GH-900: GitHub Foundations",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900",
+    "scoreToPass": 700,
+    "skillsAtAGlance": [
+      {
+        "area": "Understand Git and GitHub basics",
+        "percent": "25–30%"
+      },
+      {
+        "area": "Work with GitHub repositories",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Collaborate using GitHub",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Apply modern development practices",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Manage projects with GitHub",
+        "percent": "5–10%"
+      },
+      {
+        "area": "Understand privacy, security, and administration",
+        "percent": "10–15%"
+      },
+      {
+        "area": "Explore the GitHub community",
+        "percent": "5–10%"
+      }
+    ]
   },
   {
     "examCode": "MB-210",
@@ -617,7 +723,7 @@
     "title": "Study guide for Exam MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "October 3, 2025",
+    "skillsMeasuredAsOf": "March 11, 2026",
     "skillsAtAGlance": [
       {
         "area": "Manage cases in Customer Service",
@@ -664,6 +770,9 @@
         "area": "Implement Microsoft Power Platform",
         "percent": "5–10%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -729,6 +838,9 @@
         "area": "Extend and enhance Dynamics 365 Sales capabilities",
         "percent": "10–15%"
       }
+    ],
+    "warnings": [
+      "will retire on July 31, 2026"
     ]
   },
   {
@@ -816,6 +928,9 @@
         "area": "Implement additional supply chain management features",
         "percent": "10–15%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -878,6 +993,9 @@
         "area": "Manage testing",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -943,7 +1061,7 @@
     "title": "Study guide for Exam MD-102: Endpoint Administrator",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 23, 2026",
+    "skillsMeasuredAsOf": "April 28, 2026",
     "skillsAtAGlance": [
       {
         "area": "Prepare infrastructure for devices",
@@ -968,7 +1086,7 @@
     "title": "Study guide for Exam MS-102: Microsoft 365 Administrator",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "November 10, 2025",
+    "skillsMeasuredAsOf": "April 28, 2026",
     "skillsAtAGlance": [
       {
         "area": "Deploy and manage a Microsoft 365 tenant",
@@ -993,7 +1111,7 @@
     "title": "Study guide for Exam MS-700: Managing Microsoft Teams",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 23, 2026",
+    "skillsMeasuredAsOf": "April 28, 2026",
     "skillsAtAGlance": [
       {
         "area": "Configure and manage a Teams environment",
@@ -1018,7 +1136,7 @@
     "title": "Study guide for Exam MS-721: Collaboration Communications Systems Engineer",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "November 10, 2025",
+    "skillsMeasuredAsOf": "April 28, 2026",
     "skillsAtAGlance": [
       {
         "area": "Plan and design collaboration communications systems",
@@ -1061,9 +1179,6 @@
         "area": "Describe Microsoft 365 pricing, licensing, and support",
         "percent": "10–15%"
       }
-    ],
-    "warnings": [
-      "will retire on March 31, 2026"
     ]
   },
   {
@@ -1089,6 +1204,9 @@
         "area": "Manage environments",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on August 31, 2026"
     ]
   },
   {
@@ -1096,7 +1214,7 @@
     "title": "Study guide for Exam PL-300: Microsoft Power BI Data Analyst",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 15, 2026",
+    "skillsMeasuredAsOf": "April 20, 2026",
     "skillsAtAGlance": [
       {
         "area": "Prepare the data",
@@ -1121,7 +1239,7 @@
     "title": "Study guide for Exam PL-400: Microsoft Power Platform Developer",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "August 29, 2025",
+    "skillsMeasuredAsOf": "March 19, 2026",
     "skillsAtAGlance": [
       {
         "area": "Create a technical design",
@@ -1168,6 +1286,9 @@
         "area": "Deploy and manage automations",
         "percent": "20–25%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -1189,6 +1310,9 @@
         "area": "Implement the solution",
         "percent": "15–20%"
       }
+    ],
+    "warnings": [
+      "will retire on June 30, 2026"
     ]
   },
   {
@@ -1225,7 +1349,7 @@
     "title": "Study guide for Exam SC-100: Microsoft Cybersecurity Architect",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 22, 2026",
+    "skillsMeasuredAsOf": "April 27, 2026",
     "skillsAtAGlance": [
       {
         "area": "Design solutions that align with security best practices and priorities",
@@ -1250,23 +1374,19 @@
     "title": "Study guide for Exam SC-200: Microsoft Security Operations Analyst",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "January 22, 2026",
+    "skillsMeasuredAsOf": "April 16, 2026",
     "skillsAtAGlance": [
       {
         "area": "Manage a security operations environment",
+        "percent": "40–45%"
+      },
+      {
+        "area": "Respond to security incidents",
+        "percent": "35–40%"
+      },
+      {
+        "area": "Perform threat hunting",
         "percent": "20–25%"
-      },
-      {
-        "area": "Configure protections and detections",
-        "percent": "15–20%"
-      },
-      {
-        "area": "Manage incident response",
-        "percent": "25–30%"
-      },
-      {
-        "area": "Manage security threats",
-        "percent": "15–20%"
       }
     ]
   },
@@ -1275,7 +1395,7 @@
     "title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
     "scoreToPass": 700,
-    "skillsMeasuredAsOf": "November 7, 2025",
+    "skillsMeasuredAsOf": "April 27, 2026",
     "skillsAtAGlance": [
       {
         "area": "Implement and manage user identities",
@@ -1300,6 +1420,7 @@
     "title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
     "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
     "scoreToPass": 700,
+    "skillsMeasuredAsOf": "April 27, 2026",
     "skillsAtAGlance": [
       {
         "area": "Implement information protection",

@@ -66,7 +66,10 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
                 onClick={() => onSelectCert(cert)}
               >
                 <span className="table-cert-exam">{cert.exam || '—'}</span>
-                <span className="table-cert-title">{cert.title}</span>
+                <span className="table-cert-title">
+                  {cert.title}
+                  {cert.retiring && <span className="badge-retiring">⚠ Retiring</span>}
+                </span>
                 <span className="table-cert-level">{cert.levelDisplay || cert.level}</span>
               </div>
             ))}
