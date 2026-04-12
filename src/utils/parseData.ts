@@ -49,6 +49,8 @@ export function parseImportedData(raw: unknown): { certs: Cert[]; links: CertLin
       renewalAvailable: c.renewalAvailable,
       renewalPrice: c.renewalPrice,
       officialResources: c.officialResources,
+      retiring: c.retiring,
+      retirementDate: c.retirementDate,
     } as Cert
   })
 
