@@ -118,7 +118,7 @@
       "levelDisplay": "Specialty",
       "domain": "Security",
       "title": "AWS Certified Security – Specialty",
-      "exam": "SCS-C02",
+      "exam": "SCS-C03",
       "roles": ["Security"],
       "url": "https://aws.amazon.com/certification/certified-security-specialty/",
       "description": "IAM, encryption, logging, monitoring, incident response.",
@@ -126,7 +126,7 @@
       "prerequisites": "Recommended: SAA-C03 + 2 years security experience",
       "validityPeriod": "3 years",
       "officialResources": [
-        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certified-Security-Specialty_Exam-Guide.pdf"}
+        {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-security-spec/AWS-Certified-Security-Specialty_SCS-C03_Exam-Guide.pdf"}
       ]
     },
     {
@@ -2013,26 +2013,6 @@
     },
 
     {
-      "id": "ms-ms900",
-      "vendor": "Microsoft",
-      "level": "Fundamentals",
-      "levelDisplay": "Fundamentals",
-      "domain": "Microsoft 365",
-      "title": "Microsoft 365 Fundamentals",
-      "exam": "MS-900",
-      "roles": ["General"],
-      "url": "https://learn.microsoft.com/en-us/certifications/exams/ms-900",
-      "description": "Microsoft 365 basics: cloud concepts, core services, security, compliance, pricing.",
-      "price": "$99 USD",
-      "lastUpdate": "2025-01-24",
-      "scoreToPass": 700,
-      "prerequisites": "No formal requirements",
-      "validityPeriod": "Does not expire",
-      "officialResources": [
-        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-900"}
-      ]
-    },
-    {
       "id": "ms-ms102",
       "vendor": "Microsoft",
       "level": "Associate",
@@ -2354,6 +2334,8 @@
       "scoreToPass": 700,
       "prerequisites": "Required: PL-200 lub PL-400",
       "validityPeriod": "1 year",
+      "retiring": true,
+      "retirementDate": "2026-06-30",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-600"}
       ]
@@ -2482,6 +2464,114 @@
       "validityPeriod": "1 year",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"}
+      ]
+    },
+    {
+      "id": "ms-ai901",
+      "vendor": "Microsoft",
+      "level": "Fundamentals",
+      "levelDisplay": "Fundamentals",
+      "domain": "AI",
+      "title": "Azure AI Fundamentals (AI-901)",
+      "exam": "AI-901",
+      "roles": ["General"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "description": "Next-gen Azure AI Fundamentals: AI concepts, Azure AI services, generative AI, responsible AI. Replaces AI-900.",
+      "price": "$99 USD",
+      "prerequisites": "No formal requirements",
+      "validityPeriod": "Does not expire",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/"}
+      ]
+    },
+    {
+      "id": "ms-ai103",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "AI",
+      "title": "Azure AI App and Agent Developer Associate",
+      "exam": "AI-103",
+      "roles": ["Developer", "AI"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-app-and-agent-developer-associate/",
+      "description": "Design and build AI apps and agents: Azure AI services, RAG, multi-agent systems, responsible AI. Replaces AI-102.",
+      "price": "$165 USD",
+      "prerequisites": "Recommended: AI-901 or AI developer experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-app-and-agent-developer-associate/"}
+      ]
+    },
+    {
+      "id": "ms-ai200",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Developer",
+      "title": "Azure AI Cloud Developer Associate",
+      "exam": "AI-200",
+      "roles": ["Developer"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "description": "Cloud app development with AI: Azure services, AI integration, cloud-native patterns. Replaces AZ-204.",
+      "price": "$165 USD",
+      "prerequisites": "Recommended: AZ-900 or developer experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/"}
+      ]
+    },
+    {
+      "id": "ms-sc500",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Security",
+      "title": "Cloud and AI Security Engineer Associate",
+      "exam": "SC-500",
+      "roles": ["Security"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      "description": "Secure cloud and AI environments: threat protection, identity, compliance, AI security governance. Replaces AZ-500.",
+      "price": "$165 USD",
+      "prerequisites": "Recommended: SC-900 or security experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/"}
+      ]
+    },
+    {
+      "id": "ms-ai300",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "AI",
+      "title": "Machine Learning Operations Engineer Associate",
+      "exam": "AI-300",
+      "roles": ["Data", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/machine-learning-operations-engineer-associate/",
+      "description": "MLOps: automate ML pipelines, CI/CD for models, lifecycle governance, observability, drift detection. Replaces DP-100.",
+      "price": "$165 USD",
+      "prerequisites": "Recommended: DP-900 or ML experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/machine-learning-operations-engineer-associate/"}
+      ]
+    },
+    {
+      "id": "ms-az802",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Windows Server",
+      "title": "Windows Server Hybrid Administrator Associate (AZ-802)",
+      "exam": "AZ-802",
+      "roles": ["SysAdmin"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+      "description": "Single-exam replacement for AZ-800+AZ-801: hybrid Windows Server administration, Azure Arc, storage, Hyper-V.",
+      "price": "$165 USD",
+      "prerequisites": "Recommended: AZ-900 or Windows Server experience",
+      "validityPeriod": "1 year",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/"}
       ]
     },
 
@@ -2680,13 +2770,22 @@
     { "id": "l-rh-ex280-ex180", "sourceId": "rh-ex280", "targetId": "rh-ex180", "type": "recommended" },
     { "id": "l-rh-ex200-ex156", "sourceId": "rh-ex200", "targetId": "rh-ex156", "type": "recommended" },
 
-    { "id": "l-ms-ms900-ms102", "sourceId": "ms-ms900", "targetId": "ms-ms102", "type": "recommended" },
     { "id": "l-ms-sc900-sc200", "sourceId": "ms-sc900", "targetId": "ms-sc200", "type": "recommended" },
     { "id": "l-ms-sc900-sc300", "sourceId": "ms-sc900", "targetId": "ms-sc300", "type": "recommended" },
     { "id": "l-ms-sc200-sc100", "sourceId": "ms-sc200", "targetId": "ms-sc100", "type": "recommended" },
     { "id": "l-ms-sc300-sc100", "sourceId": "ms-sc300", "targetId": "ms-sc100", "type": "recommended" },
     { "id": "l-ms-ai900-ai102", "sourceId": "ms-ai900", "targetId": "ms-ai102", "type": "recommended" },
+    { "id": "l-ms-ai901-ai103", "sourceId": "ms-ai901", "targetId": "ms-ai103", "type": "recommended" },
+    { "id": "l-ms-ai901-ai200", "sourceId": "ms-ai901", "targetId": "ms-ai200", "type": "recommended" },
+    { "id": "l-ms-ai102-ai103", "sourceId": "ms-ai102", "targetId": "ms-ai103", "type": "recommended" },
+    { "id": "l-ms-az204-ai200", "sourceId": "az-204", "targetId": "ms-ai200", "type": "recommended" },
+    { "id": "l-ms-az500-sc500", "sourceId": "az-500", "targetId": "ms-sc500", "type": "recommended" },
+    { "id": "l-ms-sc900-sc500", "sourceId": "ms-sc900", "targetId": "ms-sc500", "type": "recommended" },
     { "id": "l-ms-dp900-dp100", "sourceId": "ms-dp900", "targetId": "ms-dp100", "type": "recommended" },
+    { "id": "l-ms-dp900-ai300", "sourceId": "ms-dp900", "targetId": "ms-ai300", "type": "recommended" },
+    { "id": "l-ms-dp100-ai300", "sourceId": "ms-dp100", "targetId": "ms-ai300", "type": "recommended" },
+    { "id": "l-ms-az800-az802", "sourceId": "az-800", "targetId": "ms-az802", "type": "recommended" },
+    { "id": "l-ms-az801-az802", "sourceId": "az-801", "targetId": "ms-az802", "type": "recommended" },
     { "id": "l-ms-dp900-dp203", "sourceId": "ms-dp900", "targetId": "ms-dp203", "type": "recommended" },
     { "id": "l-ms-dp900-dp300", "sourceId": "ms-dp900", "targetId": "ms-dp300", "type": "recommended" },
     { "id": "l-ms-dp900-dp600", "sourceId": "ms-dp900", "targetId": "ms-dp600", "type": "recommended" },
@@ -2697,8 +2796,6 @@
     { "id": "l-ms-dp600-dp700", "sourceId": "ms-dp600", "targetId": "ms-dp700", "type": "recommended" },
     { "id": "l-ms-dp900-dp700", "sourceId": "ms-dp900", "targetId": "ms-dp700", "type": "recommended" },
     { "id": "l-ms-sc900-sc401", "sourceId": "ms-sc900", "targetId": "ms-sc401", "type": "recommended" },
-    { "id": "l-ms-ms900-md102", "sourceId": "ms-ms900", "targetId": "ms-md102", "type": "recommended" },
-    { "id": "l-ms-ms900-ms700", "sourceId": "ms-ms900", "targetId": "ms-ms700", "type": "recommended" },
     { "id": "l-ms-ms700-ms721", "sourceId": "ms-ms700", "targetId": "ms-ms721", "type": "required" },
 
     { "id": "l-gh-900-100", "sourceId": "gh-900", "targetId": "gh-100", "type": "recommended" },
