@@ -1994,6 +1994,42 @@
       ]
     },
     {
+      "id": "k8s-kca",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "KCA",
+      "domain": "Security",
+      "title": "Kyverno Certified Associate (KCA)",
+      "exam": "KCA",
+      "roles": ["Security", "DevOps"],
+      "url": "https://www.cncf.io/training/certification/kca/",
+      "description": "Kubernetes policy management with Kyverno: validate, mutate, generate configs; security policies as code; DevSecOps.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: CKA or KCNA",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/kca/"}
+      ]
+    },
+    {
+      "id": "k8s-cba",
+      "vendor": "Kubernetes",
+      "level": "Associate",
+      "levelDisplay": "CBA",
+      "domain": "Platform Engineering",
+      "title": "Certified Backstage Associate (CBA)",
+      "exam": "CBA",
+      "roles": ["DevOps", "Architect"],
+      "url": "https://www.cncf.io/training/certification/cba/",
+      "description": "Backstage internal developer portal: service catalog management, software templates, TechDocs, DevOps integration.",
+      "price": "$250 USD",
+      "prerequisites": "Recommended: CNPA or platform engineering experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Exam Info", "url": "https://www.cncf.io/training/certification/cba/"}
+      ]
+    },
+    {
       "id": "k8s-cnpe",
       "vendor": "Kubernetes",
       "level": "Professional-Expert",
@@ -2765,6 +2801,9 @@
     { "id": "l-k8s-kcna-cgoa", "sourceId": "k8s-kcna", "targetId": "k8s-cgoa", "type": "recommended" },
     { "id": "l-k8s-kcna-otca", "sourceId": "k8s-kcna", "targetId": "k8s-otca", "type": "recommended" },
     { "id": "l-k8s-kcna-cnpa", "sourceId": "k8s-kcna", "targetId": "k8s-cnpa", "type": "recommended" },
+    { "id": "l-k8s-kcna-kca", "sourceId": "k8s-kcna", "targetId": "k8s-kca", "type": "recommended" },
+    { "id": "l-k8s-kcna-cba", "sourceId": "k8s-kcna", "targetId": "k8s-cba", "type": "recommended" },
+    { "id": "l-k8s-cnpa-cba", "sourceId": "k8s-cnpa", "targetId": "k8s-cba", "type": "recommended" },
     { "id": "l-k8s-cnpa-cnpe", "sourceId": "k8s-cnpa", "targetId": "k8s-cnpe", "type": "recommended" },
     { "id": "l-k8s-cka-cnpe", "sourceId": "k8s-cka", "targetId": "k8s-cnpe", "type": "recommended" },
     { "id": "l-rh-ex280-ex180", "sourceId": "rh-ex280", "targetId": "rh-ex180", "type": "recommended" },
