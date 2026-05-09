@@ -16,6 +16,7 @@ import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
 import AboutSection from './components/AboutSection'
 import TableView from './components/TableView'
+import CertQuiz from './components/CertQuiz'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
@@ -45,7 +46,7 @@ export default function App() {
     const saved = localStorage.getItem('theme')
     return (saved === 'light' || saved === 'dark') ? saved : 'dark'
   })
-  const [viewMode, setViewMode] = useState<'graph' | 'table'>('graph')
+  const [viewMode, setViewMode] = useState<'graph' | 'table' | 'quiz'>('graph')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -372,6 +373,9 @@ export default function App() {
               <button className={viewMode === 'table' ? 'active' : ''} onClick={() => setViewMode('table')}>
                 📝 Table
               </button>
+              <button className={viewMode === 'quiz' ? 'active' : ''} onClick={() => setViewMode('quiz')}>
+                🎯 Quiz
+              </button>
             </div>
           </div>
 
@@ -410,7 +414,9 @@ export default function App() {
       </aside>
 
       <main className="canvas">
-        {viewMode === 'table' ? (
+        {viewMode === 'quiz' ? (
+          <CertQuiz />
+        ) : viewMode === 'table' ? (
           <TableView
             certs={filteredCertsByVendor}
             onSelectCert={(cert) => setSelectedId(cert.id)}
