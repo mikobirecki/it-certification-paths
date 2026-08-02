@@ -161,6 +161,8 @@
       "price": "$300 USD",
       "prerequisites": "Recommended: SAA-C03 + database experience",
       "validityPeriod": "3 years",
+      "retiring": true,
+      "retirementDate": "2024-04-30",
       "officialResources": [
         {"title": "Exam Guide", "url": "https://d1.awsstatic.com/training-and-certification/docs-database-specialty/AWS-Certified-Database-Specialty_Exam-Guide.pdf"}
       ]
@@ -276,6 +278,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: 6 months experience with Azure",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104"}
       ]
@@ -296,6 +300,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: SAP and Azure experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120"}
       ]
@@ -316,6 +322,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: AZ-104",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140"}
       ]
@@ -338,6 +346,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: 1-2 years development experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-204"}
       ]
@@ -358,6 +368,8 @@
       "scoreToPass": 700,
       "prerequisites": "Required: AZ-104 (Azure Administrator)",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305"}
       ]
@@ -378,6 +390,8 @@
       "scoreToPass": 700,
       "prerequisites": "Required: AZ-104 lub AZ-204",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400"}
       ]
@@ -400,6 +414,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: AZ-104",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-500"}
       ]
@@ -420,6 +436,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: AZ-104",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700"}
       ]
@@ -442,6 +460,8 @@
       "scoreToPass": 700,
       "prerequisites": "Wymagane razem z AZ-801",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800"}
       ]
@@ -464,6 +484,8 @@
       "scoreToPass": 700,
       "prerequisites": "Wymagane razem z AZ-800",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801"}
       ]
@@ -524,6 +546,7 @@
       "url": "https://cloud.google.com/certification/cloud-engineer",
       "description": "Operations and deployments: IAM, networking, compute, monitoring.",
       "price": "$125 USD",
+      "lastUpdate": "2026-06-30",
       "prerequisites": "No formal requirements",
       "validityPeriod": "3 years",
       "examLength": "120 min",
@@ -737,6 +760,7 @@
       "url": "https://cloud.google.com/certification/machine-learning-engineer",
       "description": "ML na GCP: Vertex AI, model training, deployment, MLOps, responsible AI.",
       "price": "$200 USD",
+      "lastUpdate": "2026-06-01",
       "prerequisites": "Recommended: 3+ years ML experience, 1+ year with GCP",
       "validityPeriod": "2 years",
       "examLength": "120 min",
@@ -1068,7 +1092,7 @@
       "domain": "RHCA",
       "title": "Red Hat Certified Specialist in Ansible Network Automation",
       "exam": "EX457",
-      "roles": ["DevOps", "Network"],
+      "roles": ["DevOps", "Architect"],
       "url": "https://www.redhat.com/en/services/certification/red-hat-certified-specialist-ansible-network-automation",
       "description": "Tests skills to manage network infrastructure using Red Hat Ansible.",
       "price": "$450 USD",
@@ -2064,6 +2088,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: MS-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102"}
       ]
@@ -2104,6 +2130,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: SC-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200"}
       ]
@@ -2124,6 +2152,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: SC-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300"}
       ]
@@ -2144,6 +2174,8 @@
       "scoreToPass": 700,
       "prerequisites": "Required: SC-200/SC-300/AZ-500",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100"}
       ]
@@ -2188,6 +2220,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: AI-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102"}
       ]
@@ -2230,6 +2264,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900 + Python",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-100"}
       ]
@@ -2250,6 +2286,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-203"}
       ]
@@ -2270,6 +2308,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300"}
       ]
@@ -2290,6 +2330,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900 + Power BI",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600"}
       ]
@@ -2330,6 +2372,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: PL-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300"}
       ]
@@ -2350,6 +2394,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: PL-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400"}
       ]
@@ -2393,6 +2439,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420"}
       ]
@@ -2414,6 +2462,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: DP-900 + DP-600",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700"}
       ]
@@ -2435,6 +2485,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: SC-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401"}
       ]
@@ -2456,6 +2508,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: MS-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102"}
       ]
@@ -2477,6 +2531,8 @@
       "scoreToPass": 700,
       "prerequisites": "Recommended: MS-900",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700"}
       ]
@@ -2498,6 +2554,8 @@
       "scoreToPass": 700,
       "prerequisites": "Required: MS-700",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721"}
       ]
@@ -2528,12 +2586,14 @@
       "domain": "AI",
       "title": "Azure AI App and Agent Developer Associate",
       "exam": "AI-103",
-      "roles": ["Developer", "AI"],
+      "roles": ["General", "DevOps"],
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-app-and-agent-developer-associate/",
       "description": "Design and build AI apps and agents: Azure AI services, RAG, multi-agent systems, responsible AI. Replaces AI-102.",
       "price": "$165 USD",
       "prerequisites": "Recommended: AI-901 or AI developer experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-app-and-agent-developer-associate/"}
       ]
@@ -2546,12 +2606,14 @@
       "domain": "Developer",
       "title": "Azure AI Cloud Developer Associate",
       "exam": "AI-200",
-      "roles": ["Developer"],
+      "roles": ["DevOps", "General"],
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
       "description": "Cloud app development with AI: Azure services, AI integration, cloud-native patterns. Replaces AZ-204.",
       "price": "$165 USD",
       "prerequisites": "Recommended: AZ-900 or developer experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/"}
       ]
@@ -2570,6 +2632,8 @@
       "price": "$165 USD",
       "prerequisites": "Recommended: SC-900 or security experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/"}
       ]
@@ -2582,12 +2646,14 @@
       "domain": "AI",
       "title": "Machine Learning Operations Engineer Associate",
       "exam": "AI-300",
-      "roles": ["Data", "DevOps"],
+      "roles": ["Data&AI", "DevOps"],
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/machine-learning-operations-engineer-associate/",
       "description": "MLOps: automate ML pipelines, CI/CD for models, lifecycle governance, observability, drift detection. Replaces DP-100.",
       "price": "$165 USD",
       "prerequisites": "Recommended: DP-900 or ML experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/machine-learning-operations-engineer-associate/"}
       ]
@@ -2606,6 +2672,8 @@
       "price": "$165 USD",
       "prerequisites": "Recommended: AZ-900 or Windows Server experience",
       "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
       "officialResources": [
         {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/"}
       ]
@@ -2710,6 +2778,73 @@
       "validityPeriod": "3 years",
       "officialResources": [
         {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500"}
+      ]
+    },
+    {
+      "id": "ms-ab620",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "AI Agents",
+      "title": "Microsoft Certified: AI Agent Builder Associate",
+      "exam": "AB-620",
+      "roles": ["General", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "description": "Build, extend, and integrate custom AI agents in Microsoft Copilot Studio using Power Platform, Microsoft Foundry, MCP, and A2A orchestration.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-06-24",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: PL-900 or AI-901",
+      "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/"},
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620"}
+      ]
+    },
+    {
+      "id": "ms-dp750",
+      "vendor": "Microsoft",
+      "level": "Associate",
+      "levelDisplay": "Associate",
+      "domain": "Data Engineering",
+      "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+      "exam": "DP-750",
+      "roles": ["Data&AI", "DevOps"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "description": "Data engineering on Azure Databricks: ingestion, transformation, pipelines, Unity Catalog governance, optimization, monitoring.",
+      "price": "$165 USD",
+      "lastUpdate": "2026-03-11",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: DP-900 or Azure data experience",
+      "validityPeriod": "1 year",
+      "renewalAvailable": true,
+      "renewalPrice": "Free",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/"},
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750"}
+      ]
+    },
+    {
+      "id": "gh-600",
+      "vendor": "GitHub",
+      "level": "Associate",
+      "levelDisplay": "Certified",
+      "domain": "Agentic AI",
+      "title": "GitHub Certified: Agentic AI Developer",
+      "exam": "GH-600",
+      "roles": ["DevOps", "General"],
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+      "description": "Operate, integrate, supervise, and govern AI agents inside production SDLC workflows using GitHub as the control plane.",
+      "price": "$200 USD",
+      "lastUpdate": "2026-07-23",
+      "scoreToPass": 700,
+      "prerequisites": "Recommended: GH-900 or GitHub experience",
+      "validityPeriod": "3 years",
+      "officialResources": [
+        {"title": "Certification Page", "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/"},
+        {"title": "Study Guide", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600"}
       ]
     }
   ],
@@ -2841,6 +2976,10 @@
     { "id": "l-gh-900-200", "sourceId": "gh-900", "targetId": "gh-200", "type": "recommended" },
     { "id": "l-gh-900-300", "sourceId": "gh-900", "targetId": "gh-300", "type": "recommended" },
     { "id": "l-gh-100-500", "sourceId": "gh-100", "targetId": "gh-500", "type": "recommended" },
-    { "id": "l-gh-200-500", "sourceId": "gh-200", "targetId": "gh-500", "type": "recommended" }
+    { "id": "l-gh-200-500", "sourceId": "gh-200", "targetId": "gh-500", "type": "recommended" },
+
+    { "id": "l-ms-pl900-ab620", "sourceId": "ms-pl900", "targetId": "ms-ab620", "type": "recommended" },
+    { "id": "l-ms-dp900-dp750", "sourceId": "ms-dp900", "targetId": "ms-dp750", "type": "recommended" },
+    { "id": "l-gh-900-600", "sourceId": "gh-900", "targetId": "gh-600", "type": "recommended" }
   ]
 }

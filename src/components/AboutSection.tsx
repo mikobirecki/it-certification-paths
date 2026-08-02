@@ -96,7 +96,7 @@ export default function AboutSection() {
 
           <div className="about-footer">
             <p style={{ marginBottom: 8 }}>
-              <strong>📅 Last updated:</strong> April 2026
+              <strong>📅 Last updated:</strong> August 2026
             </p>
             <p style={{ marginBottom: 8 }}>
               <strong>🔄 Update schedule:</strong> We aim to update the certification data at least 
