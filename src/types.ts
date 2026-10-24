@@ -1,4 +1,4 @@
-export type Vendor = 'AWS' | 'GCP' | 'Microsoft' | 'GitHub' | 'RedHat' | 'HashiCorp' | 'Kubernetes'
+export type Vendor = 'AWS' | 'GCP' | 'Microsoft' | 'GitHub' | 'RedHat' | 'HashiCorp' | 'Kubernetes' | 'Anthropic'
 export type Level = 'Fundamentals' | 'Associate' | 'Professional-Expert' | 'Specialty' | 'Course' | 'Exam' | 'Bundle' | 'Meta'
 export type RoleTrack = 'General' | 'Architect' | 'DevOps' | 'Data&AI' | 'Security' | 'SysAdmin'
 export type LinkType = 'required' | 'recommended'
@@ -13,6 +13,7 @@ export type Cert = {
   vendor: Vendor
   level: Level
   levelDisplay?: string // vendor-specific level name
+  rhLevel?: 1 | 2 | 3 | 4 | 5 // Red Hat track level (Technologist → Architect)
   title: string
   exam?: string
   code?: string // course/bundle code (e.g., RH124, DO288)

@@ -22,7 +22,7 @@ import CertQuiz from './components/CertQuiz'
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
 
-const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub']
+const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub', 'Anthropic']
 
 function matchesText(cert: Cert, q: string) {
   const hay = `${cert.title} ${cert.exam ?? ''} ${cert.vendor} ${cert.level} ${cert.roles.join(' ')} ${cert.description ?? ''}` 
@@ -299,16 +299,15 @@ export default function App() {
             <div style={{ padding: '10px 12px', background: 'rgba(204, 0, 0, 0.1)', borderRadius: 10, border: '1px solid rgba(204, 0, 0, 0.3)', fontSize: 11, lineHeight: 1.5 }}>
               <div style={{ fontWeight: 700, color: '#cc0000', marginBottom: 6 }}>🎯 Red Hat Certification Model</div>
               <div style={{ color: '#94a3b8' }}>
-                <b style={{ color: '#e2e8f0' }}>3-tier structure:</b><br/>
-                <b>1. Core:</b> RHCSA (EX200) → RHCE (EX294)<br/>
-                <b>2. Specialist:</b> Domain-specific exams<br/>
-                <b>3. RHCA:</b> RHCE + 5 specialists
+                <b style={{ color: '#e2e8f0' }}>5-level structure (May 2026):</b><br/>
+                <b>L1 Technologist → L2 SysAdmin/Developer → L3 Engineer (RHCE = L2 + advanced exam) → L4 Specialist (no prerequisites) → L5 Architect (RHCA = RHCE + 3 specialists in the same track)</b><br/>
+                5 tracks: Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, AI. Valid 3 years.
               </div>
             </div>
           )}
 
           <div className="col" style={{ flex: 1 }}>
-            <label>{vendor === 'RedHat' ? 'Certification Path' : 'Domain'}</label>
+            <label>{vendor === 'RedHat' ? 'Track' : 'Domain'}</label>
             <select value={domain} onChange={(e) => setDomain(e.target.value)}>
               {vendorDomains.map((d) => (
                 <option key={d} value={d}>

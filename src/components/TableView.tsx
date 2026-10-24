@@ -30,6 +30,11 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
   const sortedDomains = Object.keys(groupedByDomain).sort()
 
   const getLevelClass = (cert: Cert) => {
+    // Red Hat Exams/Meta use the 5-level track model
+    if (cert.vendor === 'RedHat' && (cert.level === 'Exam' || cert.level === 'Meta') && cert.rhLevel != null) {
+      const map: Record<number, string> = { 1: 'level-fundamentals', 2: 'level-associate', 3: 'level-expert', 4: 'level-specialty', 5: 'level-meta' }
+      return map[cert.rhLevel] ?? ''
+    }
     const level = cert.level.toLowerCase()
     const display = (cert.levelDisplay || '').toLowerCase()
     

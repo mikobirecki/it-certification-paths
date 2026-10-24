@@ -8,16 +8,14 @@ interface RedHatPathsViewProps {
   searchQuery: string
 }
 
-const PATH_ORDER = ['RHCSA', 'RHCE', 'RHCA', 'Cloud-native Dev', 'Security: Linux', 'OpenShift Admin', 'OpenShift App Dev']
+const PATH_ORDER = ['Enterprise Linux', 'Ansible', 'OpenShift', 'Cloud-native Applications', 'AI']
 
 export const PATH_NAMES: Record<string, string> = {
-  'RHCSA': 'Red Hat Certified System Administrator (RHCSA)',
-  'RHCE': 'Red Hat Certified Engineer (RHCE)',
-  'RHCA': 'Red Hat Certified Architect (RHCA)',
-  'Cloud-native Dev': 'Red Hat Certified Cloud-native Developer',
-  'Security: Linux': 'Red Hat Certified Specialist in Security: Linux',
-  'OpenShift Admin': 'Red Hat Certified OpenShift Administrator',
-  'OpenShift App Dev': 'Red Hat Certified OpenShift Application Developer',
+  'Enterprise Linux': 'Enterprise Linux track',
+  'Ansible': 'Ansible track',
+  'OpenShift': 'OpenShift track',
+  'Cloud-native Applications': 'Cloud-native Applications track',
+  'AI': 'AI track',
 }
 
 export default function RedHatPathsView({ certs, onSelectCert, selectedId, selectedDomain, searchQuery }: RedHatPathsViewProps) {
@@ -32,7 +30,8 @@ export default function RedHatPathsView({ certs, onSelectCert, selectedId, selec
   const grouped = pathsToShow.map(path => ({
     path,
     courses: certs.filter(c => c.domain === path && c.level === 'Course' && matchesSearch(c)),
-    exams: certs.filter(c => c.domain === path && (c.level === 'Exam' || c.level === 'Meta') && matchesSearch(c)),
+    exams: certs.filter(c => c.domain === path && (c.level === 'Exam' || c.level === 'Meta') && matchesSearch(c))
+      .sort((a, b) => (a.rhLevel ?? 0) - (b.rhLevel ?? 0)),
     bundles: certs.filter(c => c.domain === path && c.level === 'Bundle' && matchesSearch(c)),
   })).filter(g => g.courses.length > 0 || g.exams.length > 0 || g.bundles.length > 0)
 
@@ -76,8 +75,9 @@ export default function RedHatPathsView({ certs, onSelectCert, selectedId, selec
                     className={`cert-item exam ${selectedId === cert.id ? 'selected' : ''}`}
                     onClick={() => onSelectCert(cert)}
                   >
-                    <span className="cert-code">{cert.level === 'Meta' ? 'META' : code}</span>
+                    <span className="cert-code">{cert.level === 'Meta' ? (cert.code ?? 'META') : code}</span>
                     <span className="cert-title">{title}</span>
+                    {cert.rhLevel != null && <span className="cert-badge meta">L{cert.rhLevel}</span>}
                     {cert.level === 'Meta' && <span className="cert-badge meta">no exam</span>}
                   </div>
                 )

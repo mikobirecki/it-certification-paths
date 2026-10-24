@@ -49,7 +49,8 @@ For each vendor, check the official pages below for new certs, betas, retirement
 | GCP | `cloud.google.com/learn/certification` (full role list) and individual cert pages |
 | HashiCorp | `developer.hashicorp.com/certifications` and announcements at `hashicorp-certifications.zendesk.com` (retirements) |
 | Kubernetes / CNCF | `cncf.io/training/certification/`, `training.linuxfoundation.org/certification/…` (new exams, beta/GA status) |
-| Red Hat | `redhat.com/en/services/certifications`, `redhat.com/en/services/training/all-courses-exams`, Red Hat blog for program changes |
+| Red Hat | `redhat.com/en/services/certifications` (5 tracks × 5 levels; per-track RHCE/RHCA — keep `domain` = track and `rhLevel` 1–5 in sync), `redhat.com/en/services/training/all-courses-exams`, Red Hat blog for program changes |
+| Anthropic | `pearsonvue.com/us/en/anthropic.html` (exam list and content-update dates) and the exam pages on `anthropic-partners.skilljar.com` (price); Claude Partner Network only |
 
 Scope: technical IT certs that fit the existing tracks. Skip MOS, Dynamics-only (MB-*) and pure business/leadership certs unless the user asks; list skipped candidates in the summary.
 

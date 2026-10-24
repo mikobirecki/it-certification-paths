@@ -56,6 +56,10 @@ export default function AboutSection() {
               including CKA, CKAD, and CKS for cloud-native technologies.
             </li>
             <li>
+              <strong>Anthropic</strong> — Claude certifications for associates, developers, 
+              and architects (Claude Partner Network).
+            </li>
+            <li>
               <strong>Microsoft</strong> — Broad range of certifications covering Microsoft 365, 
               Power Platform, Dynamics 365, and security solutions.
             </li>

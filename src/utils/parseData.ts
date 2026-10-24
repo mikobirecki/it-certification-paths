@@ -35,6 +35,8 @@ export function parseImportedData(raw: unknown): { certs: Cert[]; links: CertLin
       roles: c.roles,
       rolesDisplay: c.rolesDisplay,
       levelDisplay: c.levelDisplay,
+      rhLevel: c.rhLevel,
+      code: c.code,
       domain: c.domain,
       url: c.url,
       description: c.description,

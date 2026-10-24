@@ -452,6 +452,7 @@ a:hover {
 .vendorBadge.kubernetes { background: linear-gradient(135deg, #326ce5, #2457c5); color: white; }
 .vendorBadge.microsoft { background: linear-gradient(135deg, #00a4ef, #7fba00, #f25022, #ffb900); color: white; }
 .vendorBadge.github { background: linear-gradient(135deg, #24292e, #0d1117); color: white; }
+.vendorBadge.anthropic { background: linear-gradient(135deg, #d97757, #c2410c); color: white; }
 
 /* Red Hat Paths View */
 .redhat-paths-view {
