@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { defaultCerts } from '../data/defaultData'
+import { getRetirementStatus } from '../utils/retirement'
 
 type Vendor = 'AWS' | 'Microsoft' | 'GCP' | 'Any'
 type Role = 'developer' | 'admin' | 'architect' | 'security' | 'data' | 'devops' | 'general'
@@ -88,7 +90,8 @@ function computeRecommendations(answers: QuizAnswers): Recommendation[] {
     ? (['AWS', 'Microsoft', 'GCP'] as const)
     : ([vendor] as const)
 
-  const db = CERT_DB.filter(c => (allowed as readonly string[]).includes(c.vendor))
+  const retiredIds = new Set(defaultCerts.filter(c => getRetirementStatus(c) === 'retired').map(c => c.id))
+  const db = CERT_DB.filter(c => (allowed as readonly string[]).includes(c.vendor) && !retiredIds.has(c.id))
 
   // ── Experience → level scoring ─────────────────────────────────
   const fundIds = db.filter(c => c.level === 'Fundamentals').map(c => c.id)

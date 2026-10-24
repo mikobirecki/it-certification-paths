@@ -1,4 +1,5 @@
 import type { Cert } from '../types'
+import { getRetirementStatus } from '../utils/retirement'
 
 interface TableViewProps {
   certs: Cert[]
@@ -73,7 +74,9 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
                 <span className="table-cert-exam">{cert.exam || '—'}</span>
                 <span className="table-cert-title">
                   {cert.title}
-                  {cert.retiring && <span className="badge-retiring">⚠ Retiring</span>}
+                  {getRetirementStatus(cert) === 'retired'
+                    ? <span className="badge-retired">Retired</span>
+                    : cert.retiring && <span className="badge-retiring">⚠ Retiring</span>}
                 </span>
                 <span className="table-cert-level">{cert.levelDisplay || cert.level}</span>
               </div>

@@ -11,6 +11,7 @@ import '@xyflow/react/dist/style.css'
 import type { Cert, Vendor } from './types'
 import { defaultCerts, defaultLinks } from './data/defaultData'
 import { buildFlowElements } from './graph/buildFlow'
+import { getRetirementStatus } from './utils/retirement'
 import CertNode from './components/CertNode'
 import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
@@ -215,7 +216,11 @@ export default function App() {
               {selectedCert.scoreToPass && <><div className="k">🎯 Pass score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
             </div>
 
-            {selectedCert.retiring && (
+            {getRetirementStatus(selectedCert) === 'retired' ? (
+              <div className="small" style={{ padding: '8px 10px', background: 'rgba(148, 163, 184, 0.15)', borderRadius: 8, border: '1px solid rgba(148, 163, 184, 0.4)', marginTop: 8, fontSize: 11 }}>
+                <b style={{ color: '#94a3b8' }}>Retired:</b> This exam was retired on {selectedCert.retirementDate}.
+              </div>
+            ) : selectedCert.retiring && (
               <div className="small" style={{ padding: '8px 10px', background: 'rgba(239, 68, 68, 0.15)', borderRadius: 8, border: '1px solid rgba(239, 68, 68, 0.4)', marginTop: 8, fontSize: 11 }}>
                 <span style={{ color: '#f87171' }}>⚠</span> <b style={{ color: '#f87171' }}>Retiring:</b> This exam will be retired on {selectedCert.retirementDate}. Consider planning accordingly.
               </div>
