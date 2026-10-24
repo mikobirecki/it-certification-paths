@@ -9,7 +9,7 @@ import {
 import '@xyflow/react/dist/style.css'
 
 import type { Cert, Vendor } from './types'
-import { defaultCerts, defaultLinks } from './data/defaultData'
+import { defaultCerts, defaultLinks, equivalentGroups } from './data/defaultData'
 import { buildFlowElements } from './graph/buildFlow'
 import { getRetirementStatus } from './utils/retirement'
 import CertNode from './components/CertNode'
@@ -18,6 +18,7 @@ import LegendPanel from './components/LegendPanel'
 import AboutSection from './components/AboutSection'
 import TableView from './components/TableView'
 import CertQuiz from './components/CertQuiz'
+import EquivalentsView from './components/EquivalentsView'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
@@ -47,7 +48,7 @@ export default function App() {
     const saved = localStorage.getItem('theme')
     return (saved === 'light' || saved === 'dark') ? saved : 'dark'
   })
-  const [viewMode, setViewMode] = useState<'graph' | 'table' | 'quiz'>('graph')
+  const [viewMode, setViewMode] = useState<'graph' | 'table' | 'quiz' | 'compare'>('graph')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -100,6 +101,11 @@ export default function App() {
     if (!selectedId) return null
     return certData.find((c) => c.id === selectedId) ?? null
   }, [selectedId, certData])
+
+  const selectedGroups = useMemo(() => {
+    if (!selectedId) return []
+    return equivalentGroups.filter(g => g.certIds.includes(selectedId))
+  }, [selectedId])
 
   const visible = useMemo(() => {
     const certVisible = (c: Cert) => {
@@ -234,6 +240,41 @@ export default function App() {
 
             {selectedCert.description && (
               <p className="small" style={{ margin: '8px 0 0 0', color: '#94a3b8', fontSize: 11 }}>{selectedCert.description}</p>
+            )}
+
+            {selectedGroups.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: 4 }}>⇄ Equivalents at other vendors</div>
+                {selectedGroups.map(g => (
+                  <div key={g.id} style={{ marginTop: 4 }}>
+                    <div className="small" style={{ color: '#94a3b8', fontSize: 11, marginBottom: 2 }}>{g.title}</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                      {g.certIds.filter(id => id !== selectedCert.id).map(id => {
+                        const other = certData.find(c => c.id === id)
+                        if (!other) return null
+                        return (
+                          <button
+                            key={id}
+                            onClick={() => setSelectedId(id)}
+                            style={{
+                              padding: '4px 8px',
+                              background: 'rgba(99, 102, 241, 0.15)',
+                              border: '1px solid rgba(99, 102, 241, 0.3)',
+                              borderRadius: 6,
+                              color: '#c7d2fe',
+                              fontSize: 10,
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {other.vendor} {other.exam ?? other.code ?? ''}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
             )}
 
             {selectedCert.url && (
@@ -380,6 +421,9 @@ export default function App() {
               <button className={viewMode === 'quiz' ? 'active' : ''} onClick={() => setViewMode('quiz')}>
                 🎯 Quiz
               </button>
+              <button className={viewMode === 'compare' ? 'active' : ''} onClick={() => setViewMode('compare')}>
+                ⇄ Compare
+              </button>
             </div>
           </div>
 
@@ -420,6 +464,14 @@ export default function App() {
       <main className="canvas">
         {viewMode === 'quiz' ? (
           <CertQuiz />
+        ) : viewMode === 'compare' ? (
+          <EquivalentsView
+            certs={certData}
+            groups={equivalentGroups}
+            onSelectCert={(cert) => setSelectedId(cert.id)}
+            selectedId={selectedId}
+            searchQuery={query}
+          />
         ) : viewMode === 'table' ? (
           <TableView
             certs={filteredCertsByVendor}

@@ -37,6 +37,13 @@ export type Cert = {
   retirementDate?: string
 }
 
+export type EquivalentGroup = {
+  id: string
+  title: string
+  description?: string
+  certIds: string[]
+}
+
 export type CertLink = {
   id: string
   sourceId: string

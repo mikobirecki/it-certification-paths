@@ -80,6 +80,9 @@ const vendors = unionValues("Vendor", typesSrc);
 const levels = unionValues("Level", typesSrc);
 const roles = unionValues("RoleTrack", typesSrc);
 const catalog: Catalog = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+type EqGroup = { id: string; title: string; certIds: string[] };
+const EQ_PATH = path.join(ROOT, "src", "data", "equivalents.json");
+const equivalentGroups: EqGroup[] = fs.existsSync(EQ_PATH) ? JSON.parse(fs.readFileSync(EQ_PATH, "utf8")) : [];
 const today = todayStr();
 
 // ── 1. Validation ──────────────────────────────────────────────
@@ -102,6 +105,13 @@ for (const l of catalog.links) {
   if (!certIds.has(l.sourceId)) errors.push(`Link ${l.id}: unknown sourceId ${l.sourceId}`);
   if (!certIds.has(l.targetId)) errors.push(`Link ${l.id}: unknown targetId ${l.targetId}`);
 }
+const seenGroupIds = new Set<string>();
+for (const g of equivalentGroups) {
+  if (seenGroupIds.has(g.id)) errors.push(`Duplicate equivalent group id: ${g.id}`);
+  seenGroupIds.add(g.id);
+  if (!Array.isArray(g.certIds) || g.certIds.length < 2) errors.push(`Equivalent group ${g.id}: fewer than 2 certs`);
+  for (const id of g.certIds ?? []) if (!certIds.has(id)) errors.push(`Equivalent group ${g.id}: unknown cert id ${id}`);
+}
 
 // ── 2. Retirement status ───────────────────────────────────────
 const in90 = new Date();
@@ -109,6 +119,8 @@ in90.setDate(in90.getDate() + 90);
 const in90Str = `${in90.getFullYear()}-${String(in90.getMonth() + 1).padStart(2, "0")}-${String(in90.getDate()).padStart(2, "0")}`;
 const retired = catalog.certs.filter(c => c.retirementDate && c.retirementDate < today);
 const retiringSoon = catalog.certs.filter(c => c.retiring && c.retirementDate && c.retirementDate >= today && c.retirementDate <= in90Str);
+const retiredIds = new Set(retired.map(c => c.id));
+const groupsWithRetired = equivalentGroups.filter(g => g.certIds.some(id => retiredIds.has(id)));
 
 // ── 3. MS Learn Catalog API diff ───────────────────────────────
 const msCerts = catalog.certs.filter(c => c.exam && (c.vendor === "Microsoft" || c.vendor === "GitHub"));
@@ -200,6 +212,7 @@ const report = {
   retirement: {
     retired: retired.map(c => ({ id: c.id, exam: c.exam, retirementDate: c.retirementDate })),
     retiringWithin90Days: retiringSoon.map(c => ({ id: c.id, exam: c.exam, retirementDate: c.retirementDate })),
+    equivalentGroupsWithRetired: groupsWithRetired.map(g => ({ id: g.id, title: g.title, retiredIds: g.certIds.filter(id => retiredIds.has(id)) })),
   },
   msLearnApi: {
     error: apiError,
@@ -223,6 +236,9 @@ lines.push(``);
 lines.push(`## 2. Retirement status`);
 lines.push(`- Retired (date passed): ${retired.length}${retired.length ? " — " + retired.map(c => `${c.id} (${c.retirementDate})`).join(", ") : ""}`);
 lines.push(`- Retiring within 90 days: ${retiringSoon.length}${retiringSoon.length ? " — " + retiringSoon.map(c => `${c.id} (${c.retirementDate})`).join(", ") : ""}`);
+if (equivalentGroups.length) {
+  lines.push(`- Equivalent groups containing retired certs: ${groupsWithRetired.length}${groupsWithRetired.length ? " — " + groupsWithRetired.map(g => `${g.id} (${g.certIds.filter(id => retiredIds.has(id)).join(", ")})`).join("; ") : ""}`);
+}
 lines.push(``);
 lines.push(`## 3. Microsoft Learn Catalog API diff`);
 if (apiError) {

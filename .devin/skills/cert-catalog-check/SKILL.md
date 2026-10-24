@@ -62,6 +62,7 @@ Write a short change list grouped by vendor (edit / new / retiring / retired / s
 - **Exam version change** (e.g. SAP-C02 → SAP-C03): keep the cert; update `exam` once the new version is live, and before that append the transition dates to `description`.
 - **Renames / new slugs**: update `title`, `url` and matching `officialResources` URLs.
 - **New certs**: append to `certs` with valid `roles`, `level`, vendor-consistent `domain`/`levelDisplay`, price, validity, prerequisites, `officialResources`; mark betas with "(beta)" in the title. Add `required`/`recommended` links in `links` for real prerequisites and natural next steps.
+- **Equivalents**: when adding or retiring a cert, update `src/data/equivalents.json`. Add new certs to their cross-vendor group, and when a cert is retired, add its successor to the group.
 - Update the "Last updated" month in `src/components/AboutSection.tsx`.
 
 ## 4. Verify
