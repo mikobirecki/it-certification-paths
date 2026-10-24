@@ -1,4 +1,5 @@
 import type { Cert } from '../types'
+import { getRetirementStatus } from '../utils/retirement'
 
 interface TableViewProps {
   certs: Cert[]
@@ -29,6 +30,11 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
   const sortedDomains = Object.keys(groupedByDomain).sort()
 
   const getLevelClass = (cert: Cert) => {
+    // Red Hat Exams/Meta use the 5-level track model
+    if (cert.vendor === 'RedHat' && (cert.level === 'Exam' || cert.level === 'Meta') && cert.rhLevel != null) {
+      const map: Record<number, string> = { 1: 'level-fundamentals', 2: 'level-associate', 3: 'level-expert', 4: 'level-specialty', 5: 'level-meta' }
+      return map[cert.rhLevel] ?? ''
+    }
     const level = cert.level.toLowerCase()
     const display = (cert.levelDisplay || '').toLowerCase()
     
@@ -73,7 +79,9 @@ export default function TableView({ certs, onSelectCert, selectedId, selectedDom
                 <span className="table-cert-exam">{cert.exam || '—'}</span>
                 <span className="table-cert-title">
                   {cert.title}
-                  {cert.retiring && <span className="badge-retiring">⚠ Retiring</span>}
+                  {getRetirementStatus(cert) === 'retired'
+                    ? <span className="badge-retired">Retired</span>
+                    : cert.retiring && <span className="badge-retiring">⚠ Retiring</span>}
                 </span>
                 <span className="table-cert-level">{cert.levelDisplay || cert.level}</span>
               </div>

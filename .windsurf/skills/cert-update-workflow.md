@@ -2,6 +2,8 @@
 
 Use this workflow when updating `src/data/certifications.json` with new, retired, or changed vendor certifications.
 
+> The maintained, more detailed version of this workflow is the Devin skill `.devin/skills/cert-catalog-check/SKILL.md` (run `npm run check:catalog` first).
+
 ## When to use
 
 - Monthly/quarterly certification data refreshes.

@@ -452,6 +452,7 @@ a:hover {
 .vendorBadge.kubernetes { background: linear-gradient(135deg, #326ce5, #2457c5); color: white; }
 .vendorBadge.microsoft { background: linear-gradient(135deg, #00a4ef, #7fba00, #f25022, #ffb900); color: white; }
 .vendorBadge.github { background: linear-gradient(135deg, #24292e, #0d1117); color: white; }
+.vendorBadge.anthropic { background: linear-gradient(135deg, #d97757, #c2410c); color: white; }
 
 /* Red Hat Paths View */
 .redhat-paths-view {
@@ -801,6 +802,21 @@ a:hover {
   white-space: nowrap;
 }
 
+/* Retired badge */
+.badge-retired {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 /* View toggle button */
 .view-toggle {
   display: flex;
@@ -1140,4 +1156,94 @@ a:hover {
   .quiz-results-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Equivalents (Compare) view */
+.equivalents-view {
+  overflow-x: auto;
+}
+
+.eq-group-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--text-secondary, #94a3b8);
+  margin-top: 4px;
+}
+
+.eq-grid {
+  display: grid;
+  gap: 10px;
+  min-width: 640px;
+}
+
+.eq-cell {
+  min-width: 0;
+}
+
+.eq-vendor {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-secondary, #94a3b8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.eq-empty {
+  color: var(--text-secondary, #64748b);
+  font-size: 12px;
+  padding: 10px;
+}
+
+.eq-cert {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-hover);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-bottom: 6px;
+}
+
+.eq-cert:hover {
+  border-color: var(--border-color-hover);
+}
+
+.eq-cert.selected {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.6);
+}
+
+.eq-cert-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.eq-cert-top .badge-retired,
+.eq-cert-top .badge-retiring {
+  margin-left: 0;
+}
+
+.eq-cert-exam {
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--text-secondary, #94a3b8);
+  font-family: monospace;
+}
+
+.eq-cert-title {
+  font-size: 12px;
+  color: var(--text-primary, #f1f5f9);
+  margin-top: 4px;
+}
+
+.eq-cert-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 10px;
+  color: var(--text-secondary, #94a3b8);
+  margin-top: 4px;
 }

@@ -1,5 +1,6 @@
 import { Handle, Position } from '@xyflow/react'
 import type { Cert, Level } from '../types'
+import { getRetirementStatus } from '../utils/retirement'
 
 type CertNodeProps = {
   data: { cert: Cert }
@@ -24,6 +25,7 @@ function levelAccent(level: Level) {
 export default function CertNode(props: CertNodeProps) {
   const cert = props.data.cert
   const acc = levelAccent(cert.level)
+  const retirement = getRetirementStatus(cert)
 
   return (
     <div
@@ -37,6 +39,7 @@ export default function CertNode(props: CertNodeProps) {
           : '0 10px 30px rgba(0, 0, 0, 0.3)',
         overflow: 'hidden',
         position: 'relative',
+        opacity: retirement === 'retired' ? 0.55 : 1,
         backdropFilter: 'blur(10px)',
       }}
     >
@@ -64,7 +67,15 @@ export default function CertNode(props: CertNodeProps) {
             {cert.levelDisplay ?? cert.level}
           </span>
           <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-            {cert.retiring ? <span style={{ 
+            {retirement === 'retired' ? <span style={{
+              padding: '4px 8px',
+              borderRadius: 6,
+              fontSize: 10,
+              fontWeight: 700,
+              background: 'rgba(148, 163, 184, 0.2)',
+              color: '#94a3b8',
+              border: '1px solid rgba(148, 163, 184, 0.4)'
+            }}>Retired</span> : retirement === 'retiring' ? <span style={{ 
               padding: '4px 8px', 
               borderRadius: 6, 
               fontSize: 10, 

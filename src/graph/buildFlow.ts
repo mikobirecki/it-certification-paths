@@ -3,7 +3,7 @@ import type { Edge, Node } from '@xyflow/react'
 import { MarkerType } from '@xyflow/react'
 
 const levelOrder: Level[] = ['Fundamentals', 'Associate', 'Professional-Expert', 'Specialty']
-const redHatLevelOrder: Level[] = ['Course', 'Exam', 'Bundle', 'Meta']
+
 
 function buildMicrosoftLayout(certs: Cert[], xOffset: number, yOffset: number) {
   const levelGap = 360
@@ -112,8 +112,8 @@ function buildRedHatLayout(certs: Cert[], xOffset: number, yOffset: number) {
   const yGap = 140
   const domainGap = 60
 
-  // Group by domain
-  const domains = ['RHCSA', 'RHCE', 'RHCA', 'Cloud-native Dev', 'Security: Linux', 'OpenShift Admin']
+  // Rows = the 5 tracks; col 0 = Courses+Bundles, cols 1–5 = rhLevel for Exam/Meta
+  const domains = ['Enterprise Linux', 'Ansible', 'OpenShift', 'Cloud-native Applications', 'AI']
   const byDomain = new Map<string, Cert[]>()
   
   certs.forEach(c => {
@@ -129,26 +129,21 @@ function buildRedHatLayout(certs: Cert[], xOffset: number, yOffset: number) {
     const domainCerts = byDomain.get(domain)
     if (!domainCerts || domainCerts.length === 0) return
 
-    // Sort by level order within domain
-    const sorted = [...domainCerts].sort((a, b) => {
-      const aIdx = redHatLevelOrder.indexOf(a.level)
-      const bIdx = redHatLevelOrder.indexOf(b.level)
-      return aIdx - bIdx
-    })
-
-    // Group by level within domain
-    const byLevel = new Map<Level, Cert[]>()
-    sorted.forEach(c => {
-      if (!byLevel.has(c.level)) byLevel.set(c.level, [])
-      byLevel.get(c.level)!.push(c)
+    // Column 0: courses and bundles; columns 1–5: exams/meta by rhLevel
+    const columns: Cert[][] = Array.from({ length: 6 }, () => [])
+    domainCerts.forEach(c => {
+      if (c.level === 'Course' || c.level === 'Bundle') {
+        columns[0].push(c)
+      } else {
+        const col = c.rhLevel && c.rhLevel >= 1 && c.rhLevel <= 5 ? c.rhLevel : 0
+        columns[col].push(c)
+      }
     })
 
     let maxRowsInDomain = 0
-    redHatLevelOrder.forEach((level, colIdx) => {
-      const levelCerts = byLevel.get(level) || []
-      maxRowsInDomain = Math.max(maxRowsInDomain, levelCerts.length)
-      
-      levelCerts.forEach((cert, rowIdx) => {
+    columns.forEach((colCerts, colIdx) => {
+      maxRowsInDomain = Math.max(maxRowsInDomain, colCerts.length)
+      colCerts.forEach((cert, rowIdx) => {
         nodes.push({
           id: cert.id,
           type: 'certNode',

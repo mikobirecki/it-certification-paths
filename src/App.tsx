@@ -9,19 +9,21 @@ import {
 import '@xyflow/react/dist/style.css'
 
 import type { Cert, Vendor } from './types'
-import { defaultCerts, defaultLinks } from './data/defaultData'
+import { defaultCerts, defaultLinks, equivalentGroups } from './data/defaultData'
 import { buildFlowElements } from './graph/buildFlow'
+import { getRetirementStatus } from './utils/retirement'
 import CertNode from './components/CertNode'
 import TrainingEdge from './components/TrainingEdge'
 import LegendPanel from './components/LegendPanel'
 import AboutSection from './components/AboutSection'
 import TableView from './components/TableView'
 import CertQuiz from './components/CertQuiz'
+import EquivalentsView from './components/EquivalentsView'
 
 const nodeTypes = { certNode: CertNode }
 const edgeTypes = { training: TrainingEdge }
 
-const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub']
+const allVendors: Vendor[] = ['AWS', 'Microsoft', 'GCP', 'RedHat', 'HashiCorp', 'Kubernetes', 'GitHub', 'Anthropic']
 
 function matchesText(cert: Cert, q: string) {
   const hay = `${cert.title} ${cert.exam ?? ''} ${cert.vendor} ${cert.level} ${cert.roles.join(' ')} ${cert.description ?? ''}` 
@@ -46,7 +48,7 @@ export default function App() {
     const saved = localStorage.getItem('theme')
     return (saved === 'light' || saved === 'dark') ? saved : 'dark'
   })
-  const [viewMode, setViewMode] = useState<'graph' | 'table' | 'quiz'>('graph')
+  const [viewMode, setViewMode] = useState<'graph' | 'table' | 'quiz' | 'compare'>('graph')
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -99,6 +101,11 @@ export default function App() {
     if (!selectedId) return null
     return certData.find((c) => c.id === selectedId) ?? null
   }, [selectedId, certData])
+
+  const selectedGroups = useMemo(() => {
+    if (!selectedId) return []
+    return equivalentGroups.filter(g => g.certIds.includes(selectedId))
+  }, [selectedId])
 
   const visible = useMemo(() => {
     const certVisible = (c: Cert) => {
@@ -215,7 +222,11 @@ export default function App() {
               {selectedCert.scoreToPass && <><div className="k">🎯 Pass score</div><div className="v" style={{ color: '#fbbf24', fontWeight: 700 }}>{selectedCert.scoreToPass}/1000</div></>}
             </div>
 
-            {selectedCert.retiring && (
+            {getRetirementStatus(selectedCert) === 'retired' ? (
+              <div className="small" style={{ padding: '8px 10px', background: 'rgba(148, 163, 184, 0.15)', borderRadius: 8, border: '1px solid rgba(148, 163, 184, 0.4)', marginTop: 8, fontSize: 11 }}>
+                <b style={{ color: '#94a3b8' }}>Retired:</b> This exam was retired on {selectedCert.retirementDate}.
+              </div>
+            ) : selectedCert.retiring && (
               <div className="small" style={{ padding: '8px 10px', background: 'rgba(239, 68, 68, 0.15)', borderRadius: 8, border: '1px solid rgba(239, 68, 68, 0.4)', marginTop: 8, fontSize: 11 }}>
                 <span style={{ color: '#f87171' }}>⚠</span> <b style={{ color: '#f87171' }}>Retiring:</b> This exam will be retired on {selectedCert.retirementDate}. Consider planning accordingly.
               </div>
@@ -229,6 +240,41 @@ export default function App() {
 
             {selectedCert.description && (
               <p className="small" style={{ margin: '8px 0 0 0', color: '#94a3b8', fontSize: 11 }}>{selectedCert.description}</p>
+            )}
+
+            {selectedGroups.length > 0 && (
+              <div style={{ marginTop: 8 }}>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', marginBottom: 4 }}>⇄ Equivalents at other vendors</div>
+                {selectedGroups.map(g => (
+                  <div key={g.id} style={{ marginTop: 4 }}>
+                    <div className="small" style={{ color: '#94a3b8', fontSize: 11, marginBottom: 2 }}>{g.title}</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                      {g.certIds.filter(id => id !== selectedCert.id).map(id => {
+                        const other = certData.find(c => c.id === id)
+                        if (!other) return null
+                        return (
+                          <button
+                            key={id}
+                            onClick={() => setSelectedId(id)}
+                            style={{
+                              padding: '4px 8px',
+                              background: 'rgba(99, 102, 241, 0.15)',
+                              border: '1px solid rgba(99, 102, 241, 0.3)',
+                              borderRadius: 6,
+                              color: '#c7d2fe',
+                              fontSize: 10,
+                              fontWeight: 600,
+                              cursor: 'pointer',
+                            }}
+                          >
+                            {other.vendor} {other.exam ?? other.code ?? ''}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                ))}
+              </div>
             )}
 
             {selectedCert.url && (
@@ -294,16 +340,15 @@ export default function App() {
             <div style={{ padding: '10px 12px', background: 'rgba(204, 0, 0, 0.1)', borderRadius: 10, border: '1px solid rgba(204, 0, 0, 0.3)', fontSize: 11, lineHeight: 1.5 }}>
               <div style={{ fontWeight: 700, color: '#cc0000', marginBottom: 6 }}>🎯 Red Hat Certification Model</div>
               <div style={{ color: '#94a3b8' }}>
-                <b style={{ color: '#e2e8f0' }}>3-tier structure:</b><br/>
-                <b>1. Core:</b> RHCSA (EX200) → RHCE (EX294)<br/>
-                <b>2. Specialist:</b> Domain-specific exams<br/>
-                <b>3. RHCA:</b> RHCE + 5 specialists
+                <b style={{ color: '#e2e8f0' }}>5-level structure (May 2026):</b><br/>
+                <b>L1 Technologist → L2 SysAdmin/Developer → L3 Engineer (RHCE = L2 + advanced exam) → L4 Specialist (no prerequisites) → L5 Architect (RHCA = RHCE + 3 specialists in the same track)</b><br/>
+                5 tracks: Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, AI. Valid 3 years.
               </div>
             </div>
           )}
 
           <div className="col" style={{ flex: 1 }}>
-            <label>{vendor === 'RedHat' ? 'Certification Path' : 'Domain'}</label>
+            <label>{vendor === 'RedHat' ? 'Track' : 'Domain'}</label>
             <select value={domain} onChange={(e) => setDomain(e.target.value)}>
               {vendorDomains.map((d) => (
                 <option key={d} value={d}>
@@ -376,6 +421,9 @@ export default function App() {
               <button className={viewMode === 'quiz' ? 'active' : ''} onClick={() => setViewMode('quiz')}>
                 🎯 Quiz
               </button>
+              <button className={viewMode === 'compare' ? 'active' : ''} onClick={() => setViewMode('compare')}>
+                ⇄ Compare
+              </button>
             </div>
           </div>
 
@@ -416,6 +464,14 @@ export default function App() {
       <main className="canvas">
         {viewMode === 'quiz' ? (
           <CertQuiz />
+        ) : viewMode === 'compare' ? (
+          <EquivalentsView
+            certs={certData}
+            groups={equivalentGroups}
+            onSelectCert={(cert) => setSelectedId(cert.id)}
+            selectedId={selectedId}
+            searchQuery={query}
+          />
         ) : viewMode === 'table' ? (
           <TableView
             certs={filteredCertsByVendor}

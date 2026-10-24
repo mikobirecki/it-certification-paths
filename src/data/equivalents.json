@@ -1,0 +1,17 @@
+[
+  { "id": "cloud-fundamentals", "title": "Cloud fundamentals", "description": "Entry-level cloud concepts, pricing and core services.", "certIds": ["aws-clf-c02", "az-900", "gcp-cdl"] },
+  { "id": "ai-fundamentals", "title": "AI fundamentals", "description": "AI and generative AI concepts for technical and business roles.", "certIds": ["aws-aif-c01", "ms-ai901", "gcp-gai", "anth-ccao-f"] },
+  { "id": "cloud-admin", "title": "Cloud administrator / operations", "description": "Day-to-day deployment, monitoring and operation of cloud resources.", "certIds": ["aws-soa-c03", "az-104", "gcp-ace"] },
+  { "id": "solutions-architect", "title": "Solutions architect (expert)", "description": "Designing secure, resilient and cost-efficient cloud solutions.", "certIds": ["aws-sap-c02", "az-305", "gcp-pca"] },
+  { "id": "cloud-developer", "title": "Cloud developer", "description": "Building and deploying applications on cloud services.", "certIds": ["aws-dva-c02", "ms-ai200", "gcp-pcd"] },
+  { "id": "devops-engineer", "title": "DevOps engineer", "description": "CI/CD, infrastructure as code, monitoring and release automation.", "certIds": ["aws-dop-c02", "az-400", "gcp-pcdo"] },
+  { "id": "security-engineer", "title": "Cloud security engineer", "description": "Identity, data protection, network security and threat protection in the cloud.", "certIds": ["aws-scs-c02", "ms-sc500", "gcp-psec"] },
+  { "id": "security-operations", "title": "Security operations (SOC)", "description": "Threat detection, investigation and response.", "certIds": ["ms-sc200", "gcp-psoc"] },
+  { "id": "network-engineer", "title": "Network engineer", "description": "Hybrid connectivity, routing, load balancing and network security.", "certIds": ["aws-ans-c01", "az-700", "gcp-pne", "k8s-ckne"] },
+  { "id": "data-engineer", "title": "Data engineer", "description": "Data ingestion, transformation, pipelines and analytics platforms.", "certIds": ["aws-dea-c01", "ms-dp700", "gcp-pde"] },
+  { "id": "database", "title": "Database administrator / engineer", "description": "Managed relational and NoSQL databases: design, migration, operations.", "certIds": ["aws-dbs-c01", "ms-dp300", "gcp-pdbe"] },
+  { "id": "ml-engineer", "title": "Machine learning engineer", "description": "Training, deploying and operating ML and generative AI models.", "certIds": ["aws-mla-c01", "ms-ai300", "gcp-pmle"] },
+  { "id": "genai-developer", "title": "Generative AI / agent developer", "description": "Building applications and agents on foundation models: RAG, tools, evaluation.", "certIds": ["aws-gai-c01", "ms-ai103", "anth-ccdv-f"] },
+  { "id": "agentic-architect", "title": "Agentic AI architect", "description": "Designing production multi-agent systems, governance and evaluation.", "certIds": ["ms-ai500", "gcp-paa", "anth-ccar-p"] },
+  { "id": "kubernetes-admin", "title": "Kubernetes / container platform administrator", "description": "Installing, operating and troubleshooting Kubernetes-based platforms.", "certIds": ["k8s-cka", "rh-ex280"] }
+]
